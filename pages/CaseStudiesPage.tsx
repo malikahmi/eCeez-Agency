@@ -6,6 +6,51 @@ import { Link } from 'react-router-dom';
 
 const caseStudies = [
   {
+    title: "AUREX: High-End Winter Fashion Store",
+    category: "Luxury Fashion",
+    description: "A bold, editorial Shopify storefront for AUREX, a premium winter apparel brand. The project focused on high-impact typography, immersive product storytelling, and a seamless mobile-first shopping experience. We implemented custom product filtering, high-fidelity video integration, and a performance-optimized checkout to handle high-volume seasonal traffic.",
+    image: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fm=webp&fit=crop&q=75&w=800",
+    tags: ["Fashion UI", "Shopify Plus", "Performance"],
+    link: "/case-studies/aurex",
+    results: ["145% Increase in Mobile Conversions", "32% Reduction in Bounce Rate", "4.2s Average Page Load Time"]
+  },
+  {
+    title: "Shopify Product Page Design For Clothing Store",
+    category: "Ecommerce Development",
+    description: "Designed and optimized a high-converting Shopify product page for a clothing store. The page includes a clean, modern layout with a well-structured product description focused on clarity, branding, and SEO best practices. Improved product presentation through clear feature highlights, engaging copy, and a user-friendly structure to enhance customer experience and conversions.",
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fm=webp&fit=crop&q=75&w=800",
+    tags: ["Shopify", "UX/UI", "SEO Optimization"],
+    link: "/case-studies/clothing-store",
+    results: ["88% Increase in Add-to-Cart Rate", "25% Higher Average Order Value", "Top 3 Ranking for Primary Keywords"]
+  },
+  {
+    title: "Shopify Product Page & Store Design for Jewelry",
+    category: "Luxury Jewelry",
+    description: "Designed a clean, modern Shopify product page and store layout focused on visual appeal, user experience, and conversions. The project involved structuring product sections, optimizing product descriptions, and presenting products in a professional, brand-consistent way. Special attention was given to layout hierarchy, clarity, and SEO-friendly content to improve engagement and product visibility.",
+    image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fm=webp&fit=crop&q=75&w=800",
+    tags: ["Jewelry Design", "E-commerce", "Visual Appeal"],
+    link: "/case-studies/jewelry-store",
+    results: ["210% Growth in Organic Traffic", "15% Improvement in Customer Retention", "Seamless Multi-Currency Integration"]
+  },
+  {
+    title: "Barber Website Design",
+    category: "Local Business Service",
+    description: "Shortcut: Your Mobile Barber Shop. A complete digital identity including service listings, booking prompts, and a high-performance landing page designed for conversion and local brand loyalty.",
+    image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fm=webp&fit=crop&q=75&w=800",
+    tags: ["Service Design", "Booking Systems", "Local SEO"],
+    link: "/case-studies/barber",
+    results: ["500+ Monthly Online Bookings", "1st Page Ranking for 'Mobile Barber'", "98% Positive Customer Feedback"]
+  },
+  {
+    title: "Restaurant Website Design",
+    category: "Fine Dining & Hospitality",
+    description: "Coltivi: Italian Fine Dining. A vibrant, food-focused landing page featuring menu highlights, real-time reservation systems, and automated email follow-ups for guests.",
+    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fm=webp&fit=crop&q=75&w=800",
+    tags: ["Hospitality UI", "Reservation Flow", "Menu Management"],
+    link: "/case-studies/restaurant",
+    results: ["40% Increase in Direct Reservations", "25% Higher Table Turnover Rate", "Automated Guest Loyalty Program"]
+  },
+  {
     title: "Meows Cat Health: DTC Supplement Store",
     category: "Pet Health & Supplements",
     description: "A vet-formulated feline supplement brand built on Shopify for a trust-first category. We engineered the storefront around evidence — clinical dosing, third-party testing and a real guarantee above the fold — with subscribe-and-save at the core, Judge.me review automation, and Shopify Markets serving over 100 currencies.",
@@ -50,50 +95,60 @@ const caseStudies = [
     link: "/case-studies/nishiyama-ramen",
     results: ["Bilingual JA/EN architecture", "Sample-request lead generation", "Static build for fast global load"]
   },
+,
   {
-    title: "AUREX: High-End Winter Fashion Store",
-    category: "Luxury Fashion",
-    description: "A bold, editorial Shopify storefront for AUREX, a premium winter apparel brand. The project focused on high-impact typography, immersive product storytelling, and a seamless mobile-first shopping experience. We implemented custom product filtering, high-fidelity video integration, and a performance-optimized checkout to handle high-volume seasonal traffic.",
-    image: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fm=webp&fit=crop&q=75&w=800",
-    tags: ["Fashion UI", "Shopify Plus", "Performance"],
-    link: "/case-studies/aurex",
-    results: ["145% Increase in Mobile Conversions", "32% Reduction in Bounce Rate", "4.2s Average Page Load Time"]
+    title: "Swolverine: Sports Nutrition Brand",
+    category: "Sports Nutrition & Supplements",
+    description: "A research-driven sports supplement brand on Shopify. We built goal-based navigation (build strength, lose fat, energy, sleep), stack bundling with tiered savings, subscribe-and-save layered on top, free macro/BMR/TDEE calculators as link-earning tools, and a B2B wholesale portal alongside DTC across 130+ markets.",
+    image: "https://swolverine.com/cdn/shop/files/homepage-hero-mobile.jpg?v=1783707075&width=800",
+    tags: ["Shopify", "Subscriptions / Bundles", "B2B + DTC"],
+    link: "/case-studies/swolverine",
+    results: ["Goal-based navigation architecture", "Stack + subscribe savings engine", "130+ markets, EN/ES/FR"]
   },
   {
-    title: "Shopify Product Page Design For Clothing Store",
-    category: "Ecommerce Development",
-    description: "Designed and optimized a high-converting Shopify product page for a clothing store. The page includes a clean, modern layout with a well-structured product description focused on clarity, branding, and SEO best practices. Improved product presentation through clear feature highlights, engaging copy, and a user-friendly structure to enhance customer experience and conversions.",
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fm=webp&fit=crop&q=75&w=800",
-    tags: ["Shopify", "UX/UI", "SEO Optimization"],
-    link: "/case-studies/clothing-store",
-    results: ["88% Increase in Add-to-Cart Rate", "25% Higher Average Order Value", "Top 3 Ranking for Primary Keywords"]
+    title: "Volvik USA: Golf Brand Store",
+    category: "Golf Equipment",
+    description: "A 40-year golf ball innovator on Shopify. We structured the range by performance characteristic (tour urethane, premium color, 360° alignment, night glow), built a comparison tool for undecided golfers, a custom personalization path, licensed collection architecture, and a dealer locator bridging DTC with retail.",
+    image: "https://volvik.com/cdn/shop/files/volvik_2025_collection_white_bg.png?v=1747252888&width=800",
+    tags: ["Shopify", "Product Taxonomy", "Personalization"],
+    link: "/case-studies/volvik",
+    results: ["Performance-based ball taxonomy", "Comparison tool + personalization", "1,200+ reviews collected"]
   },
   {
-    title: "Shopify Product Page & Store Design for Jewelry",
-    category: "Luxury Jewelry",
-    description: "Designed a clean, modern Shopify product page and store layout focused on visual appeal, user experience, and conversions. The project involved structuring product sections, optimizing product descriptions, and presenting products in a professional, brand-consistent way. Special attention was given to layout hierarchy, clarity, and SEO-friendly content to improve engagement and product visibility.",
-    image: "https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fm=webp&fit=crop&q=75&w=800",
-    tags: ["Jewelry Design", "E-commerce", "Visual Appeal"],
-    link: "/case-studies/jewelry-store",
-    results: ["210% Growth in Organic Traffic", "15% Improvement in Customer Retention", "Seamless Multi-Currency Integration"]
+    title: "Tropez Official: UK Premium Fashion",
+    category: "Premium Fashion & Streetwear",
+    description: "A UK premium fashion brand on Shopify. We built drop-based seasonal merchandising with editorial presentation, coordinated sets as an AOV engine, and a cart drawer engineered with free-shipping progress, 'pair with' cross-sells and gift notes — selling worldwide from a UK base.",
+    image: "https://tropezofficial.com/cdn/shop/files/Activewear_Image_2.png?v=1780238729&width=800",
+    tags: ["Shopify", "Drops / Seasonal", "AOV Engineering"],
+    link: "/case-studies/tropez-official",
+    results: ["Drop-based seasonal architecture", "Cart drawer AOV engineering", "Worldwide market coverage"]
   },
   {
-    title: "Barber Website Design",
-    category: "Local Business Service",
-    description: "Shortcut: Your Mobile Barber Shop. A complete digital identity including service listings, booking prompts, and a high-performance landing page designed for conversion and local brand loyalty.",
-    image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fm=webp&fit=crop&q=75&w=800",
-    tags: ["Service Design", "Booking Systems", "Local SEO"],
-    link: "/case-studies/barber",
-    results: ["500+ Monthly Online Bookings", "1st Page Ranking for 'Mobile Barber'", "98% Positive Customer Feedback"]
+    title: "Oddli: Design-Led DTC Fashion",
+    category: "Fashion & Apparel",
+    description: "A community fashion brand where restraint was the strategy. We built a deliberately minimal editorial storefront — no badges, no countdowns, no interruption — letting photography and typography carry the sale, with transparency and the Oddli Club as real destinations rather than a policy link and an email popup.",
+    image: "https://cdn.shopify.com/s/files/1/0515/3662/5860/files/Untitled-1.jpg?v=1733761067",
+    tags: ["Shopify", "Minimal / Editorial", "Community"],
+    link: "/case-studies/oddli",
+    results: ["Minimal design-led storefront", "Transparency as a buying reason", "Community club destination"]
   },
   {
-    title: "Restaurant Website Design",
-    category: "Fine Dining & Hospitality",
-    description: "Coltivi: Italian Fine Dining. A vibrant, food-focused landing page featuring menu highlights, real-time reservation systems, and automated email follow-ups for guests.",
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fm=webp&fit=crop&q=75&w=800",
-    tags: ["Hospitality UI", "Reservation Flow", "Menu Management"],
-    link: "/case-studies/restaurant",
-    results: ["40% Increase in Direct Reservations", "25% Higher Table Turnover Rate", "Automated Guest Loyalty Program"]
+    title: "Labozero: Italian Multi-Brand Streetwear",
+    category: "Streetwear & Sneakers Retail",
+    description: "A Bari-based streetwear and sneaker retailer carrying 40+ brands. We built three parallel navigation paths (gender, category, brand), individual collections per label, outlet architecture for permanent inventory churn, Italian-language editorial, and Shopify Markets across 30 European countries.",
+    image: "https://labozero.it/cdn/shop/files/anteprimasocial.png?v=1676026605",
+    tags: ["Shopify", "Multi-Brand Catalog", "European Markets"],
+    link: "/case-studies/labozero",
+    results: ["40+ brand architecture", "Three parallel navigation paths", "30 European markets"]
+  },
+  {
+    title: "Express Wholesalers: B2B Produce Supply",
+    category: "B2B Fresh Produce Wholesale",
+    description: "A family-owned Sydney Markets produce providore supplying restaurants since 1979. No cart, no consumer checkout — a trade credibility and ordering front door built around HACCP credentials, heritage, a produce catalog for commercial kitchens, and weekly market reporting that keeps chefs coming back.",
+    image: "https://expresswholesalers.com.au/wp-content/uploads/Banner_1.jpg",
+    tags: ["WordPress", "B2B Lead Gen", "Trade Ordering"],
+    link: "/case-studies/express-wholesalers",
+    results: ["Trade ordering funnel", "HACCP + heritage credibility", "Weekly market reporting"]
   }
 ];
 

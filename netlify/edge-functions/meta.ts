@@ -46,6 +46,30 @@ const META: Record<string, { t: string; d: string }> = {
 "t": "Shopify CRO | Conversion Rate Optimization for Shopify | eCeez",
 "d": "Shopify-specific CRO: heatmaps, session recordings, A/B testing, checkout and product page optimization that turn traffic into revenue. Free CRO audit."
 },
+"/case-studies/swolverine": {
+"t": "Swolverine: Sports Supplement Shopify Case Study | eCeez",
+"d": "How we built Swolverine \u2014 a sports nutrition Shopify store with goal-based navigation, stack bundling, subscriptions, a B2B wholesale portal, and 130+ markets."
+},
+"/case-studies/volvik": {
+"t": "Volvik USA: Golf Brand Shopify Case Study | eCeez",
+"d": "How we built Volvik USA \u2014 a golf equipment Shopify store with performance-based ball taxonomy, licensed collections, personalization, and a dealer network."
+},
+"/case-studies/tropez-official": {
+"t": "Tropez Official: Premium Fashion Shopify Case Study | eCeez",
+"d": "How we built Tropez Official \u2014 a UK premium fashion Shopify store with drop-based merchandising, an AOV-driving cart drawer, and worldwide market coverage."
+},
+"/case-studies/oddli": {
+"t": "Oddli: DTC Fashion Brand Shopify Case Study | eCeez",
+"d": "How we built Oddli \u2014 a design-led DTC fashion Shopify store with a minimal editorial storefront, transparency-first content, and community-driven merchandising."
+},
+"/case-studies/labozero": {
+"t": "Labozero: Italian Streetwear Shopify Case Study | eCeez",
+"d": "How we built Labozero \u2014 an Italian multi-brand streetwear and sneaker Shopify store with 40+ brand architecture and 30 European markets."
+},
+"/case-studies/express-wholesalers": {
+"t": "Express Wholesalers: B2B Produce Website Case Study | eCeez",
+"d": "How we worked on Express Wholesalers \u2014 a B2B fresh produce wholesale website for a Sydney Markets providore supplying restaurants and commercial kitchens."
+},
 "/case-studies/meows-cat-health": {
 "t": "Meows Cat Health: DTC Supplement Store Case Study | eCeez",
 "d": "How we built Meows Cat Health — a conversion-focused Shopify DTC supplement store with subscriptions, review automation, and 100+ international markets."

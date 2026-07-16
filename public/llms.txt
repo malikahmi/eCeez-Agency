@@ -627,3 +627,30 @@ Client: Sapporo Nishiyama Europe GmbH (nishiyama-ramen.com) — bilingual B2B co
 Built: custom static bilingual (Japanese/English) architecture, scroll-driven craft storytelling, sample-request lead generation, FSSC 22000 and noodle-master credibility framing, performance-first build.
 
 Key fact: eCeez builds across Shopify DTC, large-catalog retail, editorial commerce, showroom-hybrid retail, and B2B lead generation.
+
+### Client Case Studies (Batch 2)
+https://eceez.com/case-studies/swolverine
+Client: Swolverine (swolverine.com) — Shopify sports nutrition / supplement DTC brand.
+Built: goal-based navigation (strength, fat loss, energy, gut, hormone, sleep), stack bundling with tiered savings, subscribe-and-save layered on bundles, research/dosing/third-party-testing trust modules, free macro/BMR/TDEE calculators, B2B wholesale portal + creator programme, Shopify Markets 130+ countries, EN/ES/FR.
+
+https://eceez.com/case-studies/volvik
+Client: Volvik USA (volvik.com) — Shopify golf ball brand, 40+ year heritage.
+Built: performance-characteristic taxonomy (tour urethane, premium color, 360° alignment, color performance, night glow, non-conforming, ladies), golf ball comparison tool, custom personalization (names/initials/logos), licensed collaboration collection architecture, bundles, store locator / dealer finder, B2B portal, 1,200+ reviews.
+
+https://eceez.com/case-studies/tropez-official
+Client: Tropez Official (tropezofficial.com) — Shopify UK premium fashion / streetwear.
+Built: drop-based seasonal merchandising, coordinated sets as AOV engine, cart drawer with free-shipping progress + "pair with" cross-sells + gift notes, quick-add, self-service returns portal, members club, Shopify Markets worldwide.
+
+https://eceez.com/case-studies/oddli
+Client: Oddli (oddli.com) — Shopify design-led DTC fashion brand.
+Built: deliberately minimal editorial storefront (no badges, countdowns or interruption patterns), transparency section as a first-class buying reason, Oddli Club community destination, customs line, restrained cart experience.
+
+https://eceez.com/case-studies/labozero
+Client: Labozero (labozero.it) — Shopify Italian multi-brand streetwear and sneaker retailer, Bari.
+Built: three parallel navigation paths (gender / category / brand), individual collections for 40+ brands, outlet architecture for inventory churn, Italian localisation, Shopify Markets 30 European countries, Italian-language editorial blog, Made-in-Italy artisan line.
+
+https://eceez.com/case-studies/express-wholesalers
+Client: Express Wholesalers (expresswholesalers.com.au) — B2B fresh produce wholesaler, Sydney Markets, family business since 1979.
+Built: trade credibility architecture (HACCP, heritage, testimonials), produce catalog for commercial kitchens, ordering funnel to dedicated wholesale ordering application, weekly market report, local grower sourcing narrative.
+
+Key fact: eCeez has delivered 11 documented client projects across Shopify DTC, supplements, golf, fashion, multi-brand retail, art, furniture, and B2B lead generation in the US, UK, Italy, Australia, and Japan.

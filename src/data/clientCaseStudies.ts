@@ -563,6 +563,672 @@ export const clientCaseStudies: ClientCaseStudy[] = [
       },
     ],
   },
+  /* ------------------------------------------------------------------ */
+  {
+    slug: 'swolverine',
+    client: 'Swolverine',
+    liveUrl: 'https://swolverine.com/',
+    industry: 'Sports Nutrition & Supplements',
+    platform: 'Shopify',
+    metaTitle: 'Swolverine: Sports Supplement Shopify Case Study | eCeez',
+    metaDescription:
+      'How we built Swolverine — a sports nutrition Shopify store with goal-based navigation, stack bundling, subscriptions, a B2B wholesale portal, and 130+ markets.',
+    badge: 'Shopify DTC · Sports Nutrition',
+    h1Lead: 'Engineering a Sports Nutrition Brand for',
+    h1Accent: 'Stacks, Subscriptions & Scale',
+    subtitle:
+      'Swolverine sells research-backed sports supplements to athletes and active-lifestyle customers. Supplements are a saturated, claim-heavy category, so the store had to do two things at once: prove the science, and make bundling and subscribing the path of least resistance. It also had to serve DTC shoppers, wholesale buyers, and creators from one storefront.',
+    cardImage: 'https://swolverine.com/cdn/shop/files/homepage-hero-mobile.jpg?v=1783707075&width=800',
+    cardTags: ['Shopify', 'Subscriptions / Bundles', 'B2B + DTC'],
+    cardSummary:
+      'A research-driven sports nutrition brand on Shopify with goal-based navigation, stack bundling, subscribe-and-save, a wholesale portal, and 130+ international markets.',
+    heroImage: {
+      src: 'https://swolverine.com/cdn/shop/files/homepage-hero-mobile.jpg?v=1783707075&width=1400',
+      alt: 'Swolverine Shopify storefront — sports nutrition and supplement brand hero',
+    },
+    gallery: [
+      {
+        src: 'https://swolverine.com/cdn/shop/files/Swolverine-whey-protein-isolate-test-10177329660184-51611410202904.png?v=1773973589&width=800',
+        alt: 'Swolverine whey protein isolate product page presentation',
+        caption: 'Consistent product presentation across a deep supplement range',
+      },
+      {
+        src: 'https://swolverine.com/cdn/shop/files/Swolverine-creatine-monohydrate-6767023980622-51998659412248.png?v=1775191836&width=800',
+        alt: 'Swolverine creatine monohydrate product imagery',
+        caption: 'Clinical dosing and third-party testing carried through every SKU',
+      },
+    ],
+    atAGlance: [
+      { label: 'Platform', value: 'Shopify' },
+      { label: 'Markets', value: '130+ countries' },
+      { label: 'Languages', value: 'EN / ES / FR' },
+      { label: 'Model', value: 'DTC + wholesale' },
+    ],
+    challenge: [
+      'Sports nutrition is one of the most crowded categories in ecommerce, and almost every competitor makes the same promises. A store that simply lists products competes on price and loses. Swolverine\u2019s differentiator is genuine scientific rigour \u2014 research-backed formulations, clinically meaningful doses, third-party testing \u2014 but that only matters commercially if the storefront makes it legible in seconds.',
+      'The economics also depend on two behaviours the default Shopify experience does nothing to encourage: stacking (buying complementary products together) and subscribing. Both had to be designed into the merchandising rather than bolted on as a discount code.',
+      'And the brand serves three audiences from one storefront: DTC athletes, wholesale and retail buyers, and creators in an affiliate programme \u2014 each needing a different path without cluttering the others.',
+    ],
+    approach: [
+      {
+        title: 'Goal-based navigation',
+        desc: 'Athletes shop by outcome, not ingredient. We structured navigation around goals \u2014 build strength, lose body fat, energy and focus, gut health, hormone support, sleep \u2014 alongside a conventional type-based path, so both the informed and the uncertain find their way.',
+      },
+      {
+        title: 'Stacking as a first-class product',
+        desc: 'Bundles built as genuine products (Build, Body Recomp, Post Cycle, Wellness) with tiered savings, turning a single-product purchase into a considered regimen and lifting average order value structurally rather than through discounting.',
+      },
+      {
+        title: 'Subscriptions layered onto stacks',
+        desc: 'Subscribe-and-save presented at the product and stack level, compounding with bundle savings. Consumable supplements repurchase predictably, so making subscription the obvious choice converts one-time buyers into recurring revenue.',
+      },
+      {
+        title: 'Science as the trust architecture',
+        desc: 'Research backing, proven dosing, and third-party testing surfaced as core storefront modules, supported by a substantial research-led content library \u2014 because in a claim-heavy category, evidence is the only real differentiator.',
+      },
+      {
+        title: 'Tools that earn traffic',
+        desc: 'Macro, BMR, and TDEE calculators built as free on-site tools \u2014 genuinely useful to athletes, and the kind of resource that attracts search traffic and links a product page never will.',
+      },
+      {
+        title: 'Three audiences, three lanes',
+        desc: 'A wholesale application and B2B portal, a creator/affiliate programme, and the DTC storefront each given their own path, so a retail buyer and an athlete never collide in the same journey.',
+      },
+    ],
+    delivered: [
+      'Shopify storefront with dual goal-based and type-based navigation architecture',
+      'Stack bundling products with tiered savings (up to 20% stack, plus 15% subscribe)',
+      'Subscribe-and-save subscription flow layered across products and bundles',
+      'Trust modules for research backing, clinical dosing, and third-party testing',
+      'Research-led content library across supplements, training, nutrition, and recovery',
+      'Free macro, BMR, and TDEE calculators as on-site link-earning tools',
+      'B2B wholesale application and customer portal alongside DTC',
+      'Creator and affiliate programme architecture',
+      'Shopify Markets across 130+ countries with EN/ES/FR localisation',
+      'Product review integration surfacing ratings across the range',
+    ],
+    outcome: [
+      'The store now sells the way the brand actually differentiates. Evidence \u2014 research, dosing, third-party testing \u2014 is structural rather than decorative, which is the only durable position in a category where everyone claims the same outcomes.',
+      'Stacking and subscribing are designed into the merchandising rather than bolted on, so average order value and recurring revenue are lifted by architecture instead of perpetual discounting. That is the difference between a supplement brand with a business and one renting customers from paid ads.',
+      'The calculators quietly do disproportionate work: genuinely useful free tools attract the search traffic and links that product pages cannot, while putting the brand in front of exactly the athletes it wants.',
+    ],
+    stack: ['Shopify', 'Online Store 2.0', 'Liquid', 'Subscriptions', 'Bundles', 'Shopify Markets', 'B2B portal', 'Multi-language'],
+    serviceLink: {
+      to: '/shopify-cro',
+      label: 'Explore Shopify CRO',
+      desc: 'Goal-based navigation, stack bundling, and subscription-first merchandising are conversion engineering \u2014 built into the store, not layered on after.',
+    },
+    faqs: [
+      {
+        q: 'How do you sell supplements in such a saturated category?',
+        a: 'By making the actual differentiator legible in seconds. Almost every supplement brand promises the same outcomes, so a store that just lists products competes on price and loses. Here the rigour \u2014 research backing, clinically meaningful doses, third-party testing \u2014 is built into the storefront as structural trust modules and a research-led content library, not buried in an about page.',
+      },
+      {
+        q: 'Why build stacking and bundling as products?',
+        a: 'Because it changes the economics without discounting. A customer buying one product is a transaction; a customer buying a regimen is a relationship. Building stacks as genuine products with tiered savings raises average order value structurally, and when subscription layers on top, a single purchase becomes predictable recurring revenue.',
+      },
+      {
+        q: 'Why build free calculators into a supplement store?',
+        a: 'Because they earn what product pages cannot. Macro, BMR, and TDEE calculators are genuinely useful to the exact athletes the brand wants, and useful free tools attract search traffic and backlinks that commercial pages rarely do. It is one of the most underrated growth assets available to a DTC brand.',
+      },
+      {
+        q: 'How do you serve DTC and wholesale from one store?',
+        a: 'By giving each audience its own lane. A retail buyer applying for wholesale terms and an athlete buying a tub of protein need completely different journeys. We built the wholesale application and B2B portal alongside the DTC storefront and creator programme, so each path is purpose-built without cluttering the others.',
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: 'volvik',
+    client: 'Volvik USA',
+    liveUrl: 'https://volvik.com/',
+    industry: 'Golf Equipment',
+    platform: 'Shopify',
+    metaTitle: 'Volvik USA: Golf Brand Shopify Case Study | eCeez',
+    metaDescription:
+      'How we built Volvik USA — a golf equipment Shopify store with performance-based ball taxonomy, licensed collaboration collections, personalization, and a dealer network.',
+    badge: 'Shopify · Golf & Licensed Retail',
+    h1Lead: 'Building a Golf Brand Store for',
+    h1Accent: 'Performance, Personalization & Licensing',
+    subtitle:
+      'Volvik has spent over forty years pushing golf ball design forward, from the first matte-finish ball to a range spanning tour-level urethane to night-glow. The store had to make a technically complex product line selectable by real golfers, run licensed collaboration collections alongside core performance products, and support both personalization and a national dealer network.',
+    cardImage: 'https://volvik.com/cdn/shop/files/volvik_2025_collection_white_bg.png?v=1747252888&width=800',
+    cardTags: ['Shopify', 'Product Taxonomy', 'Personalization'],
+    cardSummary:
+      'A 40-year golf ball brand on Shopify with performance-based product taxonomy, a comparison tool, custom personalization, licensed collections, and a dealer locator.',
+    heroImage: {
+      src: 'https://volvik.com/cdn/shop/files/volvik_2025_collection_white_bg.png?v=1747252888&width=1400',
+      alt: 'Volvik USA Shopify storefront — golf ball collection product range',
+    },
+    gallery: [
+      {
+        src: 'https://volvik.com/cdn/shop/files/home-banner1.jpg?v=1731961180&width=800',
+        alt: 'Volvik brand story imagery on the Shopify storefront',
+        caption: 'Forty years of color and performance told through brand storytelling',
+      },
+      {
+        src: 'https://volvik.com/cdn/shop/files/volvik_golf_gear_banner.png?v=1747252722&width=800',
+        alt: 'Volvik golf gear range on the Shopify store',
+        caption: 'Gear merchandised alongside the core ball taxonomy',
+      },
+    ],
+    atAGlance: [
+      { label: 'Platform', value: 'Shopify' },
+      { label: 'Heritage', value: '40+ years' },
+      { label: 'Reviews', value: '1,200+ collected' },
+      { label: 'Model', value: 'DTC + dealer' },
+    ],
+    challenge: [
+      'Golf balls look identical to a layman and matter enormously to a golfer. Volvik\u2019s range spans tour urethane, premium color, 360-degree alignment, color performance, night glow, non-conforming, and ladies\u2019 lines \u2014 a taxonomy that means everything to the right buyer and is impenetrable to everyone else. The store had to serve both.',
+      'On top of the core range sit licensed collaboration collections with major entertainment franchises, each with its own sub-collections and gift sets. These are a genuine revenue driver and a merchandising problem: they must be discoverable without burying the performance products the brand is actually built on.',
+      'The business also runs on two channels \u2014 direct sales and a national dealer network \u2014 plus personalization, a wholesale portal, charity editions, and limited drops. All of it had to coexist without the storefront becoming a maze.',
+    ],
+    approach: [
+      {
+        title: 'Taxonomy by performance characteristic',
+        desc: 'Balls organised by what actually differentiates them \u2014 tour urethane, premium color, alignment, night glow, non-conforming \u2014 so a serious golfer navigates by the property they care about rather than scrolling an undifferentiated grid.',
+      },
+      {
+        title: 'A comparison tool for the undecided',
+        desc: 'A dedicated compare page, because the honest truth is that most golfers cannot tell these products apart from a product page alone. Removing that uncertainty is the single biggest conversion lever in technical equipment.',
+      },
+      {
+        title: 'Licensed collections as parallel architecture',
+        desc: 'Collaboration ranges given their own navigation with character-level sub-collections and gift sets, so they capture gift-driven demand at full strength without displacing the performance range that defines the brand.',
+      },
+      {
+        title: 'Personalization as a conversion driver',
+        desc: 'Custom golf ball personalization \u2014 names, initials, logos \u2014 built as a prominent path. Personalized products carry higher margin, near-zero return rates, and emotional value that commodity balls cannot match.',
+      },
+      {
+        title: 'Bridging DTC and the dealer network',
+        desc: 'A store locator and dealer finder alongside the direct storefront, plus a B2B portal, so the online channel supports rather than competes with the retail network the brand depends on.',
+      },
+      {
+        title: 'Bundles, drops and cause campaigns',
+        desc: 'Bundle products with tiered savings, limited and seasonal editions, and charity collections \u2014 each built as durable merchandising structures the team can run repeatedly without a developer.',
+      },
+    ],
+    delivered: [
+      'Shopify storefront with performance-characteristic ball taxonomy across 7+ product families',
+      'Golf ball comparison tool for undecided buyers',
+      'Licensed collaboration collection architecture with character-level sub-collections and gift sets',
+      'Custom golf ball personalization path (names, initials, logos)',
+      'Bundle products with tiered savings across core and collaboration ranges',
+      'Store locator and dealer finder bridging DTC and retail network',
+      'B2B wholesale portal integration',
+      'Limited edition, seasonal, and charity collection structures',
+      'Review integration collecting 1,200+ customer reviews',
+      'Golf gear merchandising alongside the core ball range',
+    ],
+    outcome: [
+      'The range is finally navigable by the people who care. A golfer looking for tour-level urethane or 360-degree alignment reaches it by the property they actually care about, and the comparison tool catches everyone else \u2014 which is most buyers, since these products are genuinely hard to tell apart.',
+      'Licensed collections run as a parallel architecture rather than an intrusion. Gift-driven demand converts at full strength while the performance range that defines a forty-year brand keeps its own clear space.',
+      'Personalization and the dealer locator do the quiet commercial work: personalized products carry higher margin and almost no returns, and the locator means the online store strengthens the retail network instead of cannibalising it.',
+    ],
+    stack: ['Shopify', 'Online Store 2.0', 'Liquid', 'Product personalization', 'Bundles', 'Store locator', 'B2B portal', 'Reviews'],
+    serviceLink: {
+      to: '/shopify-web-development',
+      label: 'Explore Shopify Development',
+      desc: 'Technical product taxonomy, comparison tooling, personalization, and dealer-network integration are core Shopify development work.',
+    },
+    faqs: [
+      {
+        q: 'How do you merchandise a technically complex product range?',
+        a: 'By organising around the properties that actually differentiate products, not marketing categories. Volvik\u2019s balls split across tour urethane, premium color, alignment, night glow, and non-conforming \u2014 distinctions that mean everything to a serious golfer. Structuring navigation that way lets informed buyers self-serve, while a comparison tool catches everyone else.',
+      },
+      {
+        q: 'Why does a comparison tool matter so much here?',
+        a: 'Because most golfers genuinely cannot tell these products apart from a product page alone, and uncertainty is what stops a purchase. A comparison page that puts the differences side by side removes the single biggest source of hesitation in technical equipment \u2014 which makes it one of the highest-leverage pages on the whole store.',
+      },
+      {
+        q: 'How do licensed collaboration collections fit alongside core products?',
+        a: 'As parallel architecture with their own navigation and sub-collections. They serve a different buyer \u2014 often gift-driven rather than performance-driven \u2014 so they need their own discovery path. Done well, they capture that demand at full strength without burying the performance range the brand is actually built on.',
+      },
+      {
+        q: 'Does an online store compete with a dealer network?',
+        a: 'Only if you build it that way. Integrating a store locator and dealer finder into the storefront means online discovery routes buyers to retail partners as well as to checkout, so the channel strengthens the network rather than undercutting it. For brands that depend on retail relationships, that architecture is essential.',
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: 'tropez-official',
+    client: 'Tropez Official',
+    liveUrl: 'https://tropezofficial.com/',
+    industry: 'Premium Fashion & Streetwear',
+    platform: 'Shopify',
+    metaTitle: 'Tropez Official: Premium Fashion Shopify Case Study | eCeez',
+    metaDescription:
+      'How we built Tropez Official — a UK premium fashion Shopify store with drop-based merchandising, an AOV-driving cart drawer, and worldwide market coverage.',
+    badge: 'Shopify · Premium Fashion',
+    h1Lead: 'A Drop-Driven Storefront for',
+    h1Accent: 'UK Premium Streetwear',
+    subtitle:
+      'Tropez is a UK premium fashion brand built on quality materials and a tightly curated range of sets, tracksuits, and outerwear. Fashion at this level lives or dies on presentation and momentum \u2014 the store had to make seasonal drops feel like events, drive average order value through coordinated sets, and sell globally from a UK base.',
+    cardImage: 'https://tropezofficial.com/cdn/shop/files/Activewear_Image_2.png?v=1780238729&width=800',
+    cardTags: ['Shopify', 'Drops / Seasonal', 'AOV Engineering'],
+    cardSummary:
+      'A UK premium fashion brand on Shopify with drop-based seasonal merchandising, a conversion-engineered cart drawer, coordinated sets, and worldwide market coverage.',
+    heroImage: {
+      src: 'https://tropezofficial.com/cdn/shop/files/Activewear_Image_2.png?v=1780238729&width=1400',
+      alt: 'Tropez Official Shopify storefront — UK premium fashion and activewear',
+    },
+    gallery: [
+      {
+        src: 'https://tropezofficial.com/cdn/shop/files/Windbreaker_Utility_Shorts_Image_1.png?v=1779904224&width=800',
+        alt: 'Tropez Official windbreaker and shorts collection presentation',
+        caption: 'Coordinated sets merchandised to lift average order value',
+      },
+      {
+        src: 'https://tropezofficial.com/cdn/shop/files/Riviera_Tee_Image_1.jpg?v=1777982958&width=800',
+        alt: 'Tropez Official graphic tee collection imagery',
+        caption: 'Editorial product presentation across seasonal drops',
+      },
+    ],
+    atAGlance: [
+      { label: 'Platform', value: 'Shopify' },
+      { label: 'Base', value: 'United Kingdom' },
+      { label: 'Markets', value: 'Worldwide' },
+      { label: 'Model', value: 'DTC drops' },
+    ],
+    challenge: [
+      'Premium fashion is sold on presentation and momentum, not features. A £65 tee has no specification sheet to argue with \u2014 the storefront itself has to carry the brand well enough that the price feels self-evident. Generic theme layouts actively undermine that.',
+      'The brand also merchandises in coordinated sets, which is both its identity and its commercial engine. Selling a set rather than a single piece transforms average order value, but only if the store makes coordination effortless rather than leaving shoppers to assemble outfits themselves.',
+      'And a UK brand with global demand needs international selling that does not feel like an afterthought \u2014 correct currency, clear shipping expectations, and a checkout that does not surprise anyone at the final step.',
+    ],
+    approach: [
+      {
+        title: 'Drops as events',
+        desc: 'Seasonal collections structured as merchandised drops \u2014 new arrivals, summer sets, activewear \u2014 with editorial presentation that creates urgency and rhythm rather than presenting a static, undifferentiated catalog.',
+      },
+      {
+        title: 'Sets as the AOV engine',
+        desc: 'Coordinated sets built as first-class collections, because selling a matched set instead of a single tee changes basket economics fundamentally \u2014 and it matches how this customer already wants to dress.',
+      },
+      {
+        title: 'A cart drawer that earns its keep',
+        desc: 'Free-shipping progress toward the £100 threshold, "pair with" cross-sells, and gift notes built into the cart drawer \u2014 turning the most neglected surface in most stores into an AOV and conversion instrument.',
+      },
+      {
+        title: 'Quick-add for browsing momentum',
+        desc: 'Quick-add on collection pages so shoppers build a basket without breaking flow \u2014 critical in fashion, where browsing is the experience and every forced page load is a chance to lose the sale.',
+      },
+      {
+        title: 'Global from a UK base',
+        desc: 'Shopify Markets configured worldwide with local currency presentment, so an international customer sees familiar pricing throughout instead of an unexpected conversion at checkout.',
+      },
+      {
+        title: 'Returns and membership as retention',
+        desc: 'A self-service returns portal that removes the friction fashion buyers fear most, plus a members club capturing customers for future drops \u2014 because in drop-driven fashion, the list is the asset.',
+      },
+    ],
+    delivered: [
+      'Shopify storefront with drop-based seasonal collection architecture',
+      'Coordinated sets merchandised as first-class collections to lift average order value',
+      'Cart drawer with free-shipping progress, "pair with" cross-sells, and gift notes',
+      'Quick-add functionality on collection pages for uninterrupted browsing',
+      'Shopify Markets worldwide coverage with local currency presentment',
+      'Free-shipping threshold at £100 with live progress indicator',
+      'Self-service returns portal for frictionless exchanges',
+      'Members club email capture for exclusive drop access',
+      'Editorial product presentation across sets, tracksuits, outerwear, and swim',
+      'Social-first integration reflecting the brand\u2019s Instagram and TikTok cadence',
+    ],
+    outcome: [
+      'The store carries the brand. At this price point the storefront has to make the cost feel self-evident, and editorial presentation with drop-based rhythm does what a generic theme never could \u2014 it makes the range feel considered rather than listed.',
+      'Coordinated sets and the cart drawer work together on basket economics: sets change what a customer buys, and the drawer \u2014 free-shipping progress, "pair with" cross-sells \u2014 changes what they add before checkout. Most stores leave that surface completely idle.',
+      'The members club is quietly the most valuable asset. In drop-driven fashion, the list is the business: it turns each release from a hopeful launch into a mailing to people who already want the product.',
+    ],
+    stack: ['Shopify', 'Online Store 2.0', 'Liquid', 'Cart drawer', 'Shopify Markets', 'Returns portal', 'Quick-add', 'Email capture'],
+    serviceLink: {
+      to: '/shopify-theme-customization',
+      label: 'Explore Theme Customization',
+      desc: 'Editorial fashion presentation, drop merchandising, and a conversion-engineered cart drawer need custom sections the theme editor alone cannot deliver.',
+    },
+    faqs: [
+      {
+        q: 'What does premium fashion need that a standard Shopify theme cannot give?',
+        a: 'Presentation that justifies the price. A £65 tee has no spec sheet to argue with \u2014 the storefront itself has to carry the brand well enough that the cost feels self-evident. Editorial layouts, considered typography, and drop-based rhythm do that work; a generic multipurpose theme actively undermines it by making a premium range look like a catalog.',
+      },
+      {
+        q: 'Why build coordinated sets as collections?',
+        a: 'Because it changes basket economics and matches how the customer already wants to dress. Selling a matched set instead of a single piece transforms average order value, but only if the store makes coordination effortless. Leaving shoppers to assemble outfits themselves means most simply buy one item.',
+      },
+      {
+        q: 'What makes a cart drawer worth engineering?',
+        a: 'It is the most neglected high-intent surface in ecommerce. The shopper is already committed \u2014 free-shipping progress, "pair with" cross-sells, and gift notes at that moment lift average order value while removing the delivery-cost surprise that drives abandonment. Most stores leave the cart completely idle.',
+      },
+      {
+        q: 'Why does a members club matter for a drop-driven brand?',
+        a: 'Because the list is the asset. Drop-based fashion depends on reaching people the moment a release goes live, and an owned email list turns each launch from a hopeful post into a direct mailing to customers who already want the product. It is the difference between renting attention and owning it.',
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: 'oddli',
+    client: 'Oddli',
+    liveUrl: 'https://oddli.com/',
+    industry: 'Fashion & Apparel',
+    platform: 'Shopify',
+    metaTitle: 'Oddli: DTC Fashion Brand Shopify Case Study | eCeez',
+    metaDescription:
+      'How we built Oddli — a design-led DTC fashion Shopify store with a minimal editorial storefront, transparency-first content, and community-driven merchandising.',
+    badge: 'Shopify · Design-Led DTC',
+    h1Lead: 'A Minimal, Design-Led Storefront for',
+    h1Accent: 'a Community Fashion Brand',
+    subtitle:
+      'Oddli is a fashion brand built around a distinctive point of view and a genuine community \u2014 "if you see someone wearing Oddli, say hello." That premise demanded the opposite of a conventional ecommerce build: a restrained, design-led storefront where the product and the brand voice carry everything, with nothing extraneous in the way.',
+    cardImage: 'https://cdn.shopify.com/s/files/1/0515/3662/5860/files/Untitled-1.jpg?v=1733761067',
+    cardTags: ['Shopify', 'Minimal / Editorial', 'Community'],
+    cardSummary:
+      'A design-led DTC fashion brand on Shopify with a deliberately minimal editorial storefront, transparency-first content, customs, and a community club.',
+    heroImage: {
+      src: 'https://cdn.shopify.com/s/files/1/0515/3662/5860/files/Untitled-1.jpg?v=1733761067',
+      alt: 'Oddli Shopify storefront — design-led DTC fashion brand',
+    },
+    atAGlance: [
+      { label: 'Platform', value: 'Shopify' },
+      { label: 'Category', value: 'Fashion / apparel' },
+      { label: 'Approach', value: 'Minimal editorial' },
+      { label: 'Model', value: 'DTC + community' },
+    ],
+    challenge: [
+      'Most ecommerce advice pushes toward more \u2014 more badges, more urgency, more pop-ups, more persuasion. For a brand whose entire identity is a distinctive aesthetic and a real community, that advice is actively wrong. Every conversion cliché added would have eroded the thing people actually buy Oddli for.',
+      'The difficulty of restraint is that it leaves nowhere to hide. With no badges or countdowns doing the work, the product photography, typography, spacing, and voice have to carry the entire commercial burden \u2014 which means every one of those decisions has to be right.',
+      'The brand also runs a customs line, a community club, and a transparency commitment, each needing a place in a storefront whose whole premise is that nothing extraneous appears.',
+    ],
+    approach: [
+      {
+        title: 'Restraint as the strategy',
+        desc: 'A deliberately minimal storefront with no badge clutter, no countdowns, no interruption \u2014 because for this brand the aesthetic is the product, and conventional conversion decoration would erode exactly what customers are buying.',
+      },
+      {
+        title: 'Product photography carries the load',
+        desc: 'Layout and typography built to get out of the way of the imagery, since with the usual persuasion machinery removed, the product has to sell itself \u2014 which is precisely the point.',
+      },
+      {
+        title: 'Transparency as a first-class page',
+        desc: 'A dedicated transparency section rather than a buried policy link, because for a values-led brand this content is a genuine buying reason, not compliance text.',
+      },
+      {
+        title: 'Community over funnel',
+        desc: 'The Oddli Club built as a real membership destination rather than a discount capture form \u2014 matching a brand whose premise is that wearing it makes you recognisable to other people who wear it.',
+      },
+      {
+        title: 'Customs as a distinct line',
+        desc: 'A separate customs path, giving one-off and personalised pieces their own home without disrupting the clarity of the core range.',
+      },
+      {
+        title: 'Sizing confidence, quietly',
+        desc: 'A clear size chart and accessible shipping and returns information \u2014 the practical answers apparel buyers need, presented without shouting.',
+      },
+    ],
+    delivered: [
+      'Minimal, design-led Shopify storefront built around the brand aesthetic',
+      'Editorial collection architecture (new in, best sellers, basics, swim, customs, accessories)',
+      'Dedicated transparency section treating values content as a buying reason',
+      'Oddli Club community destination rather than a discount capture form',
+      'Customs line given its own distinct path',
+      'Size chart and accessible shipping and returns information',
+      'Restrained cart and checkout experience free of interruption patterns',
+      'Social-first integration reflecting Instagram and TikTok community cadence',
+      'Clean product presentation letting photography carry the commercial load',
+      'Gift card and accessories merchandising within the minimal structure',
+    ],
+    outcome: [
+      'The store looks like the brand, which for a design-led label is the entire commercial argument. Stripping out the badges, countdowns, and interruption patterns most stores rely on meant the aesthetic \u2014 the actual product \u2014 does the selling.',
+      'Restraint is harder than addition. With no persuasion machinery to lean on, every decision about photography, typography, and spacing had to earn its place, which is exactly the discipline a brand like this requires and most agencies avoid because it is easier to add than to remove.',
+      'Treating transparency and the club as real destinations rather than a policy link and an email popup matches a brand whose premise is recognition and community \u2014 and gives customers genuine reasons to buy beyond the garment itself.',
+    ],
+    stack: ['Shopify', 'Online Store 2.0', 'Liquid', 'Editorial layout', 'Community club', 'Custom product line'],
+    serviceLink: {
+      to: '/shopify-theme-customization',
+      label: 'Explore Theme Customization',
+      desc: 'A restrained, design-led storefront where the aesthetic carries the sale is exactly what custom theme work exists for.',
+    },
+    faqs: [
+      {
+        q: 'Why build a minimal store instead of using conversion best practices?',
+        a: 'Because for a design-led brand, those "best practices" are counterproductive. Badges, countdowns, and pop-ups would erode the aesthetic that customers are actually buying. Conversion advice is contextual, not universal \u2014 the right approach for a discount retailer is the wrong one for a brand whose identity is restraint.',
+      },
+      {
+        q: 'Is a minimal store harder to build?',
+        a: 'Considerably. Restraint leaves nowhere to hide. With no badges or urgency mechanics doing the work, photography, typography, and spacing carry the entire commercial burden, so every one of those decisions has to be right. Adding is easy; removing while keeping the store selling is the hard part.',
+      },
+      {
+        q: 'Why give transparency its own section?',
+        a: 'Because for a values-led brand it is a genuine buying reason, not compliance text. Customers who choose brands on values want that information accessible and prominent. Burying it in a footer policy link treats a real differentiator as an obligation.',
+      },
+      {
+        q: 'What makes a community club different from an email popup?',
+        a: 'Intent. A popup extracts an address in exchange for a discount; a club is a destination people choose to join. For a brand whose premise is that wearing it makes you recognisable to others who wear it, community is the product\u2019s meaning \u2014 so it needs to be a real place on the site, not a modal.',
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: 'labozero',
+    client: 'Labozero',
+    liveUrl: 'https://labozero.it/',
+    industry: 'Streetwear & Sneakers Retail',
+    platform: 'Shopify',
+    metaTitle: 'Labozero: Italian Streetwear Shopify Case Study | eCeez',
+    metaDescription:
+      'How we built Labozero — an Italian multi-brand streetwear and sneaker Shopify store with 40+ brand architecture, gender-split navigation, and 30 European markets.',
+    badge: 'Shopify · Multi-Brand Retail',
+    h1Lead: 'A Multi-Brand Streetwear Store for',
+    h1Accent: 'Italy and Europe',
+    subtitle:
+      'Labozero is a streetwear and sneaker retailer based in Bari, carrying more than forty brands from Adidas and New Balance to Dr. Martens and The North Face. Multi-brand retail is a navigation problem before it is a design problem: the store had to make a vast, constantly rotating catalog findable across two genders, dozens of brands, and thirty European markets.',
+    cardImage: 'https://labozero.it/cdn/shop/files/anteprimasocial.png?v=1676026605',
+    cardTags: ['Shopify', 'Multi-Brand Catalog', 'European Markets'],
+    cardSummary:
+      'An Italian multi-brand streetwear and sneaker retailer on Shopify with 40+ brand architecture, gender-split navigation, outlet merchandising, and 30 European markets.',
+    heroImage: {
+      src: 'https://labozero.it/cdn/shop/files/anteprimasocial.png?v=1676026605',
+      alt: 'Labozero Shopify storefront — Italian streetwear and sneaker retailer',
+    },
+    atAGlance: [
+      { label: 'Platform', value: 'Shopify' },
+      { label: 'Brands', value: '40+ carried' },
+      { label: 'Markets', value: '30 European' },
+      { label: 'Base', value: 'Bari, Italy' },
+    ],
+    challenge: [
+      'A multi-brand retailer faces a structural problem a single-brand store never does. Labozero carries over forty brands across sneakers, apparel, and accessories, split by gender, each with its own categories \u2014 and shoppers arrive with completely different mental models. Some want a brand, some want a category, some want a deal.',
+      'The catalog also churns constantly. Sneaker and streetwear inventory turns over relentlessly, with drops, seasonal ranges, and deep discounting running simultaneously. Navigation built around a snapshot of stock would be obsolete within a month.',
+      'And an Italian retailer selling across Europe needs genuine Italian-language experience alongside thirty markets and currencies \u2014 while also bridging an online store with a physical Bari storefront.',
+    ],
+    approach: [
+      {
+        title: 'Three navigation paths, one catalog',
+        desc: 'Gender-split navigation (uomo/donna), a dedicated sneakers axis, and a top-brand path running in parallel \u2014 because shoppers arrive with different mental models and forcing them all through one hierarchy loses most of them.',
+      },
+      {
+        title: 'Brand architecture as first-class structure',
+        desc: 'Every carried brand given its own collection, from Adidas and New Balance to Dr. Martens, The North Face, and Alexander McQueen \u2014 capturing the brand-led search demand that drives most streetwear discovery.',
+      },
+      {
+        title: 'Outlet built for permanent churn',
+        desc: 'Outlet and off-price merchandised as first-class destinations rather than an afterthought, so relentless inventory turnover always has a home and discount-driven shoppers convert without cluttering full-price ranges.',
+      },
+      {
+        title: 'Editorial that captures search',
+        desc: 'An Italian-language blog covering brand releases and local relevance \u2014 the content that captures informational search a collection page never will, and connects the store to its Bari community.',
+      },
+      {
+        title: 'Thirty markets, one storefront',
+        desc: 'Shopify Markets across thirty European countries with local currency presentment, turning a regional Italian retailer into a European one without operational complexity.',
+      },
+      {
+        title: 'Made-in-Italy as a differentiator',
+        desc: 'Artisan Italian lines given dedicated space alongside global brands \u2014 something a pure multi-brand reseller cannot replicate, and a genuine reason to choose this store over a marketplace.',
+      },
+    ],
+    delivered: [
+      'Shopify storefront with parallel gender, category, and brand navigation architecture',
+      'Individual brand collections across 40+ carried labels',
+      'Dedicated sneaker taxonomy spanning sneakers, boots, running, and sandals',
+      'Outlet and off-price collections built for permanent inventory churn',
+      'Italian-language storefront with full localisation',
+      'Shopify Markets across 30 European countries and currencies',
+      'Italian-language editorial blog covering releases and local relevance',
+      'Made-in-Italy artisan line merchandised as a differentiator',
+      'Newsletter discount capture for first-purchase conversion',
+      'WhatsApp and social integration matching Italian retail communication habits',
+    ],
+    outcome: [
+      'The catalog is navigable three different ways, which is what multi-brand retail actually requires. A shopper who wants New Balance, one who wants women\u2019s jackets, and one who just wants a deal each get a path built for them, instead of all three being forced through one hierarchy that suits none of them.',
+      'The structure absorbs churn rather than fighting it. Streetwear inventory turns over relentlessly, and because brand collections and outlet are permanent architecture rather than a snapshot of current stock, the store never needs rebuilding around this season\u2019s range.',
+      'The European market configuration turned a Bari retailer into a European one, while the Italian-language editorial and the artisan Made-in-Italy line give the store something a marketplace structurally cannot copy: locality and a point of view.',
+    ],
+    stack: ['Shopify', 'Online Store 2.0', 'Liquid', 'Multi-brand taxonomy', 'Shopify Markets', 'Italian localisation', 'Blog', 'WhatsApp'],
+    serviceLink: {
+      to: '/shopify-web-development',
+      label: 'Explore Shopify Development',
+      desc: 'Multi-brand catalog architecture, parallel navigation paths, and multi-market European selling are core Shopify development work.',
+    },
+    faqs: [
+      {
+        q: 'How do you structure a multi-brand retail store?',
+        a: 'With parallel navigation paths rather than one hierarchy. Shoppers arrive with different mental models \u2014 some want a brand, some a category, some a deal \u2014 so the store runs gender-split navigation, a sneaker axis, and a brand path simultaneously. Forcing everyone through a single structure loses most of them.',
+      },
+      {
+        q: 'Why give every brand its own collection?',
+        a: 'Because brand-led search drives most streetwear discovery. Shoppers search for the brand first and the category second, so a dedicated collection per label captures that demand directly and gives the store a landing page for exactly the query being made.',
+      },
+      {
+        q: 'How do you handle constant inventory churn?',
+        a: 'By building structure that outlives any given stock. Streetwear turns over relentlessly, so brand collections and outlet are built as permanent architecture rather than a snapshot of current inventory. Navigation built around this season\u2019s range is obsolete within a month.',
+      },
+      {
+        q: 'What does selling across 30 European markets involve?',
+        a: 'Shopify Markets handles currency presentment per country, so a German or Spanish shopper sees local pricing throughout rather than a surprise conversion at checkout. Paired with genuine Italian-language localisation for the home market, it lets a regional retailer operate as a European one without added operational complexity.',
+      },
+    ],
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    slug: 'express-wholesalers',
+    client: 'Express Wholesalers',
+    liveUrl: 'https://expresswholesalers.com.au/',
+    industry: 'B2B Fresh Produce Wholesale',
+    platform: 'WordPress',
+    metaTitle: 'Express Wholesalers: B2B Produce Website Case Study | eCeez',
+    metaDescription:
+      'How we worked on Express Wholesalers — a B2B fresh produce wholesale website for a Sydney Markets providore supplying restaurants and commercial kitchens.',
+    badge: 'B2B · Fresh Produce Wholesale',
+    h1Lead: 'A B2B Ordering Front Door for',
+    h1Accent: 'a Sydney Produce Wholesaler',
+    subtitle:
+      'Express Wholesalers is a family-owned premium fruit and vegetable providore operating inside Sydney Markets, supplying restaurants and commercial kitchens across the city. This is B2B in its purest form: no cart, no consumer checkout \u2014 a credibility and ordering front door for chefs who need reliable produce and a supplier they can trust.',
+    cardImage: 'https://expresswholesalers.com.au/wp-content/uploads/Banner_1.jpg',
+    cardTags: ['WordPress', 'B2B Lead Gen', 'Trade Ordering'],
+    cardSummary:
+      'A family-owned Sydney Markets fresh produce wholesaler supplying restaurants and commercial kitchens, with trade ordering, produce catalog, and weekly market reporting.',
+    heroImage: {
+      src: 'https://expresswholesalers.com.au/wp-content/uploads/Banner_1.jpg',
+      alt: 'Express Wholesalers website — premium fresh produce wholesale, Sydney Markets',
+    },
+    gallery: [
+      {
+        src: 'https://expresswholesalers.com.au/wp-content/uploads/organic-Food.jpg',
+        alt: 'Express Wholesalers premium fresh produce range',
+        caption: 'Premium produce sourced from Sydney Markets daily',
+      },
+      {
+        src: 'https://expresswholesalers.com.au/wp-content/uploads/22.jpg',
+        alt: 'Express Wholesalers team and operations inside Sydney Markets',
+        caption: 'A family business since 1979, told through people and place',
+      },
+    ],
+    atAGlance: [
+      { label: 'Type', value: 'B2B wholesale' },
+      { label: 'Since', value: '1979' },
+      { label: 'Location', value: 'Sydney Markets' },
+      { label: 'Customers', value: 'Restaurants & cafés' },
+    ],
+    challenge: [
+      'A chef choosing a produce supplier is making a decision that shows up on every plate they serve. Reliability, quality, and freshness are not marketing claims here \u2014 they are the entire relationship. The website\u2019s job is not to sell a box of tomatoes; it is to convince a commercial kitchen that this supplier will not let them down at 5am.',
+      'The ordering reality is also nothing like consumer ecommerce. Trade customers order recurring quantities against fluctuating market prices, through an account relationship. A conventional cart and checkout would be actively wrong for how this business works.',
+      'And produce is a market: prices and availability move constantly, so the site needed to communicate current conditions and weekly best buys rather than presenting a static, quickly outdated price list.',
+    ],
+    approach: [
+      {
+        title: 'Credibility before catalog',
+        desc: 'A family business since 1979, HACCP approval, Sydney Markets location, and long-standing customer testimonials placed prominently \u2014 because a chef is choosing a relationship, and provenance is what earns that decision.',
+      },
+      {
+        title: 'Ordering routed to a trade system',
+        desc: 'The site funnels to a dedicated wholesale ordering application rather than forcing a consumer cart onto trade customers who order recurring quantities against moving market prices.',
+      },
+      {
+        title: 'Produce catalog for commercial kitchens',
+        desc: 'Categories built for how chefs actually buy \u2014 fruit, vegetables, prepared vegetables, mixed leaf and herbs, juice and eggs \u2014 including the prepared lines that save kitchen labour.',
+      },
+      {
+        title: 'Market reporting as ongoing value',
+        desc: 'A weekly market report covering best buys and produce in season, giving chefs a genuine reason to return and positioning the wholesaler as an advisor rather than an order-taker.',
+      },
+      {
+        title: 'Trust signals that matter in food',
+        desc: 'HACCP approval and food-safety credentials surfaced clearly, because a commercial kitchen carries regulatory obligations and needs a supplier whose standards are verifiable.',
+      },
+      {
+        title: 'Local sourcing as the story',
+        desc: 'Support for local Sydney growers and nationwide sourcing told as the differentiator it genuinely is \u2014 the reason a restaurant chooses a family providore over a faceless distributor.',
+      },
+    ],
+    delivered: [
+      'B2B website architecture built around trade credibility rather than consumer checkout',
+      'Produce catalog structured for commercial kitchens across 5 category groups',
+      'Trade ordering funnel routed to a dedicated wholesale ordering application',
+      'Weekly market report integration covering best buys and produce in season',
+      'HACCP approval and food-safety credentials surfaced as trust signals',
+      'Family-business heritage and local grower sourcing narrative',
+      'Long-standing customer testimonials from trade partners',
+      'Newsletter capture for weekly market reporting',
+      'Sydney Markets location and contact prominence for phone-led trade relationships',
+      'Prepared-produce lines merchandised for kitchen labour savings',
+    ],
+    outcome: [
+      'The site works as a trade front door rather than a shop. A chef arrives needing to know whether this supplier is reliable, and leaves with the answer \u2014 heritage since 1979, HACCP approval, a Sydney Markets floor position, and testimonials from customers who have stayed twenty years.',
+      'Ordering routes to a system built for trade rather than forcing a consumer cart onto customers who buy recurring quantities against moving market prices. Matching the tool to the actual buying behaviour is the whole point.',
+      'The weekly market report is the quiet asset. It gives chefs a reason to return, and positions the business as an advisor on what is good this week rather than a supplier waiting for an order \u2014 which is exactly the relationship a family providore should have with its kitchens.',
+    ],
+    stack: ['WordPress', 'B2B ordering integration', 'Market reporting', 'Lead capture', 'Local SEO'],
+    serviceLink: {
+      to: '/website-development-for-businesses',
+      label: 'Explore Website Development',
+      desc: 'B2B trade websites need credibility architecture and ordering that matches real buying behaviour \u2014 not a consumer cart bolted onto a wholesale business.',
+    },
+    faqs: [
+      {
+        q: 'Why not build a standard ecommerce store for a produce wholesaler?',
+        a: 'Because trade buying works nothing like consumer checkout. Chefs order recurring quantities against fluctuating market prices through an account relationship, often by phone or a standing order. A conventional cart would be actively wrong. The site instead builds credibility and routes ordering to a system designed for trade.',
+      },
+      {
+        q: 'What convinces a restaurant to choose a produce supplier?',
+        a: 'Reliability and provenance, not price alone. A chef is making a decision that shows up on every plate they serve, so heritage, food-safety credentials like HACCP, market-floor position, and long-standing customer testimonials do far more than any promotional claim. It is a relationship decision, and the site is built to earn it.',
+      },
+      {
+        q: 'Why publish a weekly market report?',
+        a: 'Because it gives chefs a reason to return and repositions the business. Produce is a market where prices and availability move constantly, so reporting on best buys and what is in season makes the wholesaler an advisor rather than an order-taker \u2014 which is exactly the relationship a family providore should have with its kitchens.',
+      },
+      {
+        q: 'Does a wholesale business need a website at all?',
+        a: 'Yes, but not the one most people picture. It will not replace the phone relationships wholesale runs on, and it should not try. Its job is to win the consideration \u2014 to convince a chef evaluating suppliers that this one is credible \u2014 and to make ordering easy once that relationship exists.',
+      },
+    ],
+  },
+
 ];
 
 export const getCaseStudy = (slug?: string) =>

@@ -37,7 +37,9 @@ const PORT = 4321;
 const STATIC_ROUTES = [
   '/', '/services', '/blog', '/contact', '/about-us', '/careers', '/privacy-policy',
   '/case-studies', '/case-studies/clothing-store', '/case-studies/jewelry-store',
-  '/case-studies/meows-cat-health', '/case-studies/wrestlingmart', '/case-studies/aoap-projects',
+  '/case-studies/meows-cat-health', '/case-studies/swolverine', '/case-studies/volvik',
+  '/case-studies/tropez-official', '/case-studies/oddli', '/case-studies/labozero',
+  '/case-studies/express-wholesalers', '/case-studies/wrestlingmart', '/case-studies/aoap-projects',
   '/case-studies/east-and-south-interiors', '/case-studies/nishiyama-ramen',
   '/shopify-development-company',
   '/case-studies/barber', '/case-studies/restaurant', '/case-studies/aurex',

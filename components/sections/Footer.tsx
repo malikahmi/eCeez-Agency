@@ -121,32 +121,29 @@ export const Footer: React.FC = () => {
               </a>
 
               {/* Shopify Partner Badge */}
-              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-xl px-4 py-2 transition-all duration-300 hover:border-zinc-700/80 select-none">
+              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-lg px-3 py-1.5 transition-all duration-300 hover:border-zinc-700/80 select-none">
                 <img 
                   src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/shopify_partners_logo.png?v=1782923241"
                   alt="Shopify Partners Logo"
-                  className="h-8 w-auto object-contain brightness-110"
-                  referrerPolicy="no-referrer"
+                  className="h-5 w-auto object-contain brightness-110"
                 />
               </div>
 
               {/* Google Partner Badge */}
-              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-xl px-4 py-2 transition-all duration-300 hover:border-zinc-700/80 select-none">
+              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-lg px-3 py-1.5 transition-all duration-300 hover:border-zinc-700/80 select-none">
                 <img 
                   src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/images.png?v=1782923469"
                   alt="Google Partner Badge"
-                  className="h-8 w-auto object-contain brightness-110"
-                  referrerPolicy="no-referrer"
+                  className="h-5 w-auto object-contain brightness-110"
                 />
               </div>
 
               {/* Meta Partner Badge */}
-              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-xl px-4 py-2 transition-all duration-300 hover:border-zinc-700/80 select-none">
+              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-lg px-3 py-1.5 transition-all duration-300 hover:border-zinc-700/80 select-none">
                 <img 
                   src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Meta_lockup_positive-primary_RGB_scaled2.webp?v=1782923646"
                   alt="Meta Partner Badge"
-                  className="h-8 w-auto object-contain brightness-110"
-                  referrerPolicy="no-referrer"
+                  className="h-5 w-auto object-contain brightness-110"
                 />
               </div>
             </div>
@@ -177,7 +174,7 @@ export const Footer: React.FC = () => {
             {/* Column 2 */}
             <div className="flex flex-col gap-3">
               {[
-                { title: 'Shopify Setup', path: '/shopify-store-setup-service' },
+                { title: 'Shopify SEO', path: '/shopify-seo' },
                 { title: 'SEO Growth', path: '/seo' },
                 { title: 'CRO Audit', path: '/cro' },
                 { title: 'Analytics', path: '/analytics' },
@@ -218,7 +215,9 @@ export const Footer: React.FC = () => {
             {/* Column 4 */}
             <div className="flex flex-col gap-3 col-span-2 md:col-span-1">
               {[
+                { title: 'Conversion Calculator', path: '/tools/shopify-conversion-calculator' },
                 { title: 'Taxonomy Mapper', path: '/tools/ecommerce-taxonomy-mapper' },
+                { title: 'Ecommerce UX Guide', path: '/ecommerce-ux' },
                 { title: 'About Us', path: '/about-us' },
                 { title: 'Company Careers', path: '/careers' },
                 { title: 'Store Security', path: '/security' },

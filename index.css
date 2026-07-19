@@ -65,3 +65,7 @@ img {
 img:not([width]):not([height]) {
   content-visibility: auto;
 }
+
+/* Hide scrollbar for single-line client strip while keeping scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

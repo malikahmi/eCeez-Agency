@@ -1,42 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 /**
- * ClientTrustBar — a lightweight, text-based logo/name strip using REAL clients.
- * Uses styled brand names rather than hotlinked logo images (which would be a
- * dependency risk and a potential trademark concern). Links to case studies.
+ * ClientTrustBar — single-line client strip, logo-ready with graceful fallback.
+ *
+ * WHY THIS DESIGN: Hotlinking 8 brand logos from 8 different CDNs is fragile
+ * (the exact "images not showing" problem seen with the footer badges) and the
+ * logos are mixed colors. So each brand shows its real logo IF one is provided
+ * and loads; otherwise it falls back to a clean styled wordmark that never
+ * breaks. To use real logos: download each brand's logo into /public/logos/
+ * and set its `logo` path below (e.g. '/logos/volvik.svg').
  */
 
-const CLIENTS: { name: string; slug: string }[] = [
+interface Client { name: string; slug: string; logo?: string }
+
+const CLIENTS: Client[] = [
   { name: 'Volvik', slug: 'volvik' },
   { name: 'Swolverine', slug: 'swolverine' },
   { name: 'WrestlingMart', slug: 'wrestlingmart' },
   { name: 'Tropez', slug: 'tropez-official' },
   { name: 'Oddli', slug: 'oddli' },
-  { name: 'AOAP Projects', slug: 'aoap-projects' },
-  { name: 'Meows Cat Health', slug: 'meows-cat-health' },
+  { name: 'AOAP', slug: 'aoap-projects' },
+  { name: 'Meows', slug: 'meows-cat-health' },
   { name: 'Labozero', slug: 'labozero' },
 ];
 
+const ClientMark: React.FC<{ client: Client }> = ({ client }) => {
+  const [failed, setFailed] = useState(false);
+  const showLogo = client.logo && !failed;
+  return (
+    <Link
+      to={`/case-studies/${client.slug}`}
+      className="shrink-0 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity"
+      title={`${client.name} — view case study`}
+    >
+      {showLogo ? (
+        <img
+          src={client.logo}
+          alt={`${client.name} logo`}
+          className="h-6 sm:h-7 w-auto object-contain grayscale"
+          loading="lazy"
+          decoding="async"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <span className="text-base sm:text-lg font-bold text-zinc-500 hover:text-zinc-900 transition-colors tracking-tight whitespace-nowrap">
+          {client.name}
+        </span>
+      )}
+    </Link>
+  );
+};
+
 export const ClientTrustBar: React.FC = () => (
-  <section className="py-10 border-y border-zinc-100 bg-white" aria-label="Selected clients">
+  <section className="py-8 border-y border-zinc-100 bg-white" aria-label="Selected clients">
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      <p className="text-center text-xs uppercase tracking-[0.2em] text-zinc-400 mb-6">
+      <p className="text-center text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-5">
         Trusted by brands we&rsquo;ve engineered for
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 sm:gap-x-12">
+      {/* Single line: horizontal scroll on narrow screens, no wrapping */}
+      <div className="flex items-center justify-start sm:justify-center gap-6 sm:gap-10 overflow-x-auto no-scrollbar pb-1">
         {CLIENTS.map((c) => (
-          <Link
-            key={c.slug}
-            to={`/case-studies/${c.slug}`}
-            className="text-lg sm:text-xl font-bold text-zinc-400 hover:text-zinc-900 transition-colors tracking-tight"
-            title={`${c.name} — view case study`}
-          >
-            {c.name}
-          </Link>
+          <ClientMark key={c.slug} client={c} />
         ))}
       </div>
-      <p className="text-center mt-6">
+      <p className="text-center mt-5">
         <Link to="/case-studies" className="text-sm text-indigo-600 font-semibold hover:underline">
           See all case studies &rarr;
         </Link>

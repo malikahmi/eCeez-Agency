@@ -7,6 +7,8 @@ import { HeroScrollDemo } from './components/hero-scroll-demo';
 import { ShopifyDashboard } from './components/ShopifyDashboard';
 import { ClientWork } from './components/sections/ClientWork';
 import { ClientTrustBar } from './components/sections/ClientTrustBar';
+import { BrandStatement } from './components/sections/BrandStatement';
+import { ScrollProgress } from './components/fx/ScrollProgress';
 import { Specialties } from './components/sections/Specialties';
 import { Services } from './components/sections/Services';
 import { About } from './components/sections/About';
@@ -71,6 +73,8 @@ const HomePage = () => (
     <ShopifyDashboard />
 
     <ClientWork />
+
+    <BrandStatement />
 
     <section id="specialties" className="py-20 bg-zinc-50">
       <Specialties />
@@ -186,6 +190,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <RouteMeta />
       <div className="min-h-screen bg-background font-sans text-foreground selection:bg-primary/30">
+        <ScrollProgress />
         <Navbar />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>

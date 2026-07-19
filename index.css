@@ -69,3 +69,31 @@ img:not([width]):not([height]) {
 /* Hide scrollbar for single-line client strip while keeping scroll */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ===== Awwwards-style micro-polish (v16) ===== */
+
+/* Brand-colored text selection */
+::selection {
+  background: #03AED2;
+  color: #fff;
+}
+
+/* Refined keyboard focus — visible but on-brand */
+:focus-visible {
+  outline: 2px solid #03AED2;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Infinite client marquee */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee-scroll 36s linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}

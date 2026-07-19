@@ -2,14 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 /**
- * ClientTrustBar — single-line client strip, logo-ready with graceful fallback.
- *
- * WHY THIS DESIGN: Hotlinking 8 brand logos from 8 different CDNs is fragile
- * (the exact "images not showing" problem seen with the footer badges) and the
- * logos are mixed colors. So each brand shows its real logo IF one is provided
- * and loads; otherwise it falls back to a clean styled wordmark that never
- * breaks. To use real logos: download each brand's logo into /public/logos/
- * and set its `logo` path below (e.g. '/logos/volvik.svg').
+ * ClientTrustBar — infinite marquee client strip (Awwwards-style).
+ * One seamless line, scrolling continuously, pausing on hover.
+ * Logo-ready with graceful wordmark fallback: drop files into /public/logos/
+ * and set `logo: '/logos/name.svg'` to switch a brand from text to image.
  */
 
 interface Client { name: string; slug: string; logo?: string }
@@ -20,9 +16,11 @@ const CLIENTS: Client[] = [
   { name: 'WrestlingMart', slug: 'wrestlingmart' },
   { name: 'Tropez', slug: 'tropez-official' },
   { name: 'Oddli', slug: 'oddli' },
-  { name: 'AOAP', slug: 'aoap-projects' },
-  { name: 'Meows', slug: 'meows-cat-health' },
+  { name: 'AOAP Projects', slug: 'aoap-projects' },
+  { name: 'Meows Cat Health', slug: 'meows-cat-health' },
   { name: 'Labozero', slug: 'labozero' },
+  { name: 'East & South', slug: 'east-and-south-interiors' },
+  { name: 'Nishiyama', slug: 'nishiyama-ramen' },
 ];
 
 const ClientMark: React.FC<{ client: Client }> = ({ client }) => {
@@ -31,20 +29,20 @@ const ClientMark: React.FC<{ client: Client }> = ({ client }) => {
   return (
     <Link
       to={`/case-studies/${client.slug}`}
-      className="shrink-0 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity"
+      className="shrink-0 flex items-center justify-center px-6 sm:px-10 opacity-50 hover:opacity-100 transition-opacity duration-300"
       title={`${client.name} — view case study`}
     >
       {showLogo ? (
         <img
           src={client.logo}
           alt={`${client.name} logo`}
-          className="h-6 sm:h-7 w-auto object-contain grayscale"
+          className="h-6 sm:h-7 w-auto object-contain grayscale hover:grayscale-0 transition-all"
           loading="lazy"
           decoding="async"
           onError={() => setFailed(true)}
         />
       ) : (
-        <span className="text-base sm:text-lg font-bold text-zinc-500 hover:text-zinc-900 transition-colors tracking-tight whitespace-nowrap">
+        <span className="text-lg sm:text-xl font-bold text-zinc-600 tracking-tight whitespace-nowrap">
           {client.name}
         </span>
       )}
@@ -53,22 +51,24 @@ const ClientMark: React.FC<{ client: Client }> = ({ client }) => {
 };
 
 export const ClientTrustBar: React.FC = () => (
-  <section className="py-8 border-y border-zinc-100 bg-white" aria-label="Selected clients">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      <p className="text-center text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-5">
-        Trusted by brands we&rsquo;ve engineered for
-      </p>
-      {/* Single line: horizontal scroll on narrow screens, no wrapping */}
-      <div className="flex items-center justify-start sm:justify-center gap-6 sm:gap-10 overflow-x-auto no-scrollbar pb-1">
-        {CLIENTS.map((c) => (
-          <ClientMark key={c.slug} client={c} />
+  <section className="py-10 border-y border-zinc-100 bg-white overflow-hidden" aria-label="Selected clients">
+    <p className="text-center text-[11px] uppercase tracking-[0.25em] text-zinc-400 mb-7">
+      Trusted by brands we&rsquo;ve engineered for
+    </p>
+    <div className="marquee group relative">
+      {/* edge fades */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-white to-transparent z-10" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-white to-transparent z-10" aria-hidden="true" />
+      <div className="marquee-track flex items-center w-max group-hover:[animation-play-state:paused]">
+        {[...CLIENTS, ...CLIENTS].map((c, i) => (
+          <ClientMark key={`${c.slug}-${i}`} client={c} />
         ))}
       </div>
-      <p className="text-center mt-5">
-        <Link to="/case-studies" className="text-sm text-indigo-600 font-semibold hover:underline">
-          See all case studies &rarr;
-        </Link>
-      </p>
     </div>
+    <p className="text-center mt-7">
+      <Link to="/case-studies" className="text-sm text-indigo-600 font-semibold hover:underline underline-offset-4">
+        See all case studies &rarr;
+      </Link>
+    </p>
   </section>
 );

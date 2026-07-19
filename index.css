@@ -55,3 +55,13 @@
   filter: blur(6px);
   z-index: -1;
 }
+
+/* Speed/CLS safeguard: images without explicit dimensions still reserve
+   sensible space and never overflow, reducing Cumulative Layout Shift. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+img:not([width]):not([height]) {
+  content-visibility: auto;
+}

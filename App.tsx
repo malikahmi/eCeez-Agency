@@ -6,6 +6,7 @@ import { Navbar } from './components/sections/Navbar';
 import { HeroScrollDemo } from './components/hero-scroll-demo';
 import { ShopifyDashboard } from './components/ShopifyDashboard';
 import { ClientWork } from './components/sections/ClientWork';
+import { ClientTrustBar } from './components/sections/ClientTrustBar';
 import { Specialties } from './components/sections/Specialties';
 import { Services } from './components/sections/Services';
 import { About } from './components/sections/About';
@@ -48,6 +49,8 @@ const ShopifyAppDevelopmentPage = lazy(() => import('./pages/ShopifyAppDevelopme
 const ShopifyCROPage = lazy(() => import('./pages/ShopifyCROPage').then(module => ({ default: module.ShopifyCROPage })));
 const EcommerceUXPage = lazy(() => import('./pages/EcommerceUXPage').then(module => ({ default: module.EcommerceUXPage })));
 const ShopifyDevelopmentCompanyPage = lazy(() => import('./pages/ShopifyDevelopmentCompanyPage').then(module => ({ default: module.ShopifyDevelopmentCompanyPage })));
+const ShopifySEOPage = lazy(() => import('./pages/ShopifySEOPage').then(module => ({ default: module.ShopifySEOPage })));
+const ConversionCalculatorPage = lazy(() => import('./pages/ConversionCalculatorPage').then(module => ({ default: module.ConversionCalculatorPage })));
 const ClientCaseStudyPage = lazy(() => import('./pages/ClientCaseStudyPage').then(module => ({ default: module.ClientCaseStudyPage })));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(module => ({ default: module.NotFoundPage })));
 
@@ -62,6 +65,8 @@ const HomePage = () => (
     <section id="home">
       <HeroScrollDemo />
     </section>
+
+    <ClientTrustBar />
 
     <ShopifyDashboard />
 
@@ -123,6 +128,8 @@ const ROUTE_TITLES: Record<string, string> = {
   '/shopify-cro': 'Shopify CRO | Conversion Rate Optimization for Shopify | eCeez',
   '/ecommerce-ux': 'Ecommerce UX: The Definitive 2026 Guide | eCeez',
   '/shopify-development-company': 'Shopify Development Company | Custom Store Experts | eCeez',
+  '/shopify-seo': 'Shopify SEO Services | Rank & Grow Organic Revenue | eCeez',
+  '/tools/shopify-conversion-calculator': 'Free Shopify Conversion Rate ROI Calculator | eCeez',
   '/privacy-policy': 'Privacy Policy | eCeez',
 };
 
@@ -216,6 +223,8 @@ const App: React.FC = () => {
             <Route path="/shopify-cro" element={<ShopifyCROPage />} />
             <Route path="/ecommerce-ux" element={<EcommerceUXPage />} />
             <Route path="/shopify-development-company" element={<ShopifyDevelopmentCompanyPage />} />
+            <Route path="/shopify-seo" element={<ShopifySEOPage />} />
+            <Route path="/tools/shopify-conversion-calculator" element={<ConversionCalculatorPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>

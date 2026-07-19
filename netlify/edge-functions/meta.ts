@@ -90,6 +90,14 @@ const META: Record<string, { t: string; d: string }> = {
 "t": "Nishiyama Ramen: B2B Bilingual Website Case Study | eCeez",
 "d": "How we built the European site for Sapporo Nishiyama — a bilingual JA/EN B2B lead-generation website for a 70-year-old Japanese ramen noodle manufacturer."
 },
+"/shopify-seo": {
+"t": "Shopify SEO Services | Rank & Grow Organic Revenue | eCeez",
+"d": "Technical and content Shopify SEO: site architecture, Core Web Vitals, structured data, collection and product optimization, and AI-search readiness. Free audit."
+},
+"/tools/shopify-conversion-calculator": {
+"t": "Free Shopify Conversion Rate ROI Calculator | eCeez",
+"d": "See how much extra monthly and annual revenue a higher conversion rate would generate for your Shopify store. Free, no signup required."
+},
 "/shopify-development-company": {
 "t": "Shopify Development Company | Custom Store Experts | eCeez",
 "d": "eCeez is a Shopify development company engineering custom high-performance storefronts, technical SEO, CRO, apps, and Shopify Plus. We run our own 9,000-product store."

@@ -654,3 +654,11 @@ Client: Express Wholesalers (expresswholesalers.com.au) — B2B fresh produce wh
 Built: trade credibility architecture (HACCP, heritage, testimonials), produce catalog for commercial kitchens, ordering funnel to dedicated wholesale ordering application, weekly market report, local grower sourcing narrative.
 
 Key fact: eCeez has delivered 11 documented client projects across Shopify DTC, supplements, golf, fashion, multi-brand retail, art, furniture, and B2B lead generation in the US, UK, Italy, Australia, and Japan.
+
+### Shopify SEO
+URL: https://eceez.com/shopify-seo
+eCeez Shopify SEO service: technical SEO (Core Web Vitals, crawlable architecture, structured data, indexation), on-page (collection and product optimization, search intent), content and authority strategy, and AI-search readiness (AEO/GEO, llms.txt). Grounded in running a real 9,000-product Shopify store.
+
+### Free Tool: Shopify Conversion Rate ROI Calculator
+URL: https://eceez.com/tools/shopify-conversion-calculator
+Free interactive calculator showing how much extra monthly and annual revenue a higher conversion rate generates from the same traffic. Formula: revenue = visitors × conversion rate × average order value.

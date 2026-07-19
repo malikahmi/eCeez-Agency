@@ -122,7 +122,7 @@ export function HeroScrollDemo() {
   }, [mouseX, mouseY]);
 
   return (
-    <div className="flex flex-col overflow-hidden bg-background relative min-h-[60rem] md:min-h-[80rem]">
+    <div className="flex flex-col overflow-hidden bg-background relative min-h-[52rem] md:min-h-[68rem]">
       {/* Signature interactive layer: 3D growth field, cursor-reactive */}
       <div className="absolute inset-x-0 top-0 h-[52rem] md:h-[64rem] pointer-events-none" aria-hidden="true">
         <GrowthField3D />

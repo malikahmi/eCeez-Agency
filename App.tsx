@@ -7,7 +7,6 @@ import { HeroScrollDemo } from './components/hero-scroll-demo';
 import { ShopifyDashboard } from './components/ShopifyDashboard';
 import { ClientWork } from './components/sections/ClientWork';
 import { ClientTrustBar } from './components/sections/ClientTrustBar';
-import { BrandStatement } from './components/sections/BrandStatement';
 import { ScrollProgress } from './components/fx/ScrollProgress';
 import { Specialties } from './components/sections/Specialties';
 import { Services } from './components/sections/Services';
@@ -74,7 +73,6 @@ const HomePage = () => (
 
     <ClientWork />
 
-    <BrandStatement />
 
     <section id="specialties" className="py-20 bg-zinc-50">
       <Specialties />

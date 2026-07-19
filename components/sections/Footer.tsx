@@ -125,7 +125,7 @@ export const Footer: React.FC = () => {
                 <img 
                   src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/shopify_partners_logo.png?v=1782923241"
                   alt="Shopify Partners Logo"
-                  className="h-5 w-auto object-contain brightness-110"
+                  className="h-4 w-auto object-contain brightness-110 opacity-80"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export const Footer: React.FC = () => {
                 <img 
                   src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/images.png?v=1782923469"
                   alt="Google Partner Badge"
-                  className="h-5 w-auto object-contain brightness-110"
+                  className="h-4 w-auto object-contain brightness-110 opacity-80"
                 />
               </div>
 
@@ -143,7 +143,7 @@ export const Footer: React.FC = () => {
                 <img 
                   src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Meta_lockup_positive-primary_RGB_scaled2.webp?v=1782923646"
                   alt="Meta Partner Badge"
-                  className="h-5 w-auto object-contain brightness-110"
+                  className="h-4 w-auto object-contain brightness-110 opacity-80"
                 />
               </div>
             </div>
@@ -237,11 +237,6 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Big Agency Typography */}
-        <div className="text-center pt-20 pb-8 select-none overflow-hidden w-full">
-          <h2 className="text-[7.5vw] sm:text-[8vw] md:text-[8.5vw] font-black text-white tracking-tighter uppercase leading-none whitespace-nowrap block w-full text-center">
-            ECEEZ AGENCY
-          </h2>
-        </div>
 
         {/* Divider */}
         <div className="border-t border-zinc-900/80 my-8"></div>
@@ -256,6 +251,13 @@ export const Footer: React.FC = () => {
             <span>|</span>
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Terms & Conditions</Link>
           </div>
+        </div>
+
+        {/* Giant brand name — Symbol Studio style: last element, cropped at footer edge */}
+        <div className="select-none w-full pt-14 -mb-12 md:-mb-24" aria-hidden="true">
+          <h2 className="text-[13vw] md:text-[12vw] font-black tracking-tighter uppercase leading-[0.8] whitespace-nowrap block w-full text-center text-transparent bg-clip-text bg-gradient-to-b from-white via-white/60 to-white/5">
+            ECEEZ&reg;
+          </h2>
         </div>
 
       </div>

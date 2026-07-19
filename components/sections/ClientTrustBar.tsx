@@ -51,7 +51,7 @@ const ClientMark: React.FC<{ client: Client }> = ({ client }) => {
 };
 
 export const ClientTrustBar: React.FC = () => (
-  <section className="py-10 border-y border-zinc-100 bg-white overflow-hidden" aria-label="Selected clients">
+  <section className="py-8 border-y border-zinc-100 bg-white overflow-hidden" aria-label="Selected clients">
     <p className="text-center text-[11px] uppercase tracking-[0.25em] text-zinc-400 mb-7">
       Trusted by brands we&rsquo;ve engineered for
     </p>

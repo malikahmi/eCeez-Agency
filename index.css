@@ -56,15 +56,6 @@
   z-index: -1;
 }
 
-/* Speed/CLS safeguard: images without explicit dimensions still reserve
-   sensible space and never overflow, reducing Cumulative Layout Shift. */
-img {
-  max-width: 100%;
-  height: auto;
-}
-img:not([width]):not([height]) {
-  content-visibility: auto;
-}
 
 /* Hide scrollbar for single-line client strip while keeping scroll */
 .no-scrollbar::-webkit-scrollbar { display: none; }

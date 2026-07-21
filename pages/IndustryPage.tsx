@@ -1,10 +1,13 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { IndustryTemplate } from '../components/industry/IndustryTemplate';
 import { getIndustry } from '../src/data/industries';
 
 export const IndustryPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
+  // Routes are static (e.g. /shopify-for-fashion-brands), so derive the slug
+  // from the pathname rather than useParams (which is empty for static routes).
+  const { pathname } = useLocation();
+  const slug = pathname.replace(/^\/+/, '').replace(/\/+$/, '');
   const data = getIndustry(slug);
 
   if (!data) {

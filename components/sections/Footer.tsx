@@ -178,7 +178,15 @@ export const Footer: React.FC = () => {
                 { title: 'SEO Growth', path: '/seo' },
                 { title: 'CRO Audit', path: '/cro' },
                 { title: 'Analytics', path: '/analytics' },
-                { title: 'Growth Automation', path: '/automation' }
+                { title: 'Growth Automation', path: '/automation' },
+                { title: 'Shopify for Fashion', path: '/shopify-for-fashion-brands' },
+                { title: 'Shopify for Jewelry', path: '/shopify-for-jewelry-stores' },
+                { title: 'Shopify for Perfume', path: '/shopify-for-perfume-brands' },
+                { title: 'Shopify for Supplements', path: '/shopify-for-supplement-brands' },
+                { title: 'Shopify for Beauty', path: '/shopify-for-beauty-brands' },
+                { title: 'Shopify for Electronics', path: '/shopify-for-electronics-brands' },
+                { title: 'Shopify for Furniture', path: '/shopify-for-furniture-brands' },
+                { title: 'Shopify for Food & Beverage', path: '/shopify-for-food-and-beverage-brands' }
               ].map((link, idx) => (
                 <Link
                   key={idx}

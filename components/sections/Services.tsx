@@ -191,9 +191,9 @@ export const Services: React.FC = () => {
                     }}
                     aria-hidden="true"
                   />
-                  {/* ghosted numeral */}
+                  {/* ghosted numeral — more visible */}
                   <div
-                    className="absolute -top-4 right-3 text-[7rem] leading-none font-black text-white/[0.04] group-hover:text-white/[0.08] transition-colors duration-500 select-none pointer-events-none"
+                    className="absolute -top-3 right-4 text-[6.5rem] leading-none font-black text-transparent bg-clip-text bg-gradient-to-br from-white/25 to-white/5 group-hover:from-white/40 group-hover:to-white/10 transition-all duration-500 select-none pointer-events-none"
                     aria-hidden="true"
                   >
                     {String(index + 1).padStart(2, '0')}

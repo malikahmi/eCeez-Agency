@@ -54,6 +54,7 @@ const ShopifySEOPage = lazy(() => import('./pages/ShopifySEOPage').then(module =
 const ShopifyCustomLiquidPage = lazy(() => import('./pages/ShopifyCustomLiquidPage').then(module => ({ default: module.ShopifyCustomLiquidPage })));
 const ShopifyHeadlessPage = lazy(() => import('./pages/ShopifyHeadlessPage').then(module => ({ default: module.ShopifyHeadlessPage })));
 const WooCommerceDevelopmentPage = lazy(() => import('./pages/WooCommerceDevelopmentPage').then(module => ({ default: module.WooCommerceDevelopmentPage })));
+const IndustryPage = lazy(() => import('./pages/IndustryPage').then(module => ({ default: module.IndustryPage })));
 const ConversionCalculatorPage = lazy(() => import('./pages/ConversionCalculatorPage').then(module => ({ default: module.ConversionCalculatorPage })));
 const ClientCaseStudyPage = lazy(() => import('./pages/ClientCaseStudyPage').then(module => ({ default: module.ClientCaseStudyPage })));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(module => ({ default: module.NotFoundPage })));
@@ -137,6 +138,14 @@ const ROUTE_TITLES: Record<string, string> = {
   '/shopify-custom-liquid-development': 'Shopify Custom Liquid Development | Bespoke Theme Code | eCeez',
   '/shopify-headless-commerce': 'Shopify Headless Commerce | Hydrogen & Storefront API | eCeez',
   '/woocommerce-development': 'WooCommerce Development | Custom Builds & Optimization | eCeez',
+  '/shopify-for-fashion-brands': 'Shopify for Fashion Brands | Apparel Store Development | eCeez',
+  '/shopify-for-jewelry-stores': 'Shopify for Jewelry Stores | Fine Jewelry Ecommerce | eCeez',
+  '/shopify-for-perfume-brands': 'Shopify for Perfume & Fragrance Brands | eCeez',
+  '/shopify-for-supplement-brands': 'Shopify for Supplement Brands | Nutrition Ecommerce | eCeez',
+  '/shopify-for-beauty-brands': 'Shopify for Beauty & Skincare Brands | eCeez',
+  '/shopify-for-electronics-brands': 'Shopify for Electronics & Tech Brands | eCeez',
+  '/shopify-for-furniture-brands': 'Shopify for Furniture & Home Brands | eCeez',
+  '/shopify-for-food-and-beverage-brands': 'Shopify for Food & Beverage Brands | eCeez',
   '/tools/shopify-conversion-calculator': 'Free Shopify Conversion Rate ROI Calculator | eCeez',
   '/privacy-policy': 'Privacy Policy | eCeez',
 };
@@ -236,6 +245,14 @@ const App: React.FC = () => {
             <Route path="/shopify-custom-liquid-development" element={<ShopifyCustomLiquidPage />} />
             <Route path="/shopify-headless-commerce" element={<ShopifyHeadlessPage />} />
             <Route path="/woocommerce-development" element={<WooCommerceDevelopmentPage />} />
+            <Route path="/shopify-for-fashion-brands" element={<IndustryPage />} />
+            <Route path="/shopify-for-jewelry-stores" element={<IndustryPage />} />
+            <Route path="/shopify-for-perfume-brands" element={<IndustryPage />} />
+            <Route path="/shopify-for-supplement-brands" element={<IndustryPage />} />
+            <Route path="/shopify-for-beauty-brands" element={<IndustryPage />} />
+            <Route path="/shopify-for-electronics-brands" element={<IndustryPage />} />
+            <Route path="/shopify-for-furniture-brands" element={<IndustryPage />} />
+            <Route path="/shopify-for-food-and-beverage-brands" element={<IndustryPage />} />
             <Route path="/tools/shopify-conversion-calculator" element={<ConversionCalculatorPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

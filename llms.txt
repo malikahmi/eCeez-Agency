@@ -624,3 +624,14 @@ Headless Shopify with Hydrogen, Oxygen, and the Storefront API. Decoupled storef
 ### WooCommerce Development
 URL: https://eceez.com/woocommerce-development
 Custom WooCommerce/WordPress builds, performance optimization, security hardening, custom plugin development, integrations, maintenance, and expert WooCommerce-to-Shopify migration preserving data and SEO rankings.
+
+### Industry Landing Pages
+eCeez builds Shopify stores for specific verticals, each with tailored UX and merchandising:
+https://eceez.com/shopify-for-fashion-brands — Fashion & apparel (editorial storefronts, sizing UX, drops). Client: Aurex.
+https://eceez.com/shopify-for-jewelry-stores — Jewelry (luxury design, detail photography, personalization, trust).
+https://eceez.com/shopify-for-perfume-brands — Perfume & fragrance (scent storytelling, samples, scent-family nav). Grounded in Maison de Musk experience.
+https://eceez.com/shopify-for-supplement-brands — Supplements (evidence-first pages, subscriptions, stack bundling). Client: Swolverine.
+https://eceez.com/shopify-for-beauty-brands — Beauty & skincare (education, ingredient transparency, subscriptions).
+https://eceez.com/shopify-for-electronics-brands — Electronics (spec tables, comparison, warranty trust).
+https://eceez.com/shopify-for-furniture-brands — Furniture & home (showroom-hybrid, special orders). Client: East and South Interiors.
+https://eceez.com/shopify-for-food-and-beverage-brands — Food & beverage (subscriptions, sourcing trust, DTC+B2B). Client: Sapporo Nishiyama.

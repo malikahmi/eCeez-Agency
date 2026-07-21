@@ -98,6 +98,38 @@ const META: Record<string, { t: string; d: string }> = {
 "t": "Shopify Headless Commerce | Hydrogen & Storefront API | eCeez",
 "d": "Shopify headless commerce with Hydrogen and the Storefront API: maximum performance and design freedom, Shopify checkout retained. Honest headless-vs-theme advice."
 },
+"/shopify-for-fashion-brands": {
+"t": "Shopify for Fashion Brands | Apparel Store Development | eCeez",
+"d": "Shopify development for fashion and apparel brands: editorial storefronts, sizing UX, drop merchandising, and conversion-focused product pages."
+},
+"/shopify-for-jewelry-stores": {
+"t": "Shopify for Jewelry Stores | Fine Jewelry Ecommerce | eCeez",
+"d": "Shopify development for jewelry brands: luxury storefronts, detail-driven photography, personalization, and trust architecture."
+},
+"/shopify-for-perfume-brands": {
+"t": "Shopify for Perfume & Fragrance Brands | eCeez",
+"d": "Shopify development for perfume and fragrance brands: scent storytelling, samples, scent-family merchandising, and repeat-purchase flows."
+},
+"/shopify-for-supplement-brands": {
+"t": "Shopify for Supplement Brands | Nutrition Ecommerce | eCeez",
+"d": "Shopify development for supplement and nutrition brands: evidence-first pages, subscriptions, stack bundling, and trust architecture."
+},
+"/shopify-for-beauty-brands": {
+"t": "Shopify for Beauty & Skincare Brands | eCeez",
+"d": "Shopify development for beauty and skincare brands: education-led pages, ingredient transparency, subscriptions, and mobile-first conversion."
+},
+"/shopify-for-electronics-brands": {
+"t": "Shopify for Electronics & Tech Brands | eCeez",
+"d": "Shopify development for electronics brands: spec-driven pages, comparison tools, warranty trust, and considered-purchase UX."
+},
+"/shopify-for-furniture-brands": {
+"t": "Shopify for Furniture & Home Brands | eCeez",
+"d": "Shopify development for furniture and home brands: showroom-hybrid architecture, special orders, and considered-purchase UX."
+},
+"/shopify-for-food-and-beverage-brands": {
+"t": "Shopify for Food & Beverage Brands | eCeez",
+"d": "Shopify development for food and beverage brands: subscriptions, sourcing trust, bundles, and DTC or B2B ordering."
+},
 "/woocommerce-development": {
 "t": "WooCommerce Development | Custom Builds & Optimization | eCeez",
 "d": "WooCommerce development: custom WordPress/WooCommerce builds, performance and security hardening, custom plugins, and expert WooCommerce-to-Shopify migration."

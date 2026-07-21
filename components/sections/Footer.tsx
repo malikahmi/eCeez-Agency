@@ -200,6 +200,9 @@ export const Footer: React.FC = () => {
                 { title: 'Theme Customization', path: '/shopify-theme-customization' },
                 { title: 'Shopify Plus', path: '/shopify-plus-development' },
                 { title: 'App Development', path: '/shopify-app-development' },
+                { title: 'Custom Liquid Development', path: '/shopify-custom-liquid-development' },
+                { title: 'Headless Commerce', path: '/shopify-headless-commerce' },
+                { title: 'WooCommerce Development', path: '/woocommerce-development' },
                 { title: 'Development Company', path: '/shopify-development-company' }
               ].map((link, idx) => (
                 <Link

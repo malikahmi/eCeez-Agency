@@ -612,3 +612,15 @@ eCeez Shopify SEO service: technical SEO (Core Web Vitals, crawlable architectur
 ### Free Tool: Shopify Conversion Rate ROI Calculator
 URL: https://eceez.com/tools/shopify-conversion-calculator
 Free interactive calculator showing how much extra monthly and annual revenue a higher conversion rate generates from the same traffic. Formula: revenue = visitors × conversion rate × average order value.
+
+### Shopify Custom Liquid Development
+URL: https://eceez.com/shopify-custom-liquid-development
+Bespoke Shopify Liquid: custom Online Store 2.0 sections and blocks, metafield-driven dynamic content, app replacement with native code, conditional theme logic, upgrade-safe development. Owned code, no app subscriptions.
+
+### Shopify Headless Commerce
+URL: https://eceez.com/shopify-headless-commerce
+Headless Shopify with Hydrogen, Oxygen, and the Storefront API. Decoupled storefronts for maximum performance and design freedom while retaining Shopify checkout and backend. Includes honest headless-vs-custom-theme architecture consulting.
+
+### WooCommerce Development
+URL: https://eceez.com/woocommerce-development
+Custom WooCommerce/WordPress builds, performance optimization, security hardening, custom plugin development, integrations, maintenance, and expert WooCommerce-to-Shopify migration preserving data and SEO rankings.

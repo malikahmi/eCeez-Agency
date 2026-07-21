@@ -51,6 +51,9 @@ const ShopifyCROPage = lazy(() => import('./pages/ShopifyCROPage').then(module =
 const EcommerceUXPage = lazy(() => import('./pages/EcommerceUXPage').then(module => ({ default: module.EcommerceUXPage })));
 const ShopifyDevelopmentCompanyPage = lazy(() => import('./pages/ShopifyDevelopmentCompanyPage').then(module => ({ default: module.ShopifyDevelopmentCompanyPage })));
 const ShopifySEOPage = lazy(() => import('./pages/ShopifySEOPage').then(module => ({ default: module.ShopifySEOPage })));
+const ShopifyCustomLiquidPage = lazy(() => import('./pages/ShopifyCustomLiquidPage').then(module => ({ default: module.ShopifyCustomLiquidPage })));
+const ShopifyHeadlessPage = lazy(() => import('./pages/ShopifyHeadlessPage').then(module => ({ default: module.ShopifyHeadlessPage })));
+const WooCommerceDevelopmentPage = lazy(() => import('./pages/WooCommerceDevelopmentPage').then(module => ({ default: module.WooCommerceDevelopmentPage })));
 const ConversionCalculatorPage = lazy(() => import('./pages/ConversionCalculatorPage').then(module => ({ default: module.ConversionCalculatorPage })));
 const ClientCaseStudyPage = lazy(() => import('./pages/ClientCaseStudyPage').then(module => ({ default: module.ClientCaseStudyPage })));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(module => ({ default: module.NotFoundPage })));
@@ -131,6 +134,9 @@ const ROUTE_TITLES: Record<string, string> = {
   '/ecommerce-ux': 'Ecommerce UX: The Definitive 2026 Guide | eCeez',
   '/shopify-development-company': 'Shopify Development Company | Custom Store Experts | eCeez',
   '/shopify-seo': 'Shopify SEO Services | Rank & Grow Organic Revenue | eCeez',
+  '/shopify-custom-liquid-development': 'Shopify Custom Liquid Development | Bespoke Theme Code | eCeez',
+  '/shopify-headless-commerce': 'Shopify Headless Commerce | Hydrogen & Storefront API | eCeez',
+  '/woocommerce-development': 'WooCommerce Development | Custom Builds & Optimization | eCeez',
   '/tools/shopify-conversion-calculator': 'Free Shopify Conversion Rate ROI Calculator | eCeez',
   '/privacy-policy': 'Privacy Policy | eCeez',
 };
@@ -227,6 +233,9 @@ const App: React.FC = () => {
             <Route path="/ecommerce-ux" element={<EcommerceUXPage />} />
             <Route path="/shopify-development-company" element={<ShopifyDevelopmentCompanyPage />} />
             <Route path="/shopify-seo" element={<ShopifySEOPage />} />
+            <Route path="/shopify-custom-liquid-development" element={<ShopifyCustomLiquidPage />} />
+            <Route path="/shopify-headless-commerce" element={<ShopifyHeadlessPage />} />
+            <Route path="/woocommerce-development" element={<WooCommerceDevelopmentPage />} />
             <Route path="/tools/shopify-conversion-calculator" element={<ConversionCalculatorPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

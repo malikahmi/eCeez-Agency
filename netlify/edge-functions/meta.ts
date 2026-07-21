@@ -90,6 +90,18 @@ const META: Record<string, { t: string; d: string }> = {
 "t": "Nishiyama Ramen: B2B Bilingual Website Case Study | eCeez",
 "d": "How we built the European site for Sapporo Nishiyama — a bilingual JA/EN B2B lead-generation website for a 70-year-old Japanese ramen noodle manufacturer."
 },
+"/shopify-custom-liquid-development": {
+"t": "Shopify Custom Liquid Development | Bespoke Theme Code | eCeez",
+"d": "Custom Shopify Liquid development: bespoke Online Store 2.0 sections, metafield-driven content, app replacement, and upgrade-safe theme logic. Code you own."
+},
+"/shopify-headless-commerce": {
+"t": "Shopify Headless Commerce | Hydrogen & Storefront API | eCeez",
+"d": "Shopify headless commerce with Hydrogen and the Storefront API: maximum performance and design freedom, Shopify checkout retained. Honest headless-vs-theme advice."
+},
+"/woocommerce-development": {
+"t": "WooCommerce Development | Custom Builds & Optimization | eCeez",
+"d": "WooCommerce development: custom WordPress/WooCommerce builds, performance and security hardening, custom plugins, and expert WooCommerce-to-Shopify migration."
+},
 "/shopify-seo": {
 "t": "Shopify SEO Services | Rank & Grow Organic Revenue | eCeez",
 "d": "Technical and content Shopify SEO: site architecture, Core Web Vitals, structured data, collection and product optimization, and AI-search readiness. Free audit."

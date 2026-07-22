@@ -88,3 +88,17 @@
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
 }
+
+/* Craft statement line reveal — CSS only, fill-mode both so the text
+   ALWAYS ends visible (a scroll-triggered version left it invisible
+   in the prerendered build). */
+@keyframes craft-rise {
+  from { opacity: 0; transform: translateY(0.4em); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.craft-line {
+  animation: craft-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .craft-line { animation: none; opacity: 1; transform: none; }
+}

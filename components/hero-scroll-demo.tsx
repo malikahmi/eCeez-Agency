@@ -28,7 +28,7 @@ const logos = [
   },
   { 
     name: "Figma", 
-    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Screenshot_2026-07-22_112001.webp?v=1784701520", 
+    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/figma-3d-logo-black-background.png?v=1784702536", 
     top: "42%", right: "4%", 
     mTop: "32%", mRight: "2%", 
     factor: -45, size: "md:w-24 md:h-24", rotate: -15 

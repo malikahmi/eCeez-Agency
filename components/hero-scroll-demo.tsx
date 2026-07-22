@@ -7,14 +7,14 @@ import { GrowthField3D } from "./fx/GrowthField3D";
 const logos = [
   { 
     name: "Shopify", 
-    url: "https://cdn.simpleicons.org/shopify/95BF47", 
+    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/icons8-shopify-50.webp?v=1784701521", 
     top: "8%", left: "2%", 
     mTop: "12%", mLeft: "4%", 
     factor: 35, size: "md:w-28 md:h-28", rotate: -8 
   },
   { 
     name: "WordPress", 
-    url: "https://cdn.simpleicons.org/wordpress/21759B", 
+    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Screenshot_2026-07-22_112133.webp?v=1784701521", 
     top: "8%", right: "2%", 
     mTop: "12%", mRight: "4%", 
     factor: -35, size: "md:w-24 md:h-24", rotate: 12 
@@ -28,7 +28,7 @@ const logos = [
   },
   { 
     name: "Figma", 
-    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Screenshot_2026-07-22_105922.webp?v=1784700337", 
+    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Screenshot_2026-07-22_112001.webp?v=1784701520", 
     top: "42%", right: "4%", 
     mTop: "32%", mRight: "2%", 
     factor: -45, size: "md:w-24 md:h-24", rotate: -15 

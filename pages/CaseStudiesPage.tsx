@@ -145,7 +145,7 @@ const caseStudies = [
     title: "Express Wholesalers: B2B Produce Supply",
     category: "B2B Fresh Produce Wholesale",
     description: "A family-owned Sydney Markets produce providore supplying restaurants since 1979. No cart, no consumer checkout — a trade credibility and ordering front door built around HACCP credentials, heritage, a produce catalog for commercial kitchens, and weekly market reporting that keeps chefs coming back.",
-    image: "https://expresswholesalers.com.au/wp-content/uploads/Banner_1.jpg",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200",
     tags: ["WordPress", "B2B Lead Gen", "Trade Ordering"],
     link: "/case-studies/express-wholesalers",
     results: ["Trade ordering funnel", "HACCP + heritage credibility", "Weekly market reporting"]
@@ -219,8 +219,16 @@ export const CaseStudiesPage: React.FC = () => {
               <img 
                 src={study.image} 
                 alt={study.title} 
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  // Client CDNs sometimes block hotlinking; fall back rather than render blank.
+                  const img = e.currentTarget;
+                  if (img.dataset.fallback) return;
+                  img.dataset.fallback = '1';
+                  img.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-10 left-10 right-10">

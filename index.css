@@ -89,16 +89,63 @@
   .marquee-track { animation: none; }
 }
 
-/* Craft statement line reveal — CSS only, fill-mode both so the text
-   ALWAYS ends visible (a scroll-triggered version left it invisible
-   in the prerendered build). */
+/* ===== Craft statement ===== */
+/* Reveal: CSS-only with fill-mode both so text ALWAYS ends visible
+   (a scroll-triggered version left it invisible in the prerendered build). */
 @keyframes craft-rise {
-  from { opacity: 0; transform: translateY(0.4em); }
+  from { opacity: 0; transform: translateY(0.35em); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.craft-line {
-  animation: craft-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+.craft-line { animation: craft-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* Continuously flowing gradient across the statement */
+@keyframes craft-flow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
+.craft-grad {
+  background-image: linear-gradient(90deg,#38A9E0,#3B82F6,#2540E8,#03AED2,#38A9E0);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: craft-flow 9s linear infinite;
+}
+.craft-accent { padding-right: 0.06em; }
+
+/* Ambient aurora blobs */
+@keyframes craft-drift-a {
+  0%,100% { transform: translate3d(-6%, -4%, 0) scale(1); }
+  50%     { transform: translate3d(6%, 5%, 0) scale(1.12); }
+}
+@keyframes craft-drift-b {
+  0%,100% { transform: translate3d(5%, 6%, 0) scale(1.08); }
+  50%     { transform: translate3d(-5%, -5%, 0) scale(1); }
+}
+.craft-aurora {
+  position: absolute; border-radius: 9999px; filter: blur(90px);
+  pointer-events: none; opacity: 0.5;
+}
+.craft-aurora-a {
+  width: 34rem; height: 34rem; top: -10rem; left: -8rem;
+  background: radial-gradient(circle, rgba(59,130,246,0.22), transparent 68%);
+  animation: craft-drift-a 18s ease-in-out infinite;
+}
+.craft-aurora-b {
+  width: 30rem; height: 30rem; bottom: -12rem; right: -6rem;
+  background: radial-gradient(circle, rgba(3,174,210,0.20), transparent 68%);
+  animation: craft-drift-b 22s ease-in-out infinite;
+}
+
+/* Cursor spotlight */
+.craft-spot {
+  position: absolute; inset: 0; pointer-events: none;
+  opacity: 0; transition: opacity 0.45s ease;
+  background: radial-gradient(420px circle at var(--sx, 50%) var(--sy, 50%), rgba(37,64,232,0.07), transparent 70%);
+}
+.craft-section:hover .craft-spot { opacity: 1; }
+
 @media (prefers-reduced-motion: reduce) {
   .craft-line { animation: none; opacity: 1; transform: none; }
+  .craft-grad, .craft-aurora { animation: none; }
 }

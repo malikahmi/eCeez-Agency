@@ -1129,22 +1129,22 @@ export const clientCaseStudies: ClientCaseStudy[] = [
     h1Accent: 'a Sydney Produce Wholesaler',
     subtitle:
       'Express Wholesalers is a family-owned premium fruit and vegetable providore operating inside Sydney Markets, supplying restaurants and commercial kitchens across the city. This is B2B in its purest form: no cart, no consumer checkout \u2014 a credibility and ordering front door for chefs who need reliable produce and a supplier they can trust.',
-    cardImage: 'https://expresswholesalers.com.au/wp-content/uploads/Banner_1.jpg',
+    cardImage: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200',
     cardTags: ['WordPress', 'B2B Lead Gen', 'Trade Ordering'],
     cardSummary:
       'A family-owned Sydney Markets fresh produce wholesaler supplying restaurants and commercial kitchens, with trade ordering, produce catalog, and weekly market reporting.',
     heroImage: {
-      src: 'https://expresswholesalers.com.au/wp-content/uploads/Banner_1.jpg',
+      src: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200',
       alt: 'Express Wholesalers website — premium fresh produce wholesale, Sydney Markets',
     },
     gallery: [
       {
-        src: 'https://expresswholesalers.com.au/wp-content/uploads/organic-Food.jpg',
+        src: 'https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&q=80&w=800',
         alt: 'Express Wholesalers premium fresh produce range',
         caption: 'Premium produce sourced from Sydney Markets daily',
       },
       {
-        src: 'https://expresswholesalers.com.au/wp-content/uploads/22.jpg',
+        src: 'https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&q=80&w=800',
         alt: 'Express Wholesalers team and operations inside Sydney Markets',
         caption: 'A family business since 1979, told through people and place',
       },

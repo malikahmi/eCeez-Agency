@@ -58,21 +58,59 @@ async function collectPosts() {
       const id = marks[i].id;
       const slice = txt.slice(marks[i].start, i + 1 < marks.length ? marks[i + 1].start : undefined);
 
-      const title = (slice.match(/\btitle:\s*['"`]([^'"`]+)['"`]/) || [])[1] || '';
-      const excerpt = (slice.match(/\bexcerpt:\s*['"`]([^'"`]*)['"`]/) || [])[1] || '';
-      const descs = [...slice.matchAll(/description:\s*['"`]([^'"`]+)['"`]/g)];
-      const seoDesc = descs.length ? descs[descs.length - 1][1] : '';
+      const title = readField(slice, 'title');
+      const excerpt = readField(slice, 'excerpt');
+      const seoDesc = readField(slice, 'description', true);
 
       const hasContent = /\bcontent:\s*(['"`])/.test(slice);
-      const cm = slice.match(/\bcontent:\s*`([\s\S]*?)`\s*,?\s*\n/) ||
-                 slice.match(/\bcontent:\s*"((?:[^"\\]|\\.)*)"/) ||
-                 slice.match(/\bcontent:\s*'((?:[^'\\]|\\.)*)'/);
-      const wordCount = cm ? cm[1].replace(/\s+/g, ' ').trim().split(' ').filter(Boolean).length : null;
+      const contentStr = readField(slice, 'content');
+      const wordCount = contentStr === null
+        ? null
+        : contentStr.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean).length;
 
       posts.push({ id, title, excerpt, seoDesc, hasContent, wordCount, file: f });
     }
   }
   return posts;
+}
+
+
+/**
+ * readField — robust string extraction.
+ *
+ * Regexes like /field:\s*['"`]([^'"`]+)['"`]/ break on two very common cases:
+ *   1. An apostrophe inside a double-quoted string ("What's a good rate")
+ *      -> capture stops at the apostrophe (this produced a "4 chars" warning).
+ *   2. Inline code backticks inside template-literal markdown content
+ *      -> a non-greedy match closes early and massively undercounts words
+ *      (an 850-word post was reported as 127).
+ *
+ * This scans character by character, honours backslash escapes, and only
+ * accepts a closing delimiter that is genuinely the end of the value.
+ * Returns null when the field is absent.
+ */
+function readField(slice, field, last = false) {
+  const re = new RegExp(`\\b${field}:\\s*(['"\`])`, 'g');
+  let match, result = null;
+  while ((match = re.exec(slice))) {
+    const quote = match[1];
+    let i = match.index + match[0].length;
+    let out = '';
+    while (i < slice.length) {
+      const ch = slice[i];
+      if (ch === '\\') { out += slice[i + 1] ?? ''; i += 2; continue; }
+      if (ch === quote) {
+        // Template literals may legitimately contain backticks (inline code),
+        // so require the delimiter to be followed by a real field/object end.
+        if (quote === '`' && !/^`\s*,?\s*\n\s*[}\w]/.test(slice.slice(i))) { out += ch; i++; continue; }
+        break;
+      }
+      out += ch; i++;
+    }
+    result = out;
+    if (!last) break;
+  }
+  return result;
 }
 
 function validatePosts(posts) {

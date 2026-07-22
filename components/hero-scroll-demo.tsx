@@ -28,7 +28,7 @@ const logos = [
   },
   { 
     name: "Figma", 
-    url: "https://cdn.simpleicons.org/figma/F24E1E", 
+    url: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Screenshot_2026-07-22_105922.webp?v=1784700337", 
     top: "42%", right: "4%", 
     mTop: "32%", mRight: "2%", 
     factor: -45, size: "md:w-24 md:h-24", rotate: -15 

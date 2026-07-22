@@ -7,6 +7,7 @@ import { HeroScrollDemo } from './components/hero-scroll-demo';
 import { ShopifyDashboard } from './components/ShopifyDashboard';
 import { ClientWork } from './components/sections/ClientWork';
 import { ClientTrustBar } from './components/sections/ClientTrustBar';
+import { CraftStatement } from './components/sections/CraftStatement';
 import { ScrollProgress } from './components/fx/ScrollProgress';
 import { Specialties } from './components/sections/Specialties';
 import { Services } from './components/sections/Services';
@@ -72,6 +73,8 @@ const HomePage = () => (
     </section>
 
     <ClientTrustBar />
+
+    <CraftStatement />
 
     <ShopifyDashboard />
 

@@ -1,0 +1,24 @@
+/* TEAM */
+Technical Lead & Lead Architect: eCeez Core Engineering Team
+UX/UI & Senior Conversion Engineer: eCeez Design Studio
+SEO Strategist & Technical Analyst: eCeez Growth & Semantic Search Team
+Contact: info@eceez.com
+Global HQ: Toronto, Canada (Servicing Global Growth Brands)
+
+/* SITE STACK */
+Frontend Framework: React 18+ (Vite Build Pipeline)
+Styling Engine: Tailwind CSS (Modern functional utility architecture)
+Performance Mechanics: Lenis (Lenis Smooth Scrolling / requestAnimationFrame loop)
+Animation: Framer Motion (Delightful micro-interactions, responsive scroll gestures)
+Icons: Lucide React (Clean, scalable vector architecture)
+Build Tools: Vite, TypeScript (NoEmit compilation safety), ESBuild
+
+/* SEMANTIC & TECHNICAL STANDARDS */
+Structured Data: Rich Schema.org, fully integrated JSON-LD
+Discovery Interfaces: llms.txt Protocol (Semantic LLM Search), ai.txt Strategy
+Accessibility (a11y): WCAG 2.1 Compliant, high contrast color pairings, semantic HTML5 elements
+Responsive Philosophy: Desktop-First design with fluid breakpoints, mobile-first performance
+Host: Fully scalable Serverless Cloud Deployment with globally distributed edge networks
+
+/* DESIGN MANIFESTO */
+"Craftsmanship over Defaults. Intentional pair-matching across fonts, space, and colors, creating rhythm and momentum for ecommerce growth."

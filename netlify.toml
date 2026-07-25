@@ -1,0 +1,190 @@
+[build]
+  base = "/"
+  command = "npm run build"
+  publish = "dist"
+
+# Puppeteer/Chromium for the prerender step. Netlify's build image includes the
+# libraries; this tells Puppeteer to download Chromium into a cached location.
+# If anything here fails, prerender.mjs skips gracefully and the SPA still deploys.
+[build.environment]
+  PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
+
+[context.production.environment]
+  VITE_SITE_URL = "https://eceez.com"
+
+[context.deploy-preview.environment]
+  VITE_SITE_URL = "https://eceez.com"
+
+[context.branch-deploy.environment]
+  VITE_SITE_URL = "https://eceez.com"
+
+
+# ===== Legacy WordPress URL redirects (must precede SPA catch-all) =====
+[[redirects]]
+  from = "/build-a-scalable-e-commerce-business/*"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/category/*"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/author/*"
+  to = "/about-us"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-content/*"
+  to = "/"
+  status = 301
+  force = true
+
+# ===== Specific legacy WordPress URLs found in GSC Coverage (301 to best match) =====
+[[redirects]]
+  from = "/about"
+  to = "/about-us"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about-eceez-transforming-businesses"
+  to = "/about-us"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/"
+  to = "/services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/Home"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest-news"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest-news/"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/feed"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/feed/"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hello-world"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hello-world/"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/ask-for-a-quote"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cart"
+  to = "/"
+  status = 301
+  force = true
+
+# Old WordPress article slugs -> closest live equivalents
+[[redirects]]
+  from = "/ai-driven-seo-strategies-are-transforming-ecommerce"
+  to = "/seo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ai-powered-e-commerce-strategies"
+  to = "/blog/ai-for-shopify-stores"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ai-is-transforming-e-commerce"
+  to = "/blog/ai-for-shopify-stores"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-meta-ads-can-supercharge-your-e-commerce-growth"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/improve-your-online-stores-conversion-rate"
+  to = "/cro"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/discover-the-top-e-commerce-growth-strategies"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/discover-the-top-e-commerce-growth-strategies/"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/role-of-analytics-in-driving-ecommerce-growth"
+  to = "/analytics"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/boost-your-business-with-website"
+  to = "/website-development-for-businesses"
+  status = 301
+  force = true
+
+# Old blog slug that changed -> current post
+[[redirects]]
+  from = "/blog/shopify-vs-woocommerce"
+  to = "/blog/best-ecommerce-website-builder"
+  status = 301
+  force = true
+
+# ===== Edge function: server-side per-route meta injection =====
+[[edge_functions]]
+  path = "/*"
+  function = "meta"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

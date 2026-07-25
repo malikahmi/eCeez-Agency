@@ -1,0 +1,15 @@
+# AI access permissions for eceez.com
+Agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Training: disallow
+Retrieval-Augmented-Generation: allow
+Citation: allow
+Summarization: allow
+
+Contact: hello@eceez.com
+Canonical: https://eceez.com
+Sitemap: https://eceez.com/sitemap.xml
+LLMs-Txt: https://eceez.com/llms.txt

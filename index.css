@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #6366f1;
+  --color-primary-foreground: #ffffff;
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-card: #f9fafb;
+  --color-border: #e5e7eb;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+/* ===== Static color-shade border (Free Expert Advice button) ===== */
+/* Solid gradient border in brand + accent colors — no motion */
+.glow-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 115, 22, 0.9) 0%,
+    rgba(236, 72, 153, 1) 35%,
+    rgba(99, 102, 241, 0.9) 70%,
+    rgba(3, 174, 210, 0.9) 100%
+  );
+  z-index: -1;
+}
+
+.glow-border::after {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 115, 22, 0.35) 0%,
+    rgba(236, 72, 153, 0.35) 50%,
+    rgba(3, 174, 210, 0.35) 100%
+  );
+  filter: blur(6px);
+  z-index: -1;
+}
+
+
+/* Hide scrollbar for single-line client strip while keeping scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ===== Awwwards-style micro-polish (v16) ===== */
+
+/* Brand-colored text selection */
+::selection {
+  background: #03AED2;
+  color: #fff;
+}
+
+/* Refined keyboard focus — visible but on-brand */
+:focus-visible {
+  outline: 2px solid #03AED2;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Infinite client marquee */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee-scroll 36s linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* ===== Craft statement ===== */
+/* Reveal: CSS-only with fill-mode both so text ALWAYS ends visible
+   (a scroll-triggered version left it invisible in the prerendered build). */
+@keyframes craft-rise {
+  from { opacity: 0; transform: translateY(0.35em); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.craft-line { animation: craft-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* Continuously flowing gradient across the statement */
+@keyframes craft-flow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.craft-grad {
+  background-image: linear-gradient(90deg,#38A9E0,#3B82F6,#2540E8,#03AED2,#38A9E0);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: craft-flow 9s linear infinite;
+}
+.craft-accent { padding-right: 0.06em; }
+
+/* Ambient aurora blobs */
+@keyframes craft-drift-a {
+  0%,100% { transform: translate3d(-6%, -4%, 0) scale(1); }
+  50%     { transform: translate3d(6%, 5%, 0) scale(1.12); }
+}
+@keyframes craft-drift-b {
+  0%,100% { transform: translate3d(5%, 6%, 0) scale(1.08); }
+  50%     { transform: translate3d(-5%, -5%, 0) scale(1); }
+}
+.craft-aurora {
+  position: absolute; border-radius: 9999px; filter: blur(90px);
+  pointer-events: none; opacity: 0.5;
+}
+.craft-aurora-a {
+  width: 34rem; height: 34rem; top: -10rem; left: -8rem;
+  background: radial-gradient(circle, rgba(59,130,246,0.22), transparent 68%);
+  animation: craft-drift-a 18s ease-in-out infinite;
+}
+.craft-aurora-b {
+  width: 30rem; height: 30rem; bottom: -12rem; right: -6rem;
+  background: radial-gradient(circle, rgba(3,174,210,0.20), transparent 68%);
+  animation: craft-drift-b 22s ease-in-out infinite;
+}
+
+/* Cursor spotlight */
+.craft-spot {
+  position: absolute; inset: 0; pointer-events: none;
+  opacity: 0; transition: opacity 0.45s ease;
+  background: radial-gradient(420px circle at var(--sx, 50%) var(--sy, 50%), rgba(37,64,232,0.07), transparent 70%);
+}
+.craft-section:hover .craft-spot { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .craft-line { animation: none; opacity: 1; transform: none; }
+  .craft-grad, .craft-aurora { animation: none; }
+}

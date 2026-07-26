@@ -10,7 +10,7 @@ export const aiBlogPosts: BlogPost[] = [
     date: 'Jun 05, 2026',
     readTime: '22 min read',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Transform your Shopify operations with native intelligence. Discover how to deploy semantic product search, automate customer support routing, and manage inventories using predictive modeling.',
     seo: {
       title: 'AI for Shopify Stores: Modern Integration Frameworks',
@@ -153,7 +153,7 @@ Explore our [Shopify Website Development Services](/shopify-store-setup-service)
     date: 'Jun 04, 2026',
     readTime: '20 min read',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Go behind the scenes of high-revenue brands. Learn how the enterprise DTC cohort utilizes automated optimization stacks to increase conversion rates.',
     seo: {
       title: 'How Ecommerce Brands Use AI | Technical Insights',
@@ -297,7 +297,7 @@ The brands winning with AI use it to amplify their own data and expertise, not t
     date: 'Jun 03, 2026',
     readTime: '18 min read',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Tired of slow, bloated apps? Discover our top high-ROI AI automation workflows. Learn to automate tag updates, recovery loops, and content feeds.',
     seo: {
       title: 'Best AI Automations for Shopify | Ultimate Technical Guide',
@@ -452,7 +452,7 @@ Start with the automation that saves the most time or recovers the most revenue 
     date: 'Jun 03, 2026',
     readTime: '19 min read',
     category: 'SEO',
-    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Programmatic AI setups can rank your storefront for thousands of keywords. Master automated structured schemas, taxonomies, and internal linking models.',
     seo: {
       title: 'AI SEO for Ecommerce | Dynamic Search Strategies',
@@ -597,7 +597,7 @@ Almost everything that makes a page cite-worthy to AI also makes it rank better 
     date: 'Jun 02, 2026',
     readTime: '17 min read',
     category: 'Content Strategy',
-    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Ditch boring, repetitive product descriptions. Master our prompt engineering frameworks to generate structured, conversion-optimized copy.',
     seo: {
       title: 'Using ChatGPT for Product Descriptions | Prompt Workbook',
@@ -741,7 +741,7 @@ Draft with AI from real data, edit for voice and accuracy, verify claims, add un
     date: 'Jun 02, 2026',
     readTime: '21 min read',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Ditch manual Shopify workflows. Learn how to connect your store endpoints to server-side automation routines to scale your business operations.',
     seo: {
       title: 'AI Workflow Automation for Shopify | Operational Playbook',
@@ -875,7 +875,7 @@ Don't try to automate everything at once. Pick the single most time-consuming re
     date: 'May 30, 2026',
     readTime: '23 min read',
     category: 'CRO',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Turn traffic into cashflow. Learn how to deploy personalize interfaces, smart layouts, and sub-second checkout speeds to increase your sales.',
     seo: {
       title: 'How AI Improves Conversion Rates | CRO Playbook',
@@ -1009,7 +1009,7 @@ Begin with the highest-leverage mechanism for your store, usually personalized r
     date: 'May 28, 2026',
     readTime: '22 min read',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'How will AI disrupt e-commerce over the next 2-3 years? Read our strategic forecast covering agentic shopping networks and automated code synthesis.',
     seo: {
       title: 'The Future of AI in Ecommerce | Industry Projections',
@@ -1142,7 +1142,7 @@ Almost every AI-era best practice, structured data, clear content, fast pages, r
     date: 'Jun 01, 2026',
     readTime: '18 min read',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Ditch slow, bloated search plugins. Discover our curated directory of fast, high-ROI Shopify tools to automate metadata and recommendations.',
     seo: {
       title: 'Shopify AI Tools for Growth | Curated Performance Vetting',

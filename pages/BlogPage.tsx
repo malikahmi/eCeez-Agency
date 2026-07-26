@@ -6,7 +6,7 @@ import {
   HelpCircle, ArrowUpRight, Filter, Bookmark, CheckCircle2 
 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import { blogPosts } from '../src/data/blogData';
+import { blogIndex as blogPosts } from '../src/data/blogIndex';
 import { PILLARS, getPostPillar, Pillar } from '../src/data/pillarData';
 import { GrowthField3D } from '../components/fx/GrowthField3D';
 

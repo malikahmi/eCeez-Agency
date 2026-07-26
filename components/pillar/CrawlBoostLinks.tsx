@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
-import { blogPosts } from '../../src/data/blogData';
+import { blogIndex as blogPosts } from '../../src/data/blogIndex';
 
 /**
  * CrawlBoostLinks — internal links from high-authority pages (pillars, homepage)

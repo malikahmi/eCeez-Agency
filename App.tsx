@@ -14,7 +14,6 @@ import { Services } from './components/sections/Services';
 import { About } from './components/sections/About';
 import { TestimonialsReels } from './components/sections/TestimonialsReels';
 import { CTA } from './components/sections/CTA';
-import { BlogSection } from './components/sections/BlogSection';
 import { Footer } from './components/sections/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 

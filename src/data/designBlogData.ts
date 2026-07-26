@@ -10,7 +10,7 @@ export const designBlogPosts: BlogPost[] = [
     date: 'Jun 05, 2026',
     readTime: '21 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Eliminate cart drop-offs and maximize brand premium with the standard UX guidelines for Shopify storefronts. Master screen layout hierarchy, font pairings, visual cues, and layout systems.',
     seo: {
       title: 'Best Shopify Website Design Practices (2026) | UX Framework',
@@ -165,7 +165,7 @@ Explore our professional [Shopify Store Setup Services](/shopify-store-setup-ser
     date: 'Jun 04, 2026',
     readTime: '24 min read',
     category: 'CRO',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Turn traffic into cashflow. Learn the math behind cart recovery, trust seals, fast checkout architectures, and low-friction shopping paths.',
     seo: {
       title: 'How to Build a High-Converting Shopify Store | CRO Guide',
@@ -289,7 +289,7 @@ Optimizing user experience turns casual browsers into repeat buyers. If your con
     date: 'Jun 03, 2026',
     readTime: '19 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Is a bespoke custom shopify design worth the investment over a theme? We break down the performance benchmarks, scaling factors, and true cost calculations.',
     seo: {
       title: 'Custom Shopify Design vs Premium Themes | 2026 Evaluation',
@@ -426,7 +426,7 @@ Most stores should start with a customized premium theme and graduate to custom,
     date: 'Jun 03, 2026',
     readTime: '22 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1200&auto=format&fit=crop',
     excerpt: '95% of new ecommerce ventures close down within their first year. Learn the leading reasons why stores fail, with actionable code fixes.',
     seo: {
       title: 'Why Most Shopify Stores Fail | Technical Diagnostic Work',
@@ -580,7 +580,7 @@ Failure is rarely one catastrophic mistake, it's the accumulation of unaddressed
     date: 'Jun 02, 2026',
     readTime: '18 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Calculate your exact development budgets. Compare startup pricing scales, app subscription costs, developer retainers, and enterprise platform charges.',
     seo: {
       title: 'How Much Does a Shopify Website Cost? | Pricing Guide',
@@ -675,7 +675,7 @@ Building your online store on Shopify is a great investment for your brand's fut
     date: 'Jun 02, 2026',
     readTime: '23 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'An advanced developer manual to speed up your local coding setups. Master Shopify CLI setups, deployment hooks, and theme checks.',
     seo: {
       title: 'Shopify Website Development Guide | Advanced Workflows',
@@ -836,7 +836,7 @@ A performant Shopify store is a system, not a template. Our [Shopify web develop
     date: 'Jun 01, 2026',
     readTime: '16 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Avoid third-party app bloat. Discover our curated directory of fast, high-ROI Shopify tools to scale your marketing, reviews, internal searches, and email flows.',
     seo: {
       title: 'Best Shopify Apps for Ecommerce Growth | Curated Stack',
@@ -958,7 +958,7 @@ If your store is already slow from app bloat, our [Shopify speed optimization se
     date: 'Jun 01, 2026',
     readTime: '20 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Are you ready to migrate to Shopify Plus? We compare pricing models, custom checkouts, automated flows, and global multi-store setups.',
     seo: {
       title: 'Shopify Plus vs Shopify | Enterprise Decision Matrix',
@@ -1068,7 +1068,7 @@ Explore our [Shopify Website Development Services](/shopify-store-setup-service)
     date: 'Jun 01, 2026',
     readTime: '22 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Redesigning your store doesn\'t have to be stressful. Learn our proven framework to preserve your search rankings and relaunch your design.',
     seo: {
       title: 'How to Redesign a Shopify Store | Risk-Free Redesign Guide',
@@ -1213,7 +1213,7 @@ For a redesign that improves conversions and protects rankings, our [theme custo
     date: 'Jun 01, 2026',
     readTime: '19 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Mobile commerce accounts for over 75% of online checkouts. Learn our technical guidelines to build fast, thumb-friendly mobile purchase funnels.',
     seo: {
       title: 'Mobile-First Shopify Design Guide | Maximize Conversions',

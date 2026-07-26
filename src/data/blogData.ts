@@ -18,7 +18,7 @@ const originalBlogPosts: BlogPost[] = [
     date: 'Mar 17, 2026',
     readTime: '25 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Learn how to start a Shopify store for beginners in 2026. This 1500+ word guide covers everything from niche selection to launching your first high-converting store.',
     featured: true,
     seo: {
@@ -210,7 +210,7 @@ The ecommerce world in 2026 is full of opportunity for those willing to do the w
     date: "Jul 9, 2026",
     readTime: "16 min read",
     category: "Design & Inspiration",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
     excerpt: "37 real Shopify stores across fashion, beauty, fragrance, supplements, home goods, and tech \u2014 with specific teardowns of the design and conversion decisions that make each one work.",
     featured: true,
     seo: {
@@ -236,7 +236,7 @@ The ecommerce world in 2026 is full of opportunity for those willing to do the w
     date: "Jul 9, 2026",
     readTime: "17 min read",
     category: "Engineering",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Shopify Hydrogen vs Liquid, decided practically: real cost ranges, real performance numbers, and a clear framework for which architecture fits your store's actual stage of growth.",
     featured: true,
     seo: {
@@ -263,7 +263,7 @@ The ecommerce world in 2026 is full of opportunity for those willing to do the w
     date: 'Feb 20, 2026',
     readTime: '16 min read',
     category: 'SEO Strategy',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Scale your organic traffic with our comprehensive ecommerce SEO audit checklist. From technical fixes to content strategy, learn how to outrank competitors.',
     seo: {
       title: 'Ecommerce SEO Audit Checklist 2026 | Technical & Content Guide',
@@ -392,7 +392,7 @@ SEO in 2026 is a marathon of technical precision and creative excellence. By sys
     date: 'Feb 15, 2026',
     readTime: '14 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Stop losing customers at the finish line. We use heatmaps, A/B testing, and UX research to maximize your existing traffic\'s value.',
     seo: {
       title: 'How to Reduce Cart Abandonment | Ecommerce CRO Guide 2026',
@@ -502,7 +502,7 @@ Reducing cart abandonment isn't about one "silver bullet." It's about a series o
     date: 'Feb 10, 2026',
     readTime: '18 min read',
     category: 'Automation',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Scale your operations without scaling your headcount. We build custom automation workflows that handle the heavy lifting.',
     seo: {
       title: 'Ecommerce Automation Workflows | Scale Your Shopify Store 2026',
@@ -605,7 +605,7 @@ Automation allows your team to focus on high-impact creative work while the mach
     date: 'Feb 05, 2026',
     readTime: '16 min read',
     category: 'Analytics',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Deep-funnel tracking and BI dashboards to give you total visibility over your marketing ROI and customer behavior.',
     seo: {
       title: 'AI in Ecommerce Analytics | Predictive Data Insights 2026',
@@ -692,7 +692,7 @@ AI doesn't replace human intuition; it empowers it with better data. By leveragi
     date: 'Feb 01, 2026',
     readTime: '18 min read',
     category: 'Security',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Your data is your most valuable asset. We protect it with military-grade encryption and proactive threat monitoring.',
     seo: {
       title: 'Ecommerce Security Best Practices | Protect Your Store 2026',
@@ -779,7 +779,7 @@ In the digital age, a **secure ecommerce website** is the foundation of a succes
     date: 'Jan 28, 2026',
     readTime: '15 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'In 2026, the boundary between "fast" and "instant" is where brands win or lose.',
     seo: {
       title: 'Ecommerce Page Speed SEO | Shopify Speed Optimization 2026',
@@ -865,7 +865,7 @@ In 2026, the boundary between "fast" and "instant" is where brands win or lose. 
     date: 'Jan 20, 2026',
     readTime: '20 min read',
     category: 'Design',
-    image: 'https://images.unsplash.com/photo-1635767798638-3e25273a8236?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1635767798638-3e25273a8236?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Establish trust through elite design. We craft immersive visual experiences and intuitive user journeys that resonate with high-end audiences.',
     seo: {
       title: 'Shopify Jewelry Store Design | High-Converting Luxury Websites 2026',
@@ -956,7 +956,7 @@ A successful jewelry store is a blend of art and science. It needs to look beaut
     date: 'Jan 15, 2026',
     readTime: '16 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Headless isn\'t just a tech stack; it\'s a decoupling of your brand\'s creative potential from the limitations of a monolith.',
     seo: {
       title: 'Headless Commerce Trends 2026 | Future of Ecommerce Tech',
@@ -1044,7 +1044,7 @@ The future of commerce is flexible, fast, and personalized. **Headless commerce 
     date: 'Jan 10, 2026',
     readTime: '13 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Turn your existing traffic into loyal customers by identifying and fixing friction points in your post-purchase journey and leveraging automation.',
     seo: {
       title: 'Ecommerce LTV Optimization | Post-Purchase Automation 2026',
@@ -1129,7 +1129,7 @@ In 2026, your store's valuation and sustainability are tied directly to your **r
     date: 'Jan 05, 2026',
     readTime: '22 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Next.js and Hydrogen are the top contenders for headless Shopify. We compare their features, performance, and ecosystem to help you choose.',
     seo: {
       title: 'Next.js vs Hydrogen | Best Headless Shopify Framework 2026',
@@ -1216,7 +1216,7 @@ At **eCeez**, we build with both. [Contact us](/contact) to discuss which framew
     date: 'Jan 01, 2026',
     readTime: '19 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'AI is transforming ecommerce from a one-size-fits-all experience to a highly personalized journey for every customer.',
     seo: {
       title: 'AI in Ecommerce Personalization | Future of Shopping 2026',
@@ -1304,7 +1304,7 @@ Personalization is the ultimate loyalty play. When a customer feels like a brand
     date: 'Dec 20, 2025',
     readTime: '24 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Expanding internationally is the fastest way to grow, but it’s also the easiest way to fail. We share our playbook for global Shopify Plus success.',
     seo: {
       title: 'Shopify Plus Global Expansion | International Ecommerce 2026',
@@ -1402,7 +1402,7 @@ Global expansion is a complex puzzle, but the rewards are massive. By leveraging
     date: 'Dec 15, 2025',
     readTime: '19 min read',
     category: 'SEO Strategy',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Faceted search is essential for large catalogs, but it can be an SEO nightmare. We show you how to do it right.',
     seo: {
       title: 'Faceted Search UX Ecommerce | Advanced Filtering SEO 2026',
@@ -1490,7 +1490,7 @@ Faceted search is a powerful tool for large catalogs, but it requires a delicate
     date: 'Dec 10, 2025',
     readTime: '18 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Core Web Vitals are the baseline. To truly excel, you need to focus on perceived performance and user-centric metrics.',
     seo: {
       title: 'Web Performance Beyond Core Web Vitals | Ecommerce Speed 2026',
@@ -1578,7 +1578,7 @@ Performance is a never-ending race. By staying ahead of the curve and focusing o
     date: 'Dec 05, 2025',
     readTime: '21 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'The Shopify App Store is great, but sometimes you need something custom. We help you decide when it’s time to build your own solution.',
     seo: {
       title: 'Custom Shopify App Development | Build vs Buy Guide 2026',
@@ -1667,7 +1667,7 @@ Custom apps are not just about fixing problems; they are about creating opportun
     date: 'Dec 01, 2025',
     readTime: '17 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'The checkout is the most critical part of your store. We use psychology and data to make it as frictionless as possible.',
     seo: {
       title: 'Checkout Psychology Ecommerce | High Converting Checkout 2026',
@@ -1754,7 +1754,7 @@ Optimizing your checkout isn't about guessing; it's about understanding human be
     date: 'Nov 25, 2025',
     readTime: '20 min read',
     category: 'Legal & Security',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Privacy is no longer just a legal requirement; it’s a competitive advantage. We show you how to do it right.',
     seo: {
       title: 'Ecommerce Data Privacy Compliance | GDPR CCPA 2026',
@@ -1842,7 +1842,7 @@ In the digital age, trust is the most valuable currency you have. By mastering *
     date: 'Nov 20, 2025',
     readTime: '19 min read',
     category: 'Social Commerce',
-    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'TikTok Shop is no longer an experiment; it’s a powerhouse. We show you how to scale your sales through short-form video.',
     seo: {
       title: 'TikTok Shop Growth Strategy 2026 | Social Commerce SEO',
@@ -1930,7 +1930,7 @@ TikTok Shop is not just a trend; it’s a fundamental shift in how people discov
     date: 'Nov 15, 2025',
     readTime: '18 min read',
     category: 'Social Commerce',
-    image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Instagram and Pinterest are the digital storefronts of the visual web. We show you how to optimize them for conversion.',
     seo: {
       title: 'Social Commerce SEO 2026 | Instagram & Pinterest Strategy',
@@ -2018,7 +2018,7 @@ The line between social media and ecommerce has officially blurred. By mastering
     date: 'Nov 10, 2025',
     readTime: '19 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Subscriptions are the holy grail of ecommerce. We share our strategies for building a successful recurring revenue model.',
     seo: {
       title: 'Ecommerce Subscription Models 2026 | Recurring Revenue Strategy',
@@ -2106,7 +2106,7 @@ In an uncertain market, recurring revenue is the ultimate safety net. By masteri
     date: 'Nov 05, 2025',
     readTime: '21 min read',
     category: 'Design',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Your PDP is where the sale happens. We show you how to design it for maximum impact.',
     seo: {
       title: 'Optimizing Product Detail Pages (PDP) 2026 | Conversion Strategy',
@@ -2195,7 +2195,7 @@ In 2026, your PDP needs to do the work of a high-end retail associate. It must i
     date: 'Nov 01, 2025',
     readTime: '18 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1633113088453-0818203815fe?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1633113088453-0818203815fe?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'AR is no longer a gimmick. We explore how it’s transforming the shopping experience and reducing returns.',
     seo: {
       title: 'Augmented Reality in Ecommerce 2026 | AR Shopping Strategy',
@@ -2283,7 +2283,7 @@ In 2026, the question isn't *if* you should use AR, but *how* you will use it to
     date: 'Oct 25, 2025',
     readTime: '18 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Sustainability is no longer a "nice to have." It’s a core requirement for the modern consumer.',
     seo: {
       title: 'Sustainable Ecommerce Strategy 2026 | Eco-Friendly Branding',
@@ -2371,7 +2371,7 @@ In 2026, the most successful brands are those that find the intersection of prof
     date: 'Oct 20, 2025',
     readTime: '20 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Your customers don’t see "Online" and "Offline." They just see your brand. We show you how to create a unified experience.',
     seo: {
       title: 'Omnichannel Ecommerce Strategy 2026 | Unified Retail Experience',
@@ -2459,7 +2459,7 @@ In 2026, the most successful brands are those that remove the friction between t
     date: 'Oct 15, 2025',
     readTime: '18 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Email is still the highest ROI channel in ecommerce. We show you how to build advanced automations that scale.',
     seo: {
       title: 'Advanced Ecommerce Email Automation 2026 | High ROI Flows',
@@ -2547,7 +2547,7 @@ In 2026, email marketing is the ultimate leverage for ecommerce brands. By build
     date: 'Oct 10, 2025',
     readTime: '18 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Influencer marketing is about more than just reach. It’s about trust, alignment, and long-term value.',
     seo: {
       title: 'Ecommerce Influencer Marketing Strategy 2026 | Brand Ambassadors',
@@ -2635,7 +2635,7 @@ In 2026, **influencer marketing** is about one thing: **trust**. By finding the 
     date: 'Oct 05, 2025',
     readTime: '18 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Loyalty is earned, not bought. We show you how to design a program that creates real emotional connection.',
     seo: {
       title: 'Ecommerce Customer Loyalty Strategy 2026 | Retention Programs',
@@ -2723,7 +2723,7 @@ In 2026, a well-designed **customer loyalty program** is one of the most valuabl
     date: 'Sep 30, 2025',
     readTime: '18 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Returns are a part of ecommerce. We show you how to handle them in a way that actually increases customer loyalty.',
     seo: {
       title: 'Ecommerce Returns Management Strategy 2026 | Reverse Logistics',
@@ -2811,7 +2811,7 @@ In 2026, your **returns policy** is a marketing tool. By making the process easy
     date: 'Sep 25, 2025',
     readTime: '11 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Voice search is transforming how people find and buy products in 2026. Learn how to optimize your store for the voice-first future and capture the "screenless" shopper.',
     seo: {
       title: 'Voice Search in Ecommerce | Voice SEO Strategy 2026',
@@ -2897,7 +2897,7 @@ Voice search is the next frontier of accessibility and convenience. By optimizin
     date: 'Mar 01, 2026',
     readTime: '18 min read',
     category: 'Design',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Master Shopify UX optimization with our comprehensive guide. Learn how to reduce friction, improve navigation, and boost conversion rates through data-driven design.',
     seo: {
       title: 'Shopify UX Optimization Guide | High-Conversion Design 2026',
@@ -2983,7 +2983,7 @@ UX optimization is never "done." It requires constant A/B testing, heatmap analy
     date: 'Feb 28, 2026',
     readTime: '14 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Deciding between Shopify and Shopify Plus? We break down the costs, features, and scalability factors to help you decide when to upgrade to Shopify Plus in 2026.',
     seo: {
       title: 'Shopify Plus vs Shopify | When to Upgrade in 2026',
@@ -3071,7 +3071,7 @@ The right time to upgrade to **Shopify Plus** is usually when:
     date: 'Feb 25, 2026',
     readTime: '22 min read',
     category: 'Automation',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Managing a large Shopify catalog requires advanced technical SEO and robust inventory management. Learn our proven strategies for scaling to 50K+ products in 2026.',
     seo: {
       title: 'Scaling Shopify with 50K+ Products | Large Inventory Guide 2026',
@@ -3157,7 +3157,7 @@ Scaling to 50K+ products is as much a technical challenge as it is a commercial 
     date: 'Mar 04, 2026',
     readTime: '20 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Speed is a direct ranking factor and conversion driver. Learn how to optimize your Shopify store for sub-1s load times and crush Core Web Vitals in 2026.',
     seo: {
       title: 'Shopify Speed Optimization | Sub-1s Load Time Guide 2026',
@@ -3242,7 +3242,7 @@ In 2026, a fast store is a trustworthy store. By prioritizing **Shopify performa
     date: 'Mar 03, 2026',
     readTime: '15 min read',
     category: 'SEO Strategy',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Google Merchant Center is a goldmine for organic traffic in 2026. Learn how to optimize your product feeds for maximum visibility in free listings and shopping ads.',
     seo: {
       title: 'Google Merchant Center SEO | Product Feed Optimization 2026',
@@ -3327,7 +3327,7 @@ In 2026, your product feed is just as important as your website content. By prio
     date: 'Mar 02, 2026',
     readTime: '18 min read',
     category: 'Growth',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Backlinks remain a top ranking factor in 2026. Learn our sustainable, value-driven strategies for earning high-quality links in the ecommerce niche.',
     seo: {
       title: 'Ecommerce Link Building Guide | Earn High-Authority Backlinks 2026',
@@ -3412,7 +3412,7 @@ In 2026, **ecommerce SEO link building** is about building relationships and pro
     date: 'Mar 10, 2026',
     readTime: '20 min read',
     category: 'Strategy',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'B2B ecommerce is exploding in 2026. Learn how to leverage Shopify Plus to build a seamless wholesale experience that mirrors the ease of B2C shopping.',
     seo: {
       title: 'Shopify B2B Strategy 2026 | Scale Wholesale on Shopify Plus',
@@ -3498,7 +3498,7 @@ The brands that win in 2026 will be those that make wholesale buying as easy as 
     date: 'Mar 12, 2026',
     readTime: '15 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Stockouts and overstock are the silent killers of ecommerce profit. Discover how AI-powered predictive inventory management is helping brands optimize their supply chain in 2026.',
     seo: {
       title: 'Predictive Inventory Management AI | Solve Stockouts 2026',
@@ -3574,7 +3574,7 @@ In 2026, the most profitable ecommerce brands aren't just the best at marketing;
     date: 'Mar 14, 2026',
     readTime: '12 min read',
     category: 'Design',
-    image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Static product pages are a thing of the past. In 2026, shoppable video is the key to engaging customers and driving massive conversion lifts on Shopify.',
     seo: {
       title: 'Video Commerce Trends 2026 | Shoppable Video on Shopify',
@@ -3660,7 +3660,7 @@ In 2026, video is not an "extra"—it is the standard. The brands that embrace *
     date: "Jul 9, 2026",
     readTime: "13 min read",
     category: "Ecommerce Strategy",
-    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Shopify Markets Pro vs Global-E compared on fees, control, localization, and setup complexity \u2014 a practical guide for merchants ready to sell internationally.",
     seo: {
       title: "Shopify Markets Pro vs Global-E 2026: Full Comparison",
@@ -3685,7 +3685,7 @@ In 2026, video is not an "extra"—it is the standard. The brands that embrace *
     date: 'Mar 15, 2026',
     readTime: '14 min read',
     category: 'Strategy',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Third-party cookies are gone. In 2026, the most successful Shopify brands are winning by collecting "Zero-Party Data"—information that customers intentionally and proactively share.',
     seo: {
       title: 'Zero-Party Data Strategy 2026 | Ecommerce Personalization',
@@ -3771,7 +3771,7 @@ In 2026, personalization is built on trust. By asking for data transparently and
     date: 'Mar 15, 2026',
     readTime: '25 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Shopify smart search is the secret weapon of high-growth brands. Learn how to optimize your product discovery and boost conversions with AI-powered search.',
     seo: {
       title: 'Shopify Smart Search Guide | Best Search Apps 2026',
@@ -4026,7 +4026,7 @@ Even small stores can benefit from basic **Shopify search optimization**. If you
     date: 'Mar 15, 2026',
     readTime: '30 min read',
     category: 'Strategy',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Shopify draft orders are a powerful tool for custom sales, wholesale, and phone orders. Learn how to create, send, and manage them like a pro in 2026.',
     seo: {
       title: 'Shopify Draft Orders Guide | Create & Manage Manual Orders 2026',
@@ -4554,7 +4554,7 @@ Don't treat attributes as an afterthought. Treat them as your most valuable sale
     date: 'Mar 15, 2026',
     readTime: '35 min read',
     category: 'Marketing',
-    image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Product descriptions are your silent salespeople. Master the art of writing copy that balances SEO with high-conversion persuasion.',
     seo: {
       title: 'Product Descriptions Guide | Writing Copy That Converts 2026',
@@ -5023,7 +5023,7 @@ Review your current categories today. If more than 5% of your products are in a 
     date: 'Mar 15, 2026',
     readTime: '30 min read',
     category: 'Engineering',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Shopify combined listings allow you to merge multiple products into a single parent listing. Discover how this feature improves UX and SEO.',
     seo: {
       title: 'Shopify Combined Listings Guide | Parent & Child Products 2026',
@@ -5237,7 +5237,7 @@ Start optimizing your store today.
     date: 'Mar 15, 2026',
     readTime: '30 min read',
     category: 'Marketing',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Combined listings are changing how high-growth brands organize their stores. Learn how to leverage this feature for better UX and SEO.',
     seo: {
       title: 'Mastering Shopify Combined Listings | Ecommerce Merchandising 2026',
@@ -5627,7 +5627,7 @@ However, remember that a **single page website design** is not a "shortcut." It 
     date: 'Mar 15, 2026',
     readTime: '30 min read',
     category: 'Shopify',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Shop Pay accelerated checkout is the gold standard for fast, secure ecommerce payments. Learn how it works, why it matters, and how to optimize it for your store.',
     seo: {
       title: 'Shop Pay Accelerated Checkout Guide | Fast Shopify Payments',
@@ -5881,7 +5881,7 @@ By reducing checkout time, increasing security, and offering flexible payment op
     date: 'Mar 15, 2026',
     readTime: '28 min read',
     category: 'Shopify',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Managing different inventory for different locations is essential for growing Shopify stores. Learn how to set up locations, track stock, and optimize fulfillment.',
     seo: {
       title: 'Shopify Multi-Location Inventory Guide | Manage Stock by Location',
@@ -6104,7 +6104,7 @@ By leveraging **Shopify Multi-Location Inventory** effectively, you can transfor
     date: 'Mar 24, 2026',
     readTime: '18 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Wondering why your Shopify store isn’t converting? Discover the top 10 reasons for low conversion rates and actionable steps to turn visitors into buyers.',
     featured: true,
     seo: {
@@ -6278,7 +6278,7 @@ The ecommerce world in 2026 is competitive, but it's also full of opportunity fo
     date: 'Mar 24, 2026',
     readTime: '22 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Want to start an online store? This step-by-step beginner guide to ecommerce is your roadmap to success in 2026. Learn how to build, launch, and scale today.',
     featured: true,
     seo: {
@@ -6506,7 +6506,7 @@ The ecommerce world in 2026 is full of opportunity. Whether you want to build a 
     date: 'Mar 24, 2026',
     readTime: '18 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Your product page is the most important part of your store. Learn how to create a high-converting product page using CRO best practices and psychology.',
     featured: true,
     seo: {
@@ -7254,7 +7254,7 @@ Ready to find your winning product? [Start for free and grow your business today
     date: 'Mar 24, 2026',
     readTime: '25 min read',
     category: 'Development',
-    image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'The bar for themes is higher than ever. Learn the requirements for Shopify theme approval in 2026 and how to pass on your first try.',
     featured: false,
     seo: {
@@ -7336,7 +7336,7 @@ Ready to build for Shopify? [Start for free and grow your business today](https:
     date: 'Mar 24, 2026',
     readTime: '14 min read',
     category: 'Marketing',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Reddit is becoming the new search engine for shoppers. Discover how Reddit is changing ecommerce discovery and how to use it for your store.',
     featured: false,
     seo: {
@@ -7418,7 +7418,7 @@ Ready to grow your brand on Reddit? [Start for free and grow your business today
     date: 'Apr 29, 2026',
     readTime: '16 min read',
     category: 'Optimization',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     excerpt: 'Is your Shopify store getting traffic but no sales? Learn the 7 hidden reasons why customers are leaving without buying and how to turn your visitors into loyal customers.',
     featured: true,
     seo: {

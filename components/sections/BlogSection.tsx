@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { blogPosts } from '../../src/data/blogData';
+import { blogIndex as blogPosts } from '../../src/data/blogIndex';
 
 export const BlogSection: React.FC = () => {
   const latestPosts = blogPosts.slice(0, 3);

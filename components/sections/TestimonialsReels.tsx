@@ -47,7 +47,7 @@ const reelsData: TestimonialReel[] = [
     location: 'London, UK 🇬🇧',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=120&auto=format&fit=crop&facepad=2&crop=faces',
     thumbnail: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
-    videoUrl: 'https://cdn.shopify.com/videos/c/o/v/e2c5278c20b64182a3b1a2d6a25f239d.mp4',
+    videoUrl: 'https://cdn.shopify.com/videos/c/o/v/0d2b0c3503854d8aa98eed2bb81aff2e.mp4',
     likes: 853,
     initialComments: [
       { id: 1, user: 'becca_fan', text: 'Unbelievable results. Conversion rate optimization was insane.', avatar: 'BF', time: '1d ago' },

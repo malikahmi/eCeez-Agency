@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { ShopifyAffiliateCTA } from '../components/blog/ShopifyAffiliateCTA';
 import { blogPosts } from '../src/data/blogData';
 import { PILLARS, getPostPillar, Pillar } from '../src/data/pillarData';
@@ -313,6 +314,44 @@ export const BlogPostPage: React.FC = () => {
 
   // Custom JSX renderer overrides for Markdown content alignment to spec
   const markdownComponents = {
+    img: ({ src, alt, ...props }: any) => (
+      <figure className="my-8">
+        <img
+          src={src}
+          alt={alt || ''}
+          loading="lazy"
+          decoding="async"
+          className="w-full rounded-2xl border border-zinc-200 shadow-sm bg-zinc-50 object-cover"
+          onError={(e) => {
+            const el = e.currentTarget as HTMLImageElement;
+            if (el.dataset.fb) return;
+            el.dataset.fb = '1';
+            el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
+          }}
+          {...props}
+        />
+        {alt ? (
+          <figcaption className="mt-3 text-center text-xs text-zinc-500 italic">{alt}</figcaption>
+        ) : null}
+      </figure>
+    ),
+    table: ({ children, ...props }: any) => (
+      <div className="my-8 overflow-x-auto rounded-2xl border border-zinc-200">
+        <table className="w-full text-left text-sm border-collapse" {...props}>{children}</table>
+      </div>
+    ),
+    thead: ({ children, ...props }: any) => (
+      <thead className="bg-[#1a365d] text-white" {...props}>{children}</thead>
+    ),
+    th: ({ children, ...props }: any) => (
+      <th className="px-4 py-3 font-bold text-xs uppercase tracking-wider" {...props}>{children}</th>
+    ),
+    td: ({ children, ...props }: any) => (
+      <td className="px-4 py-3 border-t border-zinc-200 text-[#2d3748] align-top" {...props}>{children}</td>
+    ),
+    tr: ({ children, ...props }: any) => (
+      <tr className="even:bg-zinc-50/70" {...props}>{children}</tr>
+    ),
     h2: ({ children, ...props }: any) => {
       const text = React.Children.toArray(children).join('');
       const customId = text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
@@ -491,7 +530,7 @@ export const BlogPostPage: React.FC = () => {
             {/* SINGLE COLUMN HIGH-READABILITY CONTENT CORE */}
             <main className="lg:col-span-8 lg:col-start-4 space-y-12">
               <div className="markdown-body text-[11pt] lg:text-[11pt] leading-[1.6] text-[#2d3748] font-medium prose prose-zinc max-w-none">
-                <ReactMarkdown components={markdownComponents}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
                   {injectInternalLinks(post.content || '')}
                 </ReactMarkdown>
               </div>

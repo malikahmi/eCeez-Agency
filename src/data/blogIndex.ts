@@ -696,6 +696,17 @@ export const blogIndex: BlogIndexEntry[] = [
     "pillar": ""
   },
   {
+    "id": "shopify-vs-woocommerce",
+    "title": "Shopify vs WooCommerce 2026: An Honest Comparison From an Agency That Builds Both",
+    "category": "Guides",
+    "date": "2026-07-30",
+    "readTime": "15 min read",
+    "image": "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Screenshot_2026-07-30_045921.png?v=1785369599",
+    "excerpt": "Most Shopify vs WooCommerce comparisons are written by someone with a stake in the answer. We build on both platforms: here are the real costs, the SEO truth, the maintenance burden, and how to decide.",
+    "featured": true,
+    "pillar": ""
+  },
+  {
     "id": "shopify-bulk-import-10000-products-guide",
     "title": "How to Bulk Import 10,000+ Products to Shopify Without Breaking Your Store",
     "category": "Guides",

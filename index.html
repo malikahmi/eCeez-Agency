@@ -189,5 +189,13 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+    <!-- Third-party review widgets (Clutch, DesignRush).
+         Loaded with `defer` deliberately: defer executes after HTML parsing but
+         immediately BEFORE DOMContentLoaded, so the widget scripts still catch
+         the event they rely on to find and initialise their containers, while
+         staying non-blocking for first paint. Injecting these later (on idle)
+         does NOT work — the scripts miss DOMContentLoaded and never render. -->
+    <script defer type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+    <script defer type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
   </body>
 </html>

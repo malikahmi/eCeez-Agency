@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Linkedin, Instagram, Twitter, Youtube, Facebook, Check } from 'lucide-react';
+import { ReviewWidgets } from './ReviewWidgets';
 
 export const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -147,6 +148,8 @@ export const Footer: React.FC = () => {
                 />
               </div>
             </div>
+
+            <ReviewWidgets />
           </div>
 
           {/* Links Columns. Zero headers like reference screenshot */}

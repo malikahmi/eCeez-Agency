@@ -44,6 +44,38 @@ const RUSH_SRC = 'https://www.designrush.com/topbest/js/widgets/agency-reviews.j
 const CLUTCH_PROFILE = 'https://clutch.co/profile/eceez';
 const DESIGNRUSH_PROFILE = 'https://www.designrush.com/agency/profile/eceez-agency#reviews';
 const GOODFIRMS_PROFILE = 'https://www.goodfirms.co/company/eceez';
+const TRUSTPILOT_PROFILE = 'https://www.trustpilot.com/review/eceez.com';
+
+
+const TrustpilotBadge: React.FC = () => (
+  <a
+    href={TRUSTPILOT_PROFILE}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="See eCeez reviews on Trustpilot"
+    className="group inline-flex h-11 items-center gap-2.5 rounded-lg bg-white px-3.5 transition-opacity hover:opacity-90"
+  >
+    <span className="flex h-6 w-6 items-center justify-center rounded-md bg-[#00b67a] text-white">
+      <span className="text-xs font-black leading-none">&#9733;</span>
+    </span>
+    <span className="flex flex-col leading-tight">
+      <span className="flex items-center gap-1.5">
+        <span className="text-[12px] font-extrabold tracking-tight text-zinc-900">Trustpilot</span>
+        <span className="rounded bg-emerald-50 px-1 text-[9px] font-bold uppercase tracking-wider text-[#00b67a]">
+          Excellent
+        </span>
+      </span>
+      <span className="mt-0.5 flex items-center gap-1">
+        <span className="flex gap-0.5" aria-hidden="true">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <span key={i} className="text-[10px] text-[#00b67a]">&#9733;</span>
+          ))}
+        </span>
+        <span className="text-[9px] text-zinc-500 transition-colors group-hover:text-zinc-700">Reviews &#8599;</span>
+      </span>
+    </span>
+  </a>
+);
 
 const BadgeImage: React.FC<{ src: string; href: string; alt: string }> = ({ src, href, alt }) => (
   <a
@@ -127,6 +159,9 @@ export const ReviewWidgets: React.FC = () => {
       </p>
 
       <div className="flex flex-wrap items-center gap-4">
+        {/* Trustpilot */}
+        <TrustpilotBadge />
+
         {/* GoodFirms — official badge, self-hosted */}
         <BadgeImage
           src="/badges/goodfirms-rating.png"
@@ -140,17 +175,19 @@ export const ReviewWidgets: React.FC = () => {
         ) : clutchFailed ? (
           <ProfileLink href={CLUTCH_PROFILE} label="Clutch" />
         ) : (
-          <div
-            ref={clutchRef}
-            suppressHydrationWarning
-            className="clutch-widget"
-            data-url="https://widget.clutch.co"
-            data-widget-type="2"
-            data-height="45"
-            data-nofollow="false"
-            data-expandifr="true"
-            data-clutchcompany-id="2685202"
-          />
+          <div className="rounded-lg bg-white px-3 py-2">
+            <div
+              ref={clutchRef}
+              suppressHydrationWarning
+              className="clutch-widget"
+              data-url="https://widget.clutch.co"
+              data-widget-type="2"
+              data-height="45"
+              data-nofollow="false"
+              data-expandifr="true"
+              data-clutchcompany-id="2685202"
+            />
+          </div>
         )}
 
         {/* DesignRush */}

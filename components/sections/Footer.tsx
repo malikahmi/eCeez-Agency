@@ -93,62 +93,6 @@ export const Footer: React.FC = () => {
               ))}
             </div>
 
-            {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-3 pt-6 border-t border-zinc-900/60">
-              {/* Trustpilot Badge */}
-              <a 
-                href="https://www.trustpilot.com/evaluate/eceez.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2.5 bg-[#121212]/60 hover:bg-[#121212] border border-zinc-800/40 hover:border-zinc-700/80 rounded-xl px-4 py-2.5 transition-all duration-300 group"
-              >
-                <div className="flex items-center justify-center bg-[#00b67a] text-white w-6 h-6 rounded-md">
-                  <span className="text-xs font-black">★</span>
-                </div>
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-1">
-                    <span className="text-[11px] font-extrabold tracking-tight text-white">Trustpilot</span>
-                    <span className="text-[9px] bg-emerald-950 text-emerald-400 font-bold px-1 rounded uppercase tracking-wider scale-90">Excellent</span>
-                  </div>
-                  <div className="flex items-center gap-1 mt-0.5">
-                    <div className="flex gap-0.5">
-                      {[1,2,3,4,5].map((s) => (
-                        <span key={s} className="text-[#00b67a] text-[10px]">★</span>
-                      ))}
-                    </div>
-                    <span className="text-[9px] text-zinc-500 group-hover:text-zinc-300 transition-colors">Evaluate ↗</span>
-                  </div>
-                </div>
-              </a>
-
-              {/* Shopify Partner Badge */}
-              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-lg px-3 py-1.5 transition-all duration-300 hover:border-zinc-700/80 select-none">
-                <img 
-                  src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/shopify_partners_logo.png?v=1782923241"
-                  alt="Shopify Partners Logo"
-                  className="h-4 w-auto object-contain brightness-110 opacity-80"
-                />
-              </div>
-
-              {/* Google Partner Badge */}
-              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-lg px-3 py-1.5 transition-all duration-300 hover:border-zinc-700/80 select-none">
-                <img 
-                  src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/images.png?v=1782923469"
-                  alt="Google Partner Badge"
-                  className="h-4 w-auto object-contain brightness-110 opacity-80"
-                />
-              </div>
-
-              {/* Meta Partner Badge */}
-              <div className="flex items-center bg-[#121212]/60 border border-zinc-800/40 rounded-lg px-3 py-1.5 transition-all duration-300 hover:border-zinc-700/80 select-none">
-                <img 
-                  src="https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Meta_lockup_positive-primary_RGB_scaled2.webp?v=1782923646"
-                  alt="Meta Partner Badge"
-                  className="h-4 w-auto object-contain brightness-110 opacity-80"
-                />
-              </div>
-            </div>
-
             <ReviewWidgets />
           </div>
 

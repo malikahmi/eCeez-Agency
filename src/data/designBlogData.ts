@@ -578,93 +578,242 @@ Failure is rarely one catastrophic mistake, it's the accumulation of unaddressed
     author: 'eCeez Editorial Team',
     role: 'Founder & CTO',
     date: 'Jun 02, 2026',
-    readTime: '18 min read',
+    readTime: '14 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://cdn.shopify.com/s/files/1/0802/5722/0853/files/A_woman_with_long_curly_dark_hair_sits_on_a_bright_yellow_couch_holding_an_orange_book_or_magazine..webp?v=1785369745',
     excerpt: 'Calculate your exact development budgets. Compare startup pricing scales, app subscription costs, developer retainers, and enterprise platform charges.',
     seo: {
-      title: 'How Much Does a Shopify Website Cost? | Pricing Guide',
-      description: 'What does it truly cost to build a Shopify store in 2026? Read our detailed cost breakdown covering developer rates, subscriptions, app budgets, and themes.',
-      keywords: ['how much does a shopify website cost', 'shopify pricing tiers', 'ecommerce website development fees', 'cost to hire shopify expert', 'shopify plus platform budget'],
+      title: "How Much Does a Shopify Website Cost in 2026? Real Ranges",
+      description: "What a Shopify website really costs in 2026: DIY, freelancer, agency and Plus build ranges, plus app, maintenance and hidden costs most budgets miss.",
+      keywords: ["how much does a shopify website cost", "shopify website cost", "shopify development cost", "shopify development services", "shopify web design cost", "shopify developer cost", "shopify developer price", "shopify expert cost", "shopify store cost", "shopify agency pricing", "shopify plus cost", "cost to build shopify store", "shopify pricing plans"],
       faqSchema: [
-        {
-          question: 'Can I launch a professional Shopify store under $1,000?',
-          answer: 'Yes. By utilizing standard themes (like Dawn) and managing the basic setup yourself, you can launch a great store for just the cost of subscriptions, key apps, and your custom domain.'
-        },
-        {
-          question: 'What do professional Shopify developers charge?',
-          answer: 'Custom builds from expert agencies like eCeez typically start around $5,000 for high-end theme setups, and can go up to $30,000+ for complex headless architectures.'
-        }
-      ]
+        { question: "How much does it cost to build a Shopify website in 2026?", answer: "Realistic first-year totals: $1,000-$3,000 doing it yourself with a premium theme, $3,000-$15,000 with a freelancer, $15,000-$60,000 for a professional agency build, and $60,000-$250,000+ for enterprise or Shopify Plus projects. Shopify's own subscription (from about $39/month) is usually the smallest line item; design and development labour is the largest." },
+        { question: "Why do Shopify agency quotes vary so much for the same project?", answer: "Because they are rarely quoting the same work. The differences are typically bespoke design versus theme customisation, how much strategy and research is included, whether data migration and third-party integrations are in scope, the depth of QA and device testing, whether performance engineering is deliberate, and how much post-launch support is bundled. Always ask what is excluded and who owns the code." },
+        { question: "What are the hidden costs of running a Shopify store?", answer: "Apps are the biggest surprise: the average store runs 15-20 apps, often costing $200-$800 per month, which can exceed the Shopify plan itself. Then ongoing maintenance ($200-$2,500+/month), SEO, conversion optimisation, content and photography, and transaction fees that grow as revenue grows. Apps also slow your store, which costs conversions on top of the subscription." },
+        { question: "Is it cheaper to build a Shopify store myself?", answer: "In cash terms yes, at $500 or less with a premium theme and domain. But it costs 40-120 hours of your time, and the result generally looks like the template it is. DIY makes sense for validating an idea or a small catalogue. Once ecommerce is your primary revenue channel, the conversion difference between a template and a considered build usually outweighs the build fee." },
+        { question: "How can I reduce the cost of a Shopify build without hurting quality?", answer: "Start with a customised premium theme instead of bespoke design, arrive with product copy and photography finished, launch with fewer apps and add them when a measured need appears, and phase the build so B2B or internationalisation come as separate funded stages. Never economise by skipping the 301 redirect map on a migration." },
+        { question: "How much does Shopify Plus cost?", answer: "Shopify Plus starts at roughly $2,300 per month, and a Plus build typically runs $60,000-$250,000+ depending on ERP and CRM integrations, B2B requirements, multi-region architecture, and whether you go headless. It is worth it at genuine volume or operational complexity; below that it is expensive overhead rather than an advantage." },
+      ],
     },
-    content: `# How Much Does a Shopify Website Cost? Direct Pricing Breakdown & ROI Models
+    content: `What does it actually cost to build a Shopify store? The honest answer is that it depends on who builds it, and the range is enormous: from under $500 doing it yourself to well past $150,000 for an enterprise build. That spread is why most cost articles are useless, so this guide gives you real ranges with the reasoning behind each one.
 
-The most common question developers get is: **"How much does a Shopify website cost to build and maintain?"**
+We build Shopify stores for a living and we also run our own, so we know both the invoice side and the operator side. This breakdown separates the four costs people constantly conflate: **Shopify's subscription**, **the build**, **the apps**, and **the ongoing maintenance** most budgets forget entirely.
 
-The honest answer is: **It depends on your scale, features, and custom requirements.** A small storefront using a standard theme will have a very different budget compared to an enterprise brand with custom API integrations and complex logistics.
+## The short answer
 
-Let’s break down the exact costs of building and running a Shopify store, from basic setups to custom-built enterprise platforms.
+A realistic total first-year cost for a professional Shopify store:
+
+- **DIY with a premium theme:** $1,000 to $3,000
+- **Freelancer build:** $3,000 to $15,000
+- **Professional agency build:** $15,000 to $60,000
+- **Enterprise / Shopify Plus build:** $60,000 to $250,000+
+
+Within those numbers, Shopify's own subscription is usually the smallest line item. The two largest are **design and development labour** and, over time, **apps plus maintenance**. Anyone quoting you a single number without asking about your catalogue size, integrations, and design requirements is guessing.
+
+![Shopify website cost breakdown and development budget planning](https://cdn.shopify.com/s/files/1/0802/5722/0853/files/73baf5efde53894bbe8620b107f5f4c6.webp?v=1785369689)
+
+## Cost 1: The Shopify subscription
+
+This is the predictable part. Shopify's published tiers, which you should verify on [Shopify's pricing page](https://www.shopify.com/pricing) before budgeting:
+
+| Plan | Approx. monthly | Best for |
+| --- | --- | --- |
+| Basic | $39 | Launching brands, first catalogue |
+| Grow | $105 | Growing stores, lower card rates |
+| Advanced | $399 | Higher volume, advanced reporting |
+| Plus | From ~$2,300 | Enterprise, B2B, checkout extensibility |
+
+Add **payment processing**, typically around 2.9% plus 30 cents per online transaction on Basic, improving on higher plans. Using a third-party gateway instead of Shopify Payments adds a platform fee, which is why most merchants stay with Shopify Payments.
+
+The important insight: **upgrading plans is a maths problem, not a status decision.** The lower card rates on higher tiers offset the subscription difference at a calculable revenue level. Below that threshold you are paying for features you may not need. Our deeper breakdowns of the [Shopify pricing plans](/blog/shopify-pricing-plans-complete-guide) and the [full fee structure](/blog/shopify-fees-explained-2026) cover where those break-even points land.
+
+If you are still choosing platforms, our [Shopify vs WooCommerce comparison](/blog/shopify-vs-woocommerce) prices the alternative honestly, including the hosting and maintenance costs that make "free" software expensive.
+
+## Cost 2: The build (where the real money goes)
+
+This is the line item that varies by two orders of magnitude, so it deserves the most attention.
+
+### DIY: $0 to $500 plus your time
+
+A premium Shopify theme costs roughly $150 to $400 one-off, or you use a free theme for nothing. Add a domain at around $15 a year.
+
+**What you get:** a functional store that looks like a template, because it is one. **What it really costs:** 40 to 120 hours of your time learning Shopify, wrestling with theme settings, and writing product copy. If your time has any commercial value, this is not free.
+
+**When it makes sense:** validating an idea, a small catalogue, or a side project where cash matters more than time. Plenty of successful stores started exactly here, and there is no shame in it.
+
+### Freelancer: $3,000 to $15,000
+
+A competent freelance Shopify developer charges roughly $30 to $100 per hour, or fixed project fees in that range.
+
+**What you get:** genuine customisation, theme work beyond the settings panel, and someone who has done this before. **The risks:** availability, single point of failure, wildly variable quality, and no continuity when they take on their next client. We are regularly hired to untangle inherited freelance builds where the original developer became unreachable.
+
+**When it makes sense:** a clear, contained scope and a modest budget, ideally with a freelancer who has verifiable Shopify work you can inspect.
+
+### Agency: $15,000 to $60,000
+
+A professional [Shopify development](/shopify-web-development) engagement at agency level typically covers strategy, custom design, custom theme development, data migration, integrations, QA across devices, and launch support. Rates commonly run $75 to $200+ per hour depending on the market and seniority.
+
+**What you are actually buying** is not code volume. It is judgement: the decisions about architecture, merchandising, and performance that determine whether the store converts. A cheap build that converts at 1.2% is far more expensive than a considered build converting at 2.4%, and the gap compounds every month you operate.
+
+**When it makes sense:** ecommerce is a primary revenue channel, the store must reflect a real brand, and you have integrations or catalogue complexity that punish guesswork.
+
+### Enterprise and Shopify Plus: $60,000 to $250,000+
+
+At this level you are funding [Shopify Plus development](/shopify-plus-development): ERP and CRM integrations, B2B portals with customer-specific pricing, multi-region and multi-currency architecture, checkout extensibility, and sometimes [headless commerce](/shopify-headless-commerce) with a custom front end.
+
+**When it makes sense:** high transaction volume, genuine operational complexity, or requirements a standard theme structurally cannot express. Below that, enterprise architecture is expensive overhead rather than an advantage, and we tell prospects so.
+
+![Professional Shopify store design and development process](https://cdn.shopify.com/s/files/1/0802/5722/0853/files/88be45c1ad280aaa06301e64dc9efddc.webp?v=1785369696)
+
+## What actually drives your quote up or down
+
+When we scope a project, these are the variables that move the number most. Knowing them lets you control your own budget.
+
+**1. Design origin.** A customised premium theme costs a fraction of a bespoke design. Bespoke means research, wireframes, high-fidelity design, and then development of something that has never existed. Both are legitimate; only one is cheap.
+
+**2. Catalogue size and structure.** Fifty products is an afternoon. Nine thousand products with variants, metafields, and supplier feeds is a project with its own workflow. Bulk imports also surface problems that need real time to fix, and the failures are silent, so they must be tested for deliberately.
+
+**3. Integrations.** Every external system, ERP, CRM, 3PL, accounting, or subscription engine, adds scope. Integrations are where fixed-price quotes most often go wrong, because the other system's API dictates the difficulty.
+
+**4. Migration complexity.** Moving from WooCommerce, Magento, or a bespoke platform means migrating products, customers, and order history, plus mapping [301 redirects](/shopify-migration) for every URL. That redirect work is not optional; it is the difference between keeping and losing your search rankings.
+
+**5. Content readiness.** Agencies do not discount for missing content, they bill for producing it. Arriving with finished product copy, photography, and brand assets can meaningfully reduce a quote. Arriving with nothing means someone writes 300 product descriptions, and that someone charges by the hour.
+
+**6. B2B and internationalisation.** Wholesale pricing tiers, customer-specific catalogues, multi-currency, and translations each add architecture rather than just pages.
+
+## Cost 3: Apps (the line item everyone underestimates)
+
+The average Shopify store runs 15 to 20 apps, and app subscriptions frequently exceed the Shopify plan itself. Realistic monthly ranges:
+
+- Reviews: $15 to $50
+- Email and SMS marketing: $20 to $500+ depending on list size
+- Subscriptions: $50 to $250
+- Advanced search and filtering: $30 to $150
+- Loyalty programme: $30 to $300
+- Page builder: $25 to $100
+- Bundles and upsells: $20 to $100
+
+That is comfortably $200 to $800 a month for a moderately equipped store, or $2,400 to $9,600 a year that rarely appears in launch budgets.
+
+There is a second, hidden cost: **apps slow your store down.** Most inject JavaScript on every page, and since [Core Web Vitals](https://web.dev/articles/vitals) are both a ranking factor and a conversion lever, a heavy app stack costs you money twice. This is why replacing app functions with native [custom Liquid development](/shopify-custom-liquid-development) is often the highest-ROI spend available: pay once, remove a recurring fee, and get a faster store. Over two years, replacing three or four apps regularly pays for the development several times over.
+
+## Cost 4: Ongoing costs nobody budgets for
+
+Launch day is the beginning of spending, not the end.
+
+- **Maintenance and support:** $200 to $2,500+ per month for [ongoing Shopify maintenance](/shopify-maintenance), depending on scope
+- **Ongoing SEO:** $500 to $5,000+ per month; our [Shopify SEO](/shopify-seo) work is technical plus content, not keyword sprinkling
+- **Conversion optimisation:** $1,000 to $10,000+ per month for genuine testing programmes
+- **Paid advertising:** entirely dependent on your margins and market
+- **Content and photography:** recurring for any brand that ships new products
+- **Transaction fees:** scale with revenue, so they grow as you succeed
+
+![Ongoing ecommerce growth investment and store optimisation](https://cdn.shopify.com/s/files/1/0802/5722/0853/files/f7005220770a81b56e90e78c3d779a79.webp?v=1785369701)
+
+## Three realistic budget scenarios
+
+**The bootstrapped launch, about $2,000 first year.** Premium theme ($300), domain ($15), Shopify Basic ($468/year), a handful of essential apps ($600/year), and your own labour for design, copy, and setup. Entirely viable for validating a business.
+
+**The serious brand launch, about $35,000 first year.** Agency build with custom design and migration ($28,000), Shopify Grow ($1,260/year), app stack ($4,000/year), and initial SEO groundwork. Appropriate when ecommerce is the business rather than an experiment.
+
+**The scaling operation, about $120,000 first year.** Shopify Plus build with ERP integration and B2B ($90,000), Plus subscription ($27,600/year), enterprise apps, and a maintenance retainer. Appropriate at volume where downtime and friction cost more than the build.
+
+## How to spend less without building worse
+
+Genuine ways to reduce cost that do not damage the outcome:
+
+1. **Start with a customised premium theme** rather than bespoke design. You can commission a custom design later, once revenue justifies it, and the store will still convert in the meantime.
+2. **Arrive with your content finished.** Product copy, photography, and brand assets ready before development starts removes real hours from a quote.
+3. **Launch with fewer apps.** Add them when a specific, measured need appears rather than installing everything that sounds useful.
+4. **Phase the build.** Launch a strong core store, then add B2B, subscriptions, or internationalisation as separate funded phases.
+5. **Fix conversion before buying traffic.** Improving conversion earns more from visitors you already have; our [conversion calculator](/tools/shopify-conversion-calculator) shows what a modest lift is worth on your own numbers.
+
+And the false economies to avoid: skipping the redirect map on a migration, choosing the cheapest bidder for a build your revenue depends on, and treating maintenance as optional until something breaks during your busiest week.
+
+## Why quotes for the same brief differ so wildly
+
+If three agencies quote $8,000, $30,000, and $80,000 for what sounds like the same store, they are not quoting the same work. The differences are usually: bespoke design versus theme customisation, how much strategy and research is included, whether data migration and integrations are in scope, how much QA and device testing happens, whether performance engineering is deliberate or accidental, and how much post-launch support is bundled.
+
+Ask any prospective partner four questions: what exactly is in scope, what is explicitly excluded, who owns the code afterwards, and what happens if the project runs over. The answers separate a considered proposal from a number someone made up. Before signing anything, work through our [pre-launch checklist](/tools/shopify-launch-checklist) so you know what "finished" should actually include.
+
+## What a cheap build actually costs you
+
+The most common expensive mistake in Shopify budgeting is optimising for the invoice instead of the outcome. It is worth doing the arithmetic explicitly.
+
+Take a store doing $40,000 a month in revenue at a 1.5% conversion rate. Lift that to 2.2% through better product pages, faster loading, and a cleaner checkout path, and you are earning roughly $18,000 a month more from identical traffic. Over a year that is more than $200,000, which dwarfs the difference between a $10,000 build and a $35,000 build.
+
+That is the actual economics of ecommerce development, and it cuts both ways. If a considered build genuinely converts better, the cheaper option was never cheaper. If a cheap build is adequate for your stage, spending more buys you nothing you can currently use. Both statements are true, and which applies to you depends entirely on your traffic volume.
+
+**The rule we use:** below roughly 5,000 monthly visitors, a modest build is usually correct because you do not yet have enough traffic for conversion gains to compound meaningfully. Above 20,000 monthly visitors, under-investing in the store is almost certainly costing more than the build fee. Between those numbers, it is a judgement call about growth trajectory.
+
+There is a second hidden cost to cheap builds: **rebuild risk.** A store built without regard for architecture, performance, or maintainability often needs replacing within eighteen to twenty-four months, at which point you pay twice and lose the momentum in between. We are hired for these rescues regularly, and the rebuild almost always costs more than doing it properly the first time would have.
+
+## Cost by store type
+
+Different business models carry genuinely different development requirements, so identical revenue figures can justify very different budgets.
+
+**Fashion and apparel.** Editorial design carries real weight at premium price points, and size and colour variant UX plus sizing guidance directly affects both conversion and return rates. Expect design to be a larger share of the budget than average. Our [Shopify for fashion brands](/shopify-for-fashion-brands) work reflects that emphasis.
+
+**Fragrance and beauty.** Large catalogues, structured product data such as scent notes and ingredient lists, and sampling programmes push cost toward catalogue architecture and metafield work rather than visual design. We operate our own 9,000-product store in this category, so we know precisely where the hours go.
+
+**Supplements and nutrition.** Subscription infrastructure and evidence-led product pages dominate. Subscription apps or custom implementations are a significant recurring cost, but they are also where the profit lives, since a supplement bought once rarely covers its acquisition cost.
+
+**Furniture and high-value goods.** Often a showroom-hybrid model where the checkout is not the finish line. Budget shifts toward appointment flows, special-order paths, and deep catalogue taxonomy rather than a conventional cart optimisation.
+
+**B2B and wholesale.** Customer-specific pricing, tiered catalogues, purchase orders, and approval workflows. This is the single biggest cost multiplier in Shopify development, and it is where Shopify Plus starts genuinely earning its subscription.
+
+## Timeline and how it affects price
+
+Timeline and cost are linked, though not in the direction people expect. Compressed timelines usually cost more, not less, because parallel work requires more people and rework rises when discovery is rushed.
+
+Typical durations for a competent build:
+
+| Scope | Typical timeline |
+| --- | --- |
+| Theme setup and customisation | 2 to 4 weeks |
+| Custom design and build | 6 to 12 weeks |
+| Migration with data and redirects | 6 to 14 weeks |
+| Shopify Plus with integrations | 3 to 6 months |
+
+The phase people try to cut is discovery, and it is the worst possible economy. Every hour of unclear scope at the start becomes several hours of rework later. When a proposal looks unusually cheap, check whether discovery exists in it at all.
+
+## Regional rates and offshore development
+
+Rates vary enormously by geography, and pretending otherwise would be dishonest. North American and Western European agencies commonly charge $100 to $250+ per hour. Eastern European and Latin American agencies frequently sit at $50 to $120. South Asian agencies often quote $25 to $60.
+
+Excellent work exists at every one of those price points, and so does terrible work. What actually predicts quality is verifiable Shopify-specific experience, live stores you can inspect and load-test yourself, clarity of communication, and whether they will tell you when you are asking for the wrong thing.
+
+Practical advice regardless of region: **ask for live client URLs and test them yourself.** Run them through PageSpeed Insights. Check whether product schema is present. View the source and see whether it looks engineered or assembled. That five-minute exercise tells you more than any portfolio page, and it works identically whether the agency charges $30 or $200 an hour.
+
+## How agencies structure billing
+
+Understanding the models helps you compare proposals that look superficially different.
+
+**Fixed price** works when scope is genuinely well defined. It transfers risk to the agency, so competent agencies price in a contingency buffer, meaning you often pay slightly more for the certainty. Watch for change-request rates, since that is where fixed-price projects become expensive.
+
+**Time and materials** works when scope is exploratory or integration-heavy. It is fairer on both sides for unpredictable work, but it requires trust and disciplined reporting. Insist on a written estimate ceiling and regular burn updates.
+
+**Retainer** suits ongoing growth work such as [SEO](/shopify-seo), [CRO](/shopify-cro), and [maintenance](/shopify-maintenance), typically $2,000 to $10,000+ per month. This is the model where relationships actually compound, because the agency accumulates context about your store rather than starting cold each time.
+
+**Phased fixed price** is what we most often recommend: fix the price for a well-defined discovery and design phase, then price the build accurately once the scope is genuinely known. It avoids both the padding of blind fixed-price quotes and the open-endedness of pure hourly work.
+
+## When to rebuild versus optimise
+
+Before commissioning any build, it is worth asking whether you need one. Rebuilding a store that merely needs optimisation is the most wasteful spend in ecommerce.
+
+**Optimise your existing store if:** the design is acceptable but performance is poor, conversion is below benchmark but the architecture is sound, or specific features are missing. [Speed optimisation](/shopify-speed-optimization) and conversion work on an existing store typically costs a fraction of a rebuild and often delivers more measurable revenue per pound spent.
+
+**Rebuild if:** the theme is fundamentally unmaintainable, you are on a legacy architecture that blocks modern features, the brand has genuinely outgrown the design, or you are migrating platforms anyway. Also rebuild when the accumulated technical debt means every small change costs more than it should, which is a slower and more expensive problem than it first appears.
+
+We audit this honestly before quoting, because recommending a rebuild that is not needed is the easiest way for an agency to take money it has not earned.\n\n## The honest bottom line
+
+Shopify's subscription is the cheap and predictable part. The real cost of a Shopify website is **labour plus judgement**, and it scales with how much complexity your business genuinely has, not with how much you would like to spend.
+
+The most expensive store is not the one with the biggest invoice. It is the one that gets rebuilt in eighteen months because the first build could not support the business, or the one that quietly converts at half the rate it should. Budget for the store your business will need in two years, and phase the spending so you are never paying for capability you cannot yet use.
 
 ---
 
-## Table of Contents
-1. [Shopify Subscription Tiers & Fees](#shopify-plans)
-2. [Theme Customization vs. Custom Development Costs](#themes-dev)
-3. [App Budgets and Hidden Maintenance Costs](#app-costs)
-4. [The Shopify Cost Evaluation Matrix](#matrix)
-5. [Conclusion & Next Steps](#conclusion)
-
----
-
-## 1. Shopify Subscription Tiers & Fees <a id="shopify-plans"></a>
-
-Your monthly hosting cost depends directly on your selected subscription plan:
-- **Basic Shopify ($39/mo):** Ideal for new brands and small catalogs.
-- **Shopify Plan ($105/mo):** Great for growing stores that need advanced reporting.
-- **Advanced Shopify ($399/mo):** Designed for scaling brands with international needs.
-- **Shopify Plus (starting at $2,000/mo):** Built specifically for high-volume enterprise stores. (Compare all features in our [Shopify Plus vs Shopify comparison guide](/blog/shopify-plus-vs-shopify-comparison)).
-
----
-
-## 2. Theme Customization vs. Custom Development Costs <a id="themes-dev"></a>
-
-The visual layer of your store is where budget differences are most noticeable:
-*   **Pre-Built Themes ($150 - $350):** Fast and budget-friendly, but limited in layout flexibility and speed. (Read our [Custom Shopify Design vs Premium Themes Guide](/blog/custom-shopify-design-vs-premium-themes)).
-*   **Bespoke Theme Customization ($5,000 - $15,000):** A custom layout built on top of a fast theme framework, tailored specifically to your brand.
-*   **Bespoke Headless Development ($30,000 - $80,000+):** Built using advanced frameworks like Shopify Hydrogen for maximum loading speed and custom features.
-
----
-
-## 3. App Budgets and Hidden Maintenance Costs <a id="app-costs"></a>
-
-Many merchants forget to budget for third-party apps, which can add up quickly over time.
-
-### Smart App Budgets
-Keep your store lightweight by only installing essential applications:
-- **Email Marketing & Flows:** (e.g., Klaviyo) $30 - $500+/mo (based on list size).
-- **Social Proof & Reviews:** (e.g., Judge.me) Free to $15/mo.
-- **Image Optimization & SEO:** (e.g., TinyIMG) $10 - $29/mo.
-
----
-
-## 4. The Shopify Cost Evaluation Matrix <a id="matrix"></a>
-
-Here is a quick look at estimated budgets based on your brand's growth phase:
-
-| Operational Level | Estimated Initial Cost | Estimated Monthly Cost | Target Revenue Scale |
-| :--- | :--- | :--- | :--- |
-| **Startup / Bootstrapped** | $300 – $1,500 | $50 – $150 / mo | Under $100k / year |
-| **Mid-Market Brand** | $5,000 – $15,000 | $200 – $500 / mo | $100k – $1M / year |
-| **Enterprise Scaled** | $25,000 – $75,000+ | $2,000 – $5,000+ / mo | Past $1.5M / year |
-
----
-
-## 5. Conclusion & Next Steps <a id="conclusion"></a>
-
-Building your online store on Shopify is a great investment for your brand's future. By planning your budget carefully around your specific growth phase, you can maximize your ROI and avoid unnecessary software spend.
-
-**Ready to launch a high-converting storefront?** Skip the technical headache and build with the engineering experts. Explore our high-performing [Shopify Store Setup Services](/shopify-store-setup-service), read about our bespoke [Web Design Solutions](/website-development-for-businesses), and [Contact us today](/contact) for a detailed cost proposal!
-`,
+**Want a real number for your specific store?** eCeez provides transparent, itemised proposals covering [Shopify development](/shopify-web-development), [migrations](/shopify-migration), and [ongoing growth](/shopify-seo) &mdash; with scope, exclusions, and ownership stated plainly. We will also tell you when you need less than you think. [Get a free consultation](/contact) or [see our client work](/case-studies).`,
   },
   {
     id: 'shopify-website-development-guide',

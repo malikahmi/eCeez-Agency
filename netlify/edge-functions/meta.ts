@@ -138,6 +138,10 @@ const META: Record<string, { t: string; d: string }> = {
 "t": "Shopify SEO Services | Rank & Grow Organic Revenue | eCeez",
 "d": "Technical and content Shopify SEO: site architecture, Core Web Vitals, structured data, collection and product optimization, and AI-search readiness. Free audit."
 },
+"/tools/shopify-launch-checklist": {
+"t": "Shopify Launch Checklist 2026 (62 Points, Free Tool) | eCeez",
+"d": "Free interactive Shopify launch checklist: 62 pre-launch checks across products, payments, shipping, SEO, speed and analytics. Track progress, no signup needed."
+},
 "/tools/shopify-conversion-calculator": {
 "t": "Free Shopify Conversion Rate ROI Calculator | eCeez",
 "d": "See how much extra monthly and annual revenue a higher conversion rate would generate for your Shopify store. Free, no signup required."

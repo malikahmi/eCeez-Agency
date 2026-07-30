@@ -1107,8 +1107,8 @@ export const blogIndex: BlogIndexEntry[] = [
     "title": "How Much Does a Shopify Website Cost? Direct Pricing Breakdown & ROI Models",
     "category": "Guides",
     "date": "Jun 02, 2026",
-    "readTime": "18 min read",
-    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop",
+    "readTime": "14 min read",
+    "image": "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/A_woman_with_long_curly_dark_hair_sits_on_a_bright_yellow_couch_holding_an_orange_book_or_magazine..webp?v=1785369745",
     "excerpt": "Calculate your exact development budgets. Compare startup pricing scales, app subscription costs, developer retainers, and enterprise platform charges.",
     "featured": false,
     "pillar": ""

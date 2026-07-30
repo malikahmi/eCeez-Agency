@@ -56,6 +56,7 @@ const ShopifyHeadlessPage = lazy(() => import('./pages/ShopifyHeadlessPage').the
 const WooCommerceDevelopmentPage = lazy(() => import('./pages/WooCommerceDevelopmentPage').then(module => ({ default: module.WooCommerceDevelopmentPage })));
 const IndustryPage = lazy(() => import('./pages/IndustryPage').then(module => ({ default: module.IndustryPage })));
 const ConversionCalculatorPage = lazy(() => import('./pages/ConversionCalculatorPage').then(module => ({ default: module.ConversionCalculatorPage })));
+const LaunchChecklistPage = lazy(() => import('./pages/LaunchChecklistPage').then(module => ({ default: module.LaunchChecklistPage })));
 const ClientCaseStudyPage = lazy(() => import('./pages/ClientCaseStudyPage').then(module => ({ default: module.ClientCaseStudyPage })));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(module => ({ default: module.NotFoundPage })));
 
@@ -149,6 +150,7 @@ const ROUTE_TITLES: Record<string, string> = {
   '/shopify-for-furniture-brands': 'Shopify for Furniture & Home Brands | eCeez',
   '/shopify-for-food-and-beverage-brands': 'Shopify for Food & Beverage Brands | eCeez',
   '/tools/shopify-conversion-calculator': 'Free Shopify Conversion Rate ROI Calculator | eCeez',
+  '/tools/shopify-launch-checklist': 'Shopify Launch Checklist 2026 (62 Points, Free Tool) | eCeez',
   '/privacy-policy': 'Privacy Policy | eCeez',
 };
 
@@ -256,6 +258,7 @@ const App: React.FC = () => {
             <Route path="/shopify-for-furniture-brands" element={<IndustryPage />} />
             <Route path="/shopify-for-food-and-beverage-brands" element={<IndustryPage />} />
             <Route path="/tools/shopify-conversion-calculator" element={<ConversionCalculatorPage />} />
+            <Route path="/tools/shopify-launch-checklist" element={<LaunchChecklistPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>

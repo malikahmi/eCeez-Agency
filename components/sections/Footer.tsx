@@ -227,6 +227,7 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-3 col-span-2 md:col-span-1">
               {[
                 { title: 'Conversion Calculator', path: '/tools/shopify-conversion-calculator' },
+                { title: 'Launch Checklist', path: '/tools/shopify-launch-checklist' },
                 { title: 'Taxonomy Mapper', path: '/tools/ecommerce-taxonomy-mapper' },
                 { title: 'Ecommerce UX Guide', path: '/ecommerce-ux' },
                 { title: 'About Us', path: '/about-us' },

@@ -41,7 +41,7 @@ const STATIC_ROUTES = [
   '/case-studies/tropez-official', '/case-studies/oddli', '/case-studies/labozero',
   '/case-studies/express-wholesalers', '/case-studies/wrestlingmart', '/case-studies/aoap-projects',
   '/case-studies/east-and-south-interiors', '/case-studies/nishiyama-ramen',
-  '/shopify-development-company', '/shopify-seo', '/tools/shopify-conversion-calculator',
+  '/shopify-development-company', '/shopify-seo', '/tools/shopify-conversion-calculator', '/tools/shopify-launch-checklist',
   '/case-studies/barber', '/case-studies/restaurant', '/case-studies/aurex',
   '/analytics', '/automation', '/collaboration', '/security',
   '/shopify-store-setup-service', '/website-development-for-businesses',

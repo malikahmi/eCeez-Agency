@@ -11,42 +11,42 @@ const clientProjects: ClientProject[] = [
   {
     id: 1,
     name: "Aurex",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/vruwrfR7-2.webp?v=1783697202"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Aurex_Website_eceez.webp?v=1785012052"
   },
   {
     id: 2,
     name: "smartersolutions.xyz",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/5GvlM5Yt80.webp?v=1783697202"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/smartersolutions.xyz.webp?v=1785420306"
   },
   {
     id: 3,
     name: "Oud Elixir",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/skin_care_1.webp?v=1783697202"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Oud_Elixir.webp?v=1785419992"
   },
   {
     id: 4,
     name: "Cleanfit",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Clothing_1.webp?v=1783697201"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Cleanfit.webp?v=1785420106"
   },
   {
     id: 5,
     name: "Enlighten",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/0f42f6436c607c33e360676e30b7cb86.webp?v=1783697201"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Enlighten.webp?v=1785420228"
   },
   {
     id: 6,
     name: "Givenchy",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/original-e70810a59c84755c57910e4a6d1377b0.webp?v=1783697202"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Givenchy.webp?v=1785420255"
   },
   {
     id: 7,
     name: "Blue Nile",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/884958e1628001fb94c259a13977d0a0.webp?v=1783697744"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/Blue_Nile.webp?v=1785420284"
   },
   {
     id: 8,
     name: "Eluxee Jewelry",
-    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/original-3e3ecedf67c37a85f10393ae27c3c432.webp?v=1783697201"
+    image: "https://cdn.shopify.com/s/files/1/0802/5722/0853/files/ELUXEE_JEWELRY_necklace.webp?v=1785012149"
   }
 ];
 

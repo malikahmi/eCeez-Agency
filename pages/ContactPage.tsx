@@ -102,7 +102,6 @@ export const ContactPage: React.FC = () => {
                 src="https://i.ibb.co/pB3NQpRm/Untitled-design.png" 
                 alt="Lead Solutions Designer" 
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
             </div>
             {/* Green glowing active status dot */}

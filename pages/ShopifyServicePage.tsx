@@ -84,7 +84,6 @@ export const ShopifyServicePage: React.FC = () => {
               src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000" 
               alt="Shopify Store Setup Service Dashboard" 
               className="relative rounded-[3rem] border border-zinc-200 shadow-2xl"
-              referrerPolicy="no-referrer"
             />
           </div>
         </div>

@@ -101,8 +101,7 @@ export const CaseStudyTemplate: React.FC<{ c: ClientCaseStudy }> = ({ c }) => {
       <motion.figure {...fade} className="mb-14 relative max-w-5xl mx-auto">
         <div className="absolute -inset-3 bg-indigo-600/10 rounded-[3rem] blur-2xl" aria-hidden="true" />
         <img src={c.heroImage.src} alt={c.heroImage.alt} width={1200} height={675} loading="eager"
-          className="relative rounded-[2rem] border border-zinc-200 shadow-2xl w-full object-cover aspect-video bg-zinc-100"
-          referrerPolicy="no-referrer" />
+          className="relative rounded-[2rem] border border-zinc-200 shadow-2xl w-full object-cover aspect-video bg-zinc-100" />
       </motion.figure>
 
       <motion.section {...fade} className="mb-16 max-w-4xl mx-auto" aria-label="Project at a glance">
@@ -142,8 +141,7 @@ export const CaseStudyTemplate: React.FC<{ c: ClientCaseStudy }> = ({ c }) => {
             {c.gallery.map((g) => (
               <figure key={g.src} className="group">
                 <img src={g.src} alt={g.alt} loading="lazy" decoding="async" width={800} height={600}
-                  className="rounded-2xl border border-zinc-200 shadow-md w-full object-cover aspect-[4/3] bg-zinc-100 group-hover:shadow-xl transition-shadow"
-                  referrerPolicy="no-referrer" />
+                  className="rounded-2xl border border-zinc-200 shadow-md w-full object-cover aspect-[4/3] bg-zinc-100 group-hover:shadow-xl transition-shadow" />
                 <figcaption className="text-xs text-zinc-500 mt-2 text-center">{g.caption}</figcaption>
               </figure>
             ))}

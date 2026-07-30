@@ -151,7 +151,7 @@ export function HeroScrollDemo() {
                   "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=120&auto=format&fit=crop&facepad=2&crop=faces"
                 ].map((src, i) => (
                   <div key={i} className="w-6 h-6 rounded-full border-2 border-white bg-indigo-50 overflow-hidden shadow-sm">
-                    <img src={src} alt="Client" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    <img src={src} alt="Client" className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>

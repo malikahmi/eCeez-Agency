@@ -105,7 +105,6 @@ export const BusinessWebsiteDevelopment: React.FC = () => {
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" 
               alt="Professional business website development agency at work" 
               className="relative rounded-[2.5rem] shadow-2xl border border-zinc-200"
-              referrerPolicy="no-referrer"
             />
           </div>
         </div>

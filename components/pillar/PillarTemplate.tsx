@@ -201,7 +201,6 @@ export const PillarTemplate: React.FC<{ content: PillarContent }> = ({ content }
           loading="lazy"
           decoding="async"
           className="relative rounded-[3rem] border border-zinc-200 shadow-2xl w-full object-cover aspect-video"
-          referrerPolicy="no-referrer"
         />
       </motion.figure>
 
@@ -236,7 +235,6 @@ export const PillarTemplate: React.FC<{ content: PillarContent }> = ({ content }
                 loading="lazy"
                 decoding="async"
                 className="mt-8 rounded-3xl border border-zinc-200 shadow-lg w-full object-cover aspect-video"
-                referrerPolicy="no-referrer"
               />
             )}
             {i === 0 && (

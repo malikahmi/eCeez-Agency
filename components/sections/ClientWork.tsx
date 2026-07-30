@@ -83,7 +83,12 @@ const ProjectItem = ({ project, isActive, onInView }: {
             loading="lazy"
             decoding="async"
             className="absolute inset-0 w-full h-full object-cover"
-            referrerPolicy="no-referrer"
+            onError={(e) => {
+          const el = e.currentTarget as HTMLImageElement;
+          if (el.dataset.fb) return;
+          el.dataset.fb = '1';
+          el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
+          }}
           />
         </div>
       </div>
@@ -154,7 +159,12 @@ export const ClientWork: React.FC = () => {
                       animate={{ scale: 1 }}
                       transition={{ duration: 1 }}
                       className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
+            onError={(e) => {
+                    const el = e.currentTarget as HTMLImageElement;
+                    if (el.dataset.fb) return;
+                    el.dataset.fb = '1';
+                    el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
+                    }}
                     />
                   </motion.div>
                 ))}

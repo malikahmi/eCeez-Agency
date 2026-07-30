@@ -271,7 +271,6 @@ export const BlogPage: React.FC = () => {
                         src={post.image} 
                         alt={post.title} 
                         className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500" 
-                        referrerPolicy="no-referrer"
                         loading="lazy"
                       />
                       <div className="absolute top-4 left-4">

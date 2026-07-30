@@ -74,7 +74,6 @@ export const AboutUsPage: React.FC = () => {
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" 
             alt="The eCeez Ecommerce Growth Agency Team" 
             className="relative rounded-[2.5rem] border border-zinc-200 shadow-2xl"
-            referrerPolicy="no-referrer"
           />
         </div>
       </div>
@@ -140,7 +139,6 @@ export const AboutUsPage: React.FC = () => {
                   src={member.image} 
                   alt={member.name} 
                   className="w-[82%] h-auto max-h-full object-contain mix-blend-multiply select-none group-hover:scale-[1.03] transition-transform duration-500 origin-bottom"
-                  referrerPolicy="no-referrer"
                 />
               </div>
 
@@ -233,7 +231,6 @@ export const AboutUsPage: React.FC = () => {
                     src={spec.image} 
                     alt={spec.name} 
                     className="w-[85%] h-auto max-h-full object-contain mix-blend-multiply select-none group-hover:scale-[1.03] transition-transform duration-500 origin-bottom"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
 

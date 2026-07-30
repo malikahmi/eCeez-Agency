@@ -137,7 +137,6 @@ const ProjectCard = ({ project, index, total }: { project: Project; index: numbe
           src={project.image} 
           alt={project.title}
           className="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-all duration-700"
-          referrerPolicy="no-referrer"
           loading="lazy"
         />
       </motion.div>

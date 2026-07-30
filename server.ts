@@ -472,7 +472,7 @@ async function startServer() {
                     <span><strong>Read Time:</strong> ${post.readTime}</span>
                     <span><strong>Category:</strong> ${post.category}</span>
                   </div>
-                  ${post.image ? `<div style="margin-bottom: 2.5rem;"><img src="${post.image}" alt="${post.title}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" referrerPolicy="no-referrer" /></div>` : ''}
+                  ${post.image ? `<div style="margin-bottom: 2.5rem;"><img src="${post.image}" alt="${post.title}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" /></div>` : ''}
                   <div style="font-size: 1.1rem; line-height: 1.8; color: #292524;">
                     ${formattedContent}
                   </div>

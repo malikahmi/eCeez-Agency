@@ -60,7 +60,6 @@ export const CTA: React.FC = () => {
                     src="https://i.ibb.co/pB3NQpRm/Untitled-design.png" 
                     alt="Ahmer Ameer" 
                     className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 {/* White circle with arrow overlapping */}

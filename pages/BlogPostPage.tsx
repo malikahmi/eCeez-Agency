@@ -440,7 +440,6 @@ export const BlogPostPage: React.FC = () => {
                       src={authorMetadata[post.author]?.image || "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop"} 
                       alt={post.author} 
                       className="w-full h-full object-cover" 
-                      referrerPolicy="no-referrer"
                     />
                   </div>
                   <div>
@@ -573,7 +572,6 @@ export const BlogPostPage: React.FC = () => {
                       src={authorMetadata[post.author]?.image} 
                       alt={post.author} 
                       className="w-full h-full object-cover" 
-                      referrerPolicy="no-referrer"
                     />
                   </div>
                   <div className="space-y-3 text-center md:text-left flex-1">

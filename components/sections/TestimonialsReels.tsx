@@ -426,7 +426,6 @@ export const TestimonialsReels: React.FC = () => {
                       src={reel.thumbnail} 
                       alt={reel.author}
                       className="w-full h-full object-cover transition-transform duration-500 scale-105 group-hover:scale-110 opacity-70 group-hover:opacity-60"
-                      referrerPolicy="no-referrer"
                     />
 
                     {/* Dark gradient mapping inside preview */}
@@ -436,7 +435,7 @@ export const TestimonialsReels: React.FC = () => {
                     <div className="absolute top-6 left-6 flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-zinc-800/80 border border-white/20 flex items-center justify-center overflow-hidden text-lg shadow-lg">
                         {reel.avatar.startsWith('http') ? (
-                          <img src={reel.avatar} alt={reel.author} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                          <img src={reel.avatar} alt={reel.author} className="w-full h-full object-cover" />
                         ) : (
                           reel.avatar
                         )}
@@ -676,7 +675,7 @@ export const TestimonialsReels: React.FC = () => {
                     <div className="flex items-center gap-2 mb-2 pointer-events-auto">
                       <div className="w-8 h-8 rounded-full bg-zinc-800 border-2 border-indigo-500/50 flex items-center justify-center overflow-hidden text-sm shadow">
                         {activeReel.avatar.startsWith('http') ? (
-                          <img src={activeReel.avatar} alt={activeReel.author} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                          <img src={activeReel.avatar} alt={activeReel.author} className="w-full h-full object-cover" />
                         ) : (
                           activeReel.avatar
                         )}

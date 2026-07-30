@@ -141,7 +141,7 @@ export const EcommerceUXPage: React.FC = () => {
         </motion.header>
 
         <motion.figure {...fade} className="mb-16 -mx-4 sm:mx-0">
-          <img src={IMG.hero} alt="Ecommerce UX design in action — a shopper browsing a fast, well-structured online store on desktop and mobile" width={1400} height={780} className="w-full rounded-none sm:rounded-3xl border border-zinc-200 shadow-xl aspect-video object-cover" loading="eager" fetchPriority="high" referrerPolicy="no-referrer" />
+          <img src={IMG.hero} alt="Ecommerce UX design in action — a shopper browsing a fast, well-structured online store on desktop and mobile" width={1400} height={780} className="w-full rounded-none sm:rounded-3xl border border-zinc-200 shadow-xl aspect-video object-cover" loading="eager" fetchPriority="high" />
         </motion.figure>
 
         {/* KEY TAKEAWAYS */}
@@ -196,7 +196,7 @@ export const EcommerceUXPage: React.FC = () => {
         </div>
 
         <motion.figure {...fade} className="my-10">
-          <img src={IMG.journey} alt="The ecommerce customer journey from landing page through homepage, collection, product, cart, and checkout to repeat purchase" width={1200} height={675} className="w-full rounded-3xl border border-zinc-200 shadow-lg aspect-video object-cover" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
+          <img src={IMG.journey} alt="The ecommerce customer journey from landing page through homepage, collection, product, cart, and checkout to repeat purchase" width={1200} height={675} className="w-full rounded-3xl border border-zinc-200 shadow-lg aspect-video object-cover" loading="lazy" decoding="async" />
           <figcaption className="text-center text-sm text-zinc-500 mt-3">The eight-stage ecommerce journey — UX must hold at every step.</figcaption>
         </motion.figure>
 
@@ -208,7 +208,7 @@ export const EcommerceUXPage: React.FC = () => {
         {bodySections.map((sec) => (
           <React.Fragment key={sec.id}>
             <motion.figure {...fade} className="my-10">
-              <img src={sec.image} alt={sec.alt} width={1200} height={675} className="w-full rounded-3xl border border-zinc-200 shadow-lg aspect-video object-cover" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
+              <img src={sec.image} alt={sec.alt} width={1200} height={675} className="w-full rounded-3xl border border-zinc-200 shadow-lg aspect-video object-cover" loading="lazy" decoding="async" />
             </motion.figure>
             <div className="prose-eceez space-y-5 text-zinc-700 leading-relaxed [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-black [&_h2]:tracking-tight [&_h2]:mb-5 [&_h2]:scroll-mt-28 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-black [&_h3]:mt-6 [&_h3]:mb-2 [&_strong]:text-black [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2">
               <h2 id={sec.id}>{sec.heading}</h2>

@@ -75,7 +75,6 @@ export const Navbar: React.FC = () => {
                     src="https://i.ibb.co/pB3NQpRm/Untitled-design.png" 
                     alt="Ahmer Ameer" 
                     className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 {/* White circle with arrow overlapping */}
@@ -148,7 +147,6 @@ export const Navbar: React.FC = () => {
                       src="https://i.ibb.co/pB3NQpRm/Untitled-design.png" 
                       alt="Ahmer Ameer" 
                       className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
                     />
                   </div>
                   <div className="w-[22px] h-[22px] rounded-full bg-white flex items-center justify-center -ml-2 relative z-20 shadow-sm border border-zinc-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">

@@ -87,8 +87,7 @@ export const IndustryTemplate: React.FC<{ c: IndustryContent }> = ({ c }) => {
       <motion.figure {...fade} className="mb-16 relative max-w-5xl mx-auto">
         <div className="absolute -inset-3 bg-indigo-600/10 rounded-[3rem] blur-2xl" aria-hidden="true" />
         <img src={c.heroImage.src} alt={c.heroImage.alt} width={1200} height={675} loading="eager"
-          className="relative rounded-[2rem] border border-zinc-200 shadow-2xl w-full object-cover aspect-video bg-zinc-100"
-          referrerPolicy="no-referrer" />
+          className="relative rounded-[2rem] border border-zinc-200 shadow-2xl w-full object-cover aspect-video bg-zinc-100" />
       </motion.figure>
 
       {/* INTRO */}

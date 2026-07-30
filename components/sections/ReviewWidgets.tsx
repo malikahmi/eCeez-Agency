@@ -175,14 +175,14 @@ export const ReviewWidgets: React.FC = () => {
         ) : clutchFailed ? (
           <ProfileLink href={CLUTCH_PROFILE} label="Clutch" />
         ) : (
-          <div className="inline-flex w-fit items-center overflow-hidden rounded-lg bg-white px-2 h-[52px] [&_iframe]:!h-[46px] [&_iframe]:!min-h-0">
+          <div className="inline-flex w-fit items-center rounded-lg bg-white px-2.5 py-1.5">
             <div
               ref={clutchRef}
               suppressHydrationWarning
               className="clutch-widget min-w-[190px]"
               data-url="https://widget.clutch.co"
-              data-widget-type="16"
-              data-height="auto"
+              data-widget-type="2"
+              data-height="45"
               data-nofollow="false"
               data-expandifr="true"
               data-clutchcompany-id="2685202"

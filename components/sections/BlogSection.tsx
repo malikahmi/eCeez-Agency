@@ -60,7 +60,6 @@ export const BlogSection: React.FC = () => {
                   src={post.image} 
                   alt={post.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  referrerPolicy="no-referrer"
                 />
               </Link>
               <div className="p-8 flex flex-col flex-1">

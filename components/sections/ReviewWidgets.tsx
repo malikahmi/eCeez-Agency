@@ -34,7 +34,7 @@ import React, { useEffect, useRef, useState } from 'react';
  * faster. This is how the GoodFirms badge already works.
  */
 const STATIC_BADGES = {
-  clutch: '',      // e.g. '/badges/clutch.png'
+  clutch: '/badges/clutch.avif',
   designrush: '',  // e.g. '/badges/designrush.png'
 };
 

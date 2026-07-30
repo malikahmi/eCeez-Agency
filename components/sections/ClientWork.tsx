@@ -84,11 +84,19 @@ const ProjectItem = ({ project, isActive, onInView }: {
             decoding="async"
             className="absolute inset-0 w-full h-full object-cover"
             onError={(e) => {
-          const el = e.currentTarget as HTMLImageElement;
-          if (el.dataset.fb) return;
-          el.dataset.fb = '1';
-          el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
-          }}
+              // Never substitute a stock photo — a plausible-but-wrong image is
+              // worse than an obvious gap. Show a neutral brand placeholder so a
+              // broken CDN link is visible rather than disguised as real work.
+              const el = e.currentTarget as HTMLImageElement;
+              if (el.dataset.fb) return;
+              el.dataset.fb = '1';
+              el.style.display = 'none';
+              const holder = el.parentElement;
+              if (holder) {
+                holder.style.background =
+                  'linear-gradient(135deg, #1A3945 0%, #03AED2 100%)';
+              }
+            }}
           />
         </div>
       </div>
@@ -160,11 +168,19 @@ export const ClientWork: React.FC = () => {
                       transition={{ duration: 1 }}
                       className="w-full h-full object-cover"
             onError={(e) => {
-                    const el = e.currentTarget as HTMLImageElement;
-                    if (el.dataset.fb) return;
-                    el.dataset.fb = '1';
-                    el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
-                    }}
+              // Never substitute a stock photo — a plausible-but-wrong image is
+              // worse than an obvious gap. Show a neutral brand placeholder so a
+              // broken CDN link is visible rather than disguised as real work.
+              const el = e.currentTarget as HTMLImageElement;
+              if (el.dataset.fb) return;
+              el.dataset.fb = '1';
+              el.style.display = 'none';
+              const holder = el.parentElement;
+              if (holder) {
+                holder.style.background =
+                  'linear-gradient(135deg, #1A3945 0%, #03AED2 100%)';
+              }
+            }}
                     />
                   </motion.div>
                 ))}

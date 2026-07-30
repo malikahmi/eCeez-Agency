@@ -227,7 +227,9 @@ export const CaseStudiesPage: React.FC = () => {
                   const img = e.currentTarget;
                   if (img.dataset.fallback) return;
                   img.dataset.fallback = '1';
-                  img.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
+                  img.style.display = 'none';
+                  const holder = img.parentElement;
+                  if (holder) holder.style.background = 'linear-gradient(135deg, #1A3945 0%, #03AED2 100%)';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />

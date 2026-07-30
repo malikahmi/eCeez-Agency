@@ -326,7 +326,7 @@ export const BlogPostPage: React.FC = () => {
             const el = e.currentTarget as HTMLImageElement;
             if (el.dataset.fb) return;
             el.dataset.fb = '1';
-            el.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200';
+            el.style.display = 'none';
           }}
           {...props}
         />

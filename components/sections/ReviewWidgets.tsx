@@ -175,7 +175,7 @@ export const ReviewWidgets: React.FC = () => {
         ) : clutchFailed ? (
           <ProfileLink href={CLUTCH_PROFILE} label="Clutch" />
         ) : (
-          <div className="inline-flex w-fit items-center rounded-lg bg-white px-2 py-1">
+          <div className="inline-flex w-fit items-center overflow-hidden rounded-lg bg-white px-2 h-[52px] [&_iframe]:!h-[46px] [&_iframe]:!min-h-0">
             <div
               ref={clutchRef}
               suppressHydrationWarning

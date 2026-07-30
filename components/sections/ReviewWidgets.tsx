@@ -3,26 +3,61 @@ import React, { useEffect, useRef, useState } from 'react';
 /**
  * ReviewWidgets — Clutch, DesignRush and GoodFirms social proof in the footer.
  *
- * HOW THE SCRIPTS LOAD (important, don't "optimise" this again):
- * The Clutch and DesignRush scripts live in index.html with `defer`. They must
- * be present during the initial page load because they scan the DOM and
- * initialise on DOMContentLoaded. Injecting them later from a useEffect (e.g.
- * on idle or intersection) means DOMContentLoaded has already fired and the
- * widgets silently never render — this is a well-known issue with these widgets
- * in SPAs. `defer` keeps them non-blocking while still catching the event.
+ * ============================================================================
+ * WHY THIS IS MORE COMPLICATED THAN IT LOOKS (read before changing anything)
+ * ============================================================================
+ * Two separate problems break these widgets in this codebase:
  *
- * The containers below are the targets those scripts look for.
+ * 1. DOMContentLoaded timing. Both scripts scan the DOM and initialise on
+ *    DOMContentLoaded. Injecting them later (on idle, on scroll, from a
+ *    useEffect) means that event has already fired and they silently render
+ *    nothing. So they load from index.html with `defer` — which runs after
+ *    HTML parsing but immediately BEFORE DOMContentLoaded, keeping them
+ *    non-blocking while still catching the event.
  *
- * FALLBACK: if a container is still empty after a few seconds (script blocked,
- * offline, ad-blocker, or client-side route change), we show a plain profile
- * link instead, so the footer never displays an empty gap.
+ * 2. React hydration. This app calls hydrateRoot() against prerendered HTML.
+ *    If a widget script injects an iframe into the container before React
+ *    hydrates, React can remove that iframe because it is DOM React does not
+ *    know about. That is why the widgets can appear briefly and vanish.
+ *
+ * The recovery below therefore runs AFTER hydration, in three passes:
+ *    pass 1 — call each vendor's init function directly
+ *    pass 2 — re-inject the script for any container still empty
+ *    pass 3 — fall back to a plain profile link so the footer is never blank
+ *
+ * ============================================================================
+ * WANT GUARANTEED-EXACT OFFICIAL BADGES INSTEAD? (recommended, zero JS)
+ * ============================================================================
+ * Save the official badge images into /public/badges/ and set the paths below.
+ * When a path is set, that static badge renders instead of the live widget:
+ * identical official artwork, no third-party script, no hydration risk, and
+ * faster. This is how the GoodFirms badge already works.
  */
+const STATIC_BADGES = {
+  clutch: '',      // e.g. '/badges/clutch.png'
+  designrush: '',  // e.g. '/badges/designrush.png'
+};
+
+const CLUTCH_SRC = 'https://widget.clutch.co/static/js/widget.js';
+const RUSH_SRC = 'https://www.designrush.com/topbest/js/widgets/agency-reviews.js';
 
 const CLUTCH_PROFILE = 'https://clutch.co/profile/eceez';
 const DESIGNRUSH_PROFILE = 'https://www.designrush.com/agency/profile/eceez-agency#reviews';
 const GOODFIRMS_PROFILE = 'https://www.goodfirms.co/company/eceez';
 
-const FallbackLink: React.FC<{ href: string; label: string }> = ({ href, label }) => (
+const BadgeImage: React.FC<{ src: string; href: string; alt: string }> = ({ src, href, alt }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={alt}
+    className="inline-block rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
+  >
+    <img src={src} alt={alt} loading="lazy" decoding="async" className="h-11 w-auto object-contain" />
+  </a>
+);
+
+const ProfileLink: React.FC<{ href: string; label: string }> = ({ href, label }) => (
   <a
     href={href}
     target="_blank"
@@ -30,7 +65,6 @@ const FallbackLink: React.FC<{ href: string; label: string }> = ({ href, label }
     className="inline-flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/60 px-3 py-2 hover:border-zinc-700 transition-colors"
   >
     <span className="text-[11px] font-extrabold tracking-tight text-white">{label}</span>
-    <span className="text-[10px] font-semibold text-amber-400" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
     <span className="text-[10px] text-zinc-400">Reviews</span>
   </a>
 );
@@ -38,17 +72,52 @@ const FallbackLink: React.FC<{ href: string; label: string }> = ({ href, label }
 export const ReviewWidgets: React.FC = () => {
   const clutchRef = useRef<HTMLDivElement | null>(null);
   const rushRef = useRef<HTMLDivElement | null>(null);
-  const [clutchEmpty, setClutchEmpty] = useState(false);
-  const [rushEmpty, setRushEmpty] = useState(false);
+  const [clutchFailed, setClutchFailed] = useState(false);
+  const [rushFailed, setRushFailed] = useState(false);
 
   useEffect(() => {
-    // Give the deferred third-party scripts time to hydrate their containers,
-    // then fall back to a plain link if nothing rendered.
-    const t = window.setTimeout(() => {
-      if (clutchRef.current && clutchRef.current.childElementCount === 0) setClutchEmpty(true);
-      if (rushRef.current && rushRef.current.childElementCount === 0) setRushEmpty(true);
-    }, 4000);
-    return () => window.clearTimeout(t);
+    const w = window as unknown as Record<string, any>;
+    const isEmpty = (el: HTMLElement | null) => !!el && el.childElementCount === 0;
+
+    // Pass 1: ask each vendor to (re)initialise. Optional-chained and wrapped so
+    // a missing/renamed global is harmless rather than throwing.
+    const tryInit = () => {
+      try { w.CLUTCHCO?.Init?.(); } catch { /* vendor API absent */ }
+      try { w.DesignRush?.init?.(); } catch { /* vendor API absent */ }
+      try { w.designRushWidget?.init?.(); } catch { /* vendor API absent */ }
+      try { document.dispatchEvent(new Event('DOMContentLoaded')); } catch { /* noop */ }
+    };
+
+    // Pass 2: a freshly injected script executes on load, which recovers any
+    // widget whose init only runs at execution time.
+    const reinject = (src: string, key: string) => {
+      if (document.querySelector(`script[data-reinjected="${key}"]`)) return;
+      const s = document.createElement('script');
+      s.src = `${src}${src.includes('?') ? '&' : '?'}r=${Date.now()}`;
+      s.async = true;
+      s.setAttribute('data-reinjected', key);
+      document.body.appendChild(s);
+    };
+
+    const t1 = window.setTimeout(tryInit, 400);
+
+    const t2 = window.setTimeout(() => {
+      if (!STATIC_BADGES.clutch && isEmpty(clutchRef.current)) reinject(CLUTCH_SRC, 'clutch');
+      if (!STATIC_BADGES.designrush && isEmpty(rushRef.current)) reinject(RUSH_SRC, 'designrush');
+      tryInit();
+    }, 1600);
+
+    // Pass 3: give up gracefully rather than leaving an empty gap.
+    const t3 = window.setTimeout(() => {
+      if (!STATIC_BADGES.clutch && isEmpty(clutchRef.current)) setClutchFailed(true);
+      if (!STATIC_BADGES.designrush && isEmpty(rushRef.current)) setRushFailed(true);
+    }, 5200);
+
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+      window.clearTimeout(t3);
+    };
   }, []);
 
   return (
@@ -58,31 +127,22 @@ export const ReviewWidgets: React.FC = () => {
       </p>
 
       <div className="flex flex-wrap items-center gap-4">
-        {/* GoodFirms — self-hosted badge image (no external dependency) */}
-        <a
+        {/* GoodFirms — official badge, self-hosted */}
+        <BadgeImage
+          src="/badges/goodfirms-rating.png"
           href={GOODFIRMS_PROFILE}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="See eCeez reviews on GoodFirms"
-          className="inline-block rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
-        >
-          <img
-            src="/badges/goodfirms-rating.png"
-            alt="GoodFirms rating 4.89 out of 5 from 104 reviews for eCeez"
-            width={475}
-            height={112}
-            loading="lazy"
-            decoding="async"
-            className="h-11 w-auto object-contain"
-          />
-        </a>
+          alt="GoodFirms rating 4.89 out of 5 from 104 reviews for eCeez"
+        />
 
-        {/* Clutch widget container (populated by the deferred script) */}
-        {clutchEmpty ? (
-          <FallbackLink href={CLUTCH_PROFILE} label="Clutch" />
+        {/* Clutch */}
+        {STATIC_BADGES.clutch ? (
+          <BadgeImage src={STATIC_BADGES.clutch} href={CLUTCH_PROFILE} alt="eCeez reviews on Clutch" />
+        ) : clutchFailed ? (
+          <ProfileLink href={CLUTCH_PROFILE} label="Clutch" />
         ) : (
           <div
             ref={clutchRef}
+            suppressHydrationWarning
             className="clutch-widget"
             data-url="https://widget.clutch.co"
             data-widget-type="2"
@@ -93,12 +153,15 @@ export const ReviewWidgets: React.FC = () => {
           />
         )}
 
-        {/* DesignRush widget container (populated by the deferred script) */}
-        {rushEmpty ? (
-          <FallbackLink href={DESIGNRUSH_PROFILE} label="DesignRush" />
+        {/* DesignRush */}
+        {STATIC_BADGES.designrush ? (
+          <BadgeImage src={STATIC_BADGES.designrush} href={DESIGNRUSH_PROFILE} alt="eCeez Agency reviews on DesignRush" />
+        ) : rushFailed ? (
+          <ProfileLink href={DESIGNRUSH_PROFILE} label="DesignRush" />
         ) : (
           <div
             ref={rushRef}
+            suppressHydrationWarning
             data-designrush-widget
             data-agency-id="121743"
             data-style="light"

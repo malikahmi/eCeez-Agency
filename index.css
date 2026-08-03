@@ -116,15 +116,20 @@
 
 /* --- Mirrored reflection --- */
 .craft-reflection {
-  margin-top: 0.12em;
+  /* Clamp the mirrored copy to only the portion that is actually visible.
+     Without max-height it reserves the full height of the quote again (three
+     lines) even though the mask fades it out after ~1 line, which added a large
+     block of empty space beneath the section. */
+  max-height: 0.85em;
+  overflow: hidden;
+  margin-top: 0.04em;
   transform: scaleY(-1);
   transform-origin: top;
-  opacity: 0.26;
+  opacity: 0.22;
   pointer-events: none;
   user-select: none;
-  /* fade the reflection out as it falls away from the text */
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.12) 32%, transparent 62%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.12) 32%, transparent 62%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 45%, transparent 85%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 45%, transparent 85%);
   filter: blur(0.6px);
 }
 /* the reflected copy should not re-run the entrance animation */

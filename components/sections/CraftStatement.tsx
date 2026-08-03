@@ -61,7 +61,7 @@ export const CraftStatement: React.FC = () => {
     'text-[2.1rem] sm:text-5xl md:text-[4rem] font-medium leading-[1.14] tracking-[-0.025em] craft-grad';
 
   return (
-    <section className="bg-white pt-20 sm:pt-28 pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
+    <section className="bg-white pt-12 sm:pt-16 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
       <div
         ref={ref}
         onMouseMove={onMove}

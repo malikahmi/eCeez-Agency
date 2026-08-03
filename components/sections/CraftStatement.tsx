@@ -1,61 +1,44 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 /**
- * CraftStatement — oversized statement with a continuously flowing gradient,
- * per-line hover response, and a soft ambient aurora.
+ * CraftStatement — the headline quote, set in a high-contrast display style.
  *
- * SAFETY: every animation here is CSS-only with `fill-mode: both` or infinite.
- * Nothing depends on a scroll observer, because a scroll-triggered version
- * left this text invisible in the prerendered build.
+ * TYPOGRAPHY: mixes a condensed sans with an elegant serif for the accent
+ * words, echoing the reference: normal words in tight uppercase sans, accent
+ * words in a lighter serif with wide tracking. Kept to TWO lines so the
+ * section stays compact.
+ *
+ * ANIMATION: CSS-only (keyframes with fill-mode: both). Scroll-triggered
+ * reveals must not be used here — a previous version was captured mid-reveal
+ * by the prerenderer and the text stayed invisible in production.
  */
 
-const LINES = ['A love for design & code', 'allows us to produce web', 'experiences with lasting'];
+const Serif: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <span className="font-serif font-light tracking-[0.02em]">{children}</span>
+);
 
-export const CraftStatement: React.FC = () => {
-  const ref = useRef<HTMLElement | null>(null);
-
-  const onMove = (e: React.MouseEvent<HTMLElement>) => {
-    const r = e.currentTarget.getBoundingClientRect();
-    e.currentTarget.style.setProperty('--sx', `${e.clientX - r.left}px`);
-    e.currentTarget.style.setProperty('--sy', `${e.clientY - r.top}px`);
-  };
-
-  return (
-    <section
-      ref={ref}
-      onMouseMove={onMove}
-      className="craft-section relative bg-white py-24 sm:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden"
-      aria-label="Our approach"
-    >
-      {/* ambient aurora — drifts slowly, purely decorative */}
-      <div className="craft-aurora craft-aurora-a" aria-hidden="true" />
-      <div className="craft-aurora craft-aurora-b" aria-hidden="true" />
-
-      {/* cursor spotlight */}
-      <div className="craft-spot" aria-hidden="true" />
-
-      <div className="relative max-w-6xl mx-auto">
-        <h2 className="text-[2.3rem] sm:text-6xl md:text-7xl font-medium tracking-[-0.025em] leading-[1.12]">
-          {LINES.map((line, i) => (
-            <span
-              key={line}
-              className="craft-line group block cursor-default"
-              style={{ animationDelay: `${i * 90}ms` }}
-            >
-              <span className="craft-grad inline-block transition-transform duration-500 ease-out group-hover:translate-x-2">
-                {line}
-              </span>
-            </span>
-          ))}
-
-          {/* accent line — serif italic, same flowing gradient */}
-          <span className="craft-line group block cursor-default" style={{ animationDelay: `${LINES.length * 90}ms` }}>
-            <span className="craft-grad craft-accent inline-block font-serif italic font-normal transition-transform duration-500 ease-out group-hover:translate-x-2">
-              impact.
-            </span>
+export const CraftStatement: React.FC = () => (
+  <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="craft-quote text-[2rem] sm:text-5xl md:text-[4.2rem] leading-[1.06] tracking-[-0.02em] text-[#0d1117] uppercase font-semibold">
+        <span className="craft-line block" style={{ animationDelay: '0ms' }}>
+          Taking brands further through{' '}
+          <Serif>carefully</Serif>{' '}
+          <span className="craft-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
           </span>
-        </h2>
-      </div>
-    </section>
-  );
-};
+        </span>
+        <span className="craft-line block" style={{ animationDelay: '90ms' }}>
+          <Serif>crafted</Serif> emotional experiences
+          <span className="craft-icon craft-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </span>
+        </span>
+      </h2>
+    </div>
+  </section>
+);

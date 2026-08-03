@@ -116,13 +116,13 @@ export const Services: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Dark premium canvas */}
-      <div className="relative rounded-[3rem] bg-zinc-950 border border-zinc-800/60 px-6 sm:px-10 lg:px-14 py-16 sm:py-20 overflow-hidden">
+      <div className="relative rounded-[3rem] bg-[#CDCECF] border border-black/10 px-6 sm:px-10 lg:px-14 py-16 sm:py-20 overflow-hidden">
         {/* faint grid */}
         <div
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)',
+              'linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px)',
             backgroundSize: '56px 56px',
             maskImage: 'radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)',
             WebkitMaskImage: 'radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)',
@@ -130,24 +130,16 @@ export const Services: React.FC = () => {
           aria-hidden="true"
         />
         {/* ambient glows */}
-        <div className="absolute -top-32 left-1/4 w-96 h-96 bg-indigo-600/10 blur-[140px] rounded-full pointer-events-none" aria-hidden="true" />
-        <div className="absolute -bottom-32 right-1/4 w-96 h-96 bg-[#03AED2]/10 blur-[140px] rounded-full pointer-events-none" aria-hidden="true" />
+        <div className="absolute -top-32 left-1/4 w-96 h-96 bg-indigo-500/15 blur-[140px] rounded-full pointer-events-none" aria-hidden="true" />
+        <div className="absolute -bottom-32 right-1/4 w-96 h-96 bg-[#03AED2]/20 blur-[140px] rounded-full pointer-events-none" aria-hidden="true" />
 
         {/* Header */}
         <div className="relative text-center mb-14 sm:mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-xs font-semibold mb-6 uppercase tracking-[0.2em]"
-          >
-            Specialized Expertise
-          </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-black tracking-tight mb-5 text-white"
+            className="text-4xl md:text-6xl font-black tracking-tight mb-5 text-zinc-900"
           >
             Core Capabilities for{' '}
             <span className="font-serif italic font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#03AED2] to-indigo-400">
@@ -159,7 +151,7 @@ export const Services: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-zinc-400 text-lg max-w-2xl mx-auto"
+            className="text-zinc-700 text-lg max-w-2xl mx-auto"
           >
             We don&rsquo;t just build websites; we engineer digital profit engines tailored for the modern e-commerce landscape.
           </motion.p>
@@ -180,7 +172,7 @@ export const Services: React.FC = () => {
                   to={s.link}
                   aria-label={`Explore ${s.title}`}
                   onMouseMove={setSpot}
-                  className={`group flex flex-col h-full p-7 sm:p-8 rounded-[2rem] bg-zinc-900/70 border border-white/10 ${s.ring} transition-colors duration-300 relative overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-[#03AED2]`}
+                  className={`group flex flex-col h-full p-7 sm:p-8 rounded-[2rem] bg-zinc-900/95 border border-black/10 ${s.ring} transition-colors duration-300 relative overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-[#03AED2]`}
                   style={{ transformStyle: 'preserve-3d' }}
                 >
                   {/* cursor spotlight */}

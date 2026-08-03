@@ -323,15 +323,6 @@ export const TestimonialsReels: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.div 
-            initial={{ opacity: 0, y: -15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-bold uppercase tracking-widest mb-6"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
-            Founder Reels
-          </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}

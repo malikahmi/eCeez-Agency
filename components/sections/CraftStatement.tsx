@@ -1,27 +1,45 @@
 import React, { useRef } from 'react';
 
 /**
- * CraftStatement — the headline quote, set across three lines with inline 3D
- * icons that respond to the cursor.
+ * CraftStatement — the headline quote in the brand blue gradient, with a
+ * mirrored reflection beneath and inline 3D icons that respond to the cursor.
  *
- * ANIMATION: CSS-only for anything that affects visibility (keyframes with
+ * ANIMATION: anything affecting visibility is CSS-only (keyframes with
  * fill-mode: both). A scroll-triggered reveal must never be used here — an
  * earlier version was captured mid-reveal by the prerenderer and the text
- * stayed permanently invisible in production. The 3D tilt is a progressive
- * enhancement layered on top: if the JS never runs, the icons simply sit still
- * and the quote is fully readable.
+ * stayed permanently invisible in production. The 3D tilt is progressive
+ * enhancement: with no JS the icons sit still and the quote reads fine.
  */
 
-const Icon: React.FC<{ src: string; alt: string; className?: string }> = ({ src, alt, className = '' }) => (
-  <span className={`craft-icon3d ${className}`}>
-    <img src={src} alt={alt} width={64} height={64} loading="lazy" decoding="async" />
+
+const Icon: React.FC<{ src: string; className?: string }> = ({ src, className = '' }) => (
+  <span className={`craft-icon3d ${className}`} aria-hidden="true">
+    <img src={src} alt="" width={64} height={64} loading="lazy" decoding="async" />
   </span>
+);
+
+/** The quote, rendered once for the headline and once for the reflection. */
+const QuoteLines: React.FC<{ reflected?: boolean }> = ({ reflected = false }) => (
+  <>
+    <span className={reflected ? 'block' : 'craft-line block'} style={reflected ? undefined : { animationDelay: '0ms' }}>
+      A love for design
+      <Icon src="/icons/code-brackets.png" className="craft-icon-code" />
+      &amp; code
+    </span>
+    <span className={reflected ? 'block' : 'craft-line block'} style={reflected ? undefined : { animationDelay: '90ms' }}>
+      allows us to produce web
+    </span>
+    <span className={reflected ? 'block' : 'craft-line block'} style={reflected ? undefined : { animationDelay: '180ms' }}>
+      experiences with
+      <Icon src="/icons/network-nodes.png" className="craft-icon-net" />
+      lasting impact.
+    </span>
+  </>
 );
 
 export const CraftStatement: React.FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
 
-  // Cursor-driven 3D parallax on the icons (enhancement only).
   const onMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = ref.current;
     if (!el) return;
@@ -39,29 +57,27 @@ export const CraftStatement: React.FC = () => {
     el.style.setProperty('--ry', '0deg');
   };
 
+  const typeClasses =
+    'text-[2.1rem] sm:text-5xl md:text-[4rem] font-medium leading-[1.14] tracking-[-0.025em] craft-grad';
+
   return (
-    <section className="bg-white py-20 sm:py-28 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
+    <section className="bg-white pt-20 sm:pt-28 pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
       <div
         ref={ref}
         onMouseMove={onMove}
         onMouseLeave={onLeave}
         className="craft-stage max-w-6xl mx-auto"
       >
-        <h2 className="text-[2.1rem] sm:text-5xl md:text-[4rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#0d1117]">
-          <span className="craft-line block" style={{ animationDelay: '0ms' }}>
-            A love for design
-            <Icon src="/icons/code-brackets.png" alt="" className="craft-icon-code" />
-            &amp; code
-          </span>
-          <span className="craft-line block" style={{ animationDelay: '90ms' }}>
-            allows us to produce web
-          </span>
-          <span className="craft-line block" style={{ animationDelay: '180ms' }}>
-            experiences with
-            <Icon src="/icons/network-nodes.png" alt="" className="craft-icon-net" />
-            <span className="craft-grad">lasting impact.</span>
-          </span>
+        <h2 className={typeClasses}>
+          <QuoteLines />
         </h2>
+
+        {/* Mirrored reflection — decorative, hidden from assistive tech */}
+        <div className="craft-reflection" aria-hidden="true">
+          <div className={typeClasses}>
+            <QuoteLines reflected />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -99,19 +99,36 @@
 }
 .craft-line { animation: craft-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both; }
 
-/* Gradient accent on the closing phrase */
+/* Brand blue gradient across the whole quote (restores the original colour),
+   slowly flowing so the type is never static. */
 .craft-grad {
-  background-image: linear-gradient(90deg, #1A3945, #4f46e5, #03AED2);
+  background-image: linear-gradient(90deg, #38A9E0, #3B82F6, #2540E8, #03AED2, #38A9E0);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: craft-flow 8s linear infinite;
+  animation: craft-flow 9s linear infinite;
 }
 @keyframes craft-flow {
   0%   { background-position: 0% 50%; }
   100% { background-position: 200% 50%; }
 }
+
+/* --- Mirrored reflection --- */
+.craft-reflection {
+  margin-top: 0.12em;
+  transform: scaleY(-1);
+  transform-origin: top;
+  opacity: 0.26;
+  pointer-events: none;
+  user-select: none;
+  /* fade the reflection out as it falls away from the text */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.12) 32%, transparent 62%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.12) 32%, transparent 62%);
+  filter: blur(0.6px);
+}
+/* the reflected copy should not re-run the entrance animation */
+.craft-reflection .craft-line { animation: none; }
 
 /* --- 3D inline icons --- */
 .craft-stage { perspective: 900px; }
@@ -134,7 +151,6 @@
   object-fit: contain;
   filter: drop-shadow(0 6px 14px rgba(0,0,0,0.16));
 }
-/* each icon also has its own idle motion so the line feels alive at rest */
 .craft-icon-code img { animation: craft-float 5.5s ease-in-out infinite; }
 .craft-icon-net  img { animation: craft-spin3d 9s linear infinite; }
 @keyframes craft-float {

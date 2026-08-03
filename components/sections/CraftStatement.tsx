@@ -1,44 +1,68 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 /**
- * CraftStatement — the headline quote, set in a high-contrast display style.
+ * CraftStatement — the headline quote, set across three lines with inline 3D
+ * icons that respond to the cursor.
  *
- * TYPOGRAPHY: mixes a condensed sans with an elegant serif for the accent
- * words, echoing the reference: normal words in tight uppercase sans, accent
- * words in a lighter serif with wide tracking. Kept to TWO lines so the
- * section stays compact.
- *
- * ANIMATION: CSS-only (keyframes with fill-mode: both). Scroll-triggered
- * reveals must not be used here — a previous version was captured mid-reveal
- * by the prerenderer and the text stayed invisible in production.
+ * ANIMATION: CSS-only for anything that affects visibility (keyframes with
+ * fill-mode: both). A scroll-triggered reveal must never be used here — an
+ * earlier version was captured mid-reveal by the prerenderer and the text
+ * stayed permanently invisible in production. The 3D tilt is a progressive
+ * enhancement layered on top: if the JS never runs, the icons simply sit still
+ * and the quote is fully readable.
  */
 
-const Serif: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <span className="font-serif font-light tracking-[0.02em]">{children}</span>
+const Icon: React.FC<{ src: string; alt: string; className?: string }> = ({ src, alt, className = '' }) => (
+  <span className={`craft-icon3d ${className}`}>
+    <img src={src} alt={alt} width={64} height={64} loading="lazy" decoding="async" />
+  </span>
 );
 
-export const CraftStatement: React.FC = () => (
-  <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
-    <div className="max-w-6xl mx-auto">
-      <h2 className="craft-quote text-[2rem] sm:text-5xl md:text-[4.2rem] leading-[1.06] tracking-[-0.02em] text-[#0d1117] uppercase font-semibold">
-        <span className="craft-line block" style={{ animationDelay: '0ms' }}>
-          Taking brands further through{' '}
-          <Serif>carefully</Serif>{' '}
-          <span className="craft-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-              <path d="M12 5v14M5 12h14" />
-            </svg>
+export const CraftStatement: React.FC = () => {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  // Cursor-driven 3D parallax on the icons (enhancement only).
+  const onMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const el = ref.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    el.style.setProperty('--rx', `${(-y * 14).toFixed(2)}deg`);
+    el.style.setProperty('--ry', `${(x * 18).toFixed(2)}deg`);
+  };
+
+  const onLeave = () => {
+    const el = ref.current;
+    if (!el) return;
+    el.style.setProperty('--rx', '0deg');
+    el.style.setProperty('--ry', '0deg');
+  };
+
+  return (
+    <section className="bg-white py-20 sm:py-28 px-4 sm:px-6 lg:px-8" aria-label="Our approach">
+      <div
+        ref={ref}
+        onMouseMove={onMove}
+        onMouseLeave={onLeave}
+        className="craft-stage max-w-6xl mx-auto"
+      >
+        <h2 className="text-[2.1rem] sm:text-5xl md:text-[4rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#0d1117]">
+          <span className="craft-line block" style={{ animationDelay: '0ms' }}>
+            A love for design
+            <Icon src="/icons/code-brackets.png" alt="" className="craft-icon-code" />
+            &amp; code
           </span>
-        </span>
-        <span className="craft-line block" style={{ animationDelay: '90ms' }}>
-          <Serif>crafted</Serif> emotional experiences
-          <span className="craft-icon craft-icon-box" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
+          <span className="craft-line block" style={{ animationDelay: '90ms' }}>
+            allows us to produce web
           </span>
-        </span>
-      </h2>
-    </div>
-  </section>
-);
+          <span className="craft-line block" style={{ animationDelay: '180ms' }}>
+            experiences with
+            <Icon src="/icons/network-nodes.png" alt="" className="craft-icon-net" />
+            <span className="craft-grad">lasting impact.</span>
+          </span>
+        </h2>
+      </div>
+    </section>
+  );
+};

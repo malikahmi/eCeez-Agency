@@ -57,6 +57,7 @@ const WooCommerceDevelopmentPage = lazy(() => import('./pages/WooCommerceDevelop
 const IndustryPage = lazy(() => import('./pages/IndustryPage').then(module => ({ default: module.IndustryPage })));
 const ConversionCalculatorPage = lazy(() => import('./pages/ConversionCalculatorPage').then(module => ({ default: module.ConversionCalculatorPage })));
 const LaunchChecklistPage = lazy(() => import('./pages/LaunchChecklistPage').then(module => ({ default: module.LaunchChecklistPage })));
+const ReviewsPage = lazy(() => import('./pages/ReviewsPage').then(module => ({ default: module.ReviewsPage })));
 const ClientCaseStudyPage = lazy(() => import('./pages/ClientCaseStudyPage').then(module => ({ default: module.ClientCaseStudyPage })));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(module => ({ default: module.NotFoundPage })));
 
@@ -113,6 +114,7 @@ const ROUTE_TITLES: Record<string, string> = {
   '/security': 'Web Security & Compliance | eCeez',
   '/about-us': 'About eCeez | Shopify & Ecommerce Growth Agency',
   '/contact': 'Contact eCeez | Free Expert Advice',
+  '/reviews': 'eCeez Client Reviews — 4.95/5 from 22 Clients | eCeez',
   '/case-studies': 'Case Studies | eCeez Client Results',
   '/case-studies/swolverine': 'Swolverine: Sports Supplement Shopify Case Study | eCeez',
   '/case-studies/volvik': 'Volvik USA: Golf Brand Shopify Case Study | eCeez',
@@ -213,6 +215,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/case-studies" element={<CaseStudiesPage />} />
+            <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogPostPage />} />

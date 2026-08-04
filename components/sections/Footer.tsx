@@ -105,6 +105,7 @@ export const Footer: React.FC = () => {
                 { title: 'Home', path: '/' },
                 { title: 'Services', path: '/services' },
                 { title: 'Projects', path: '/case-studies' },
+                { title: 'Client Reviews', path: '/reviews' },
                 { title: 'Blog Insights', path: '/blog' },
                 { title: 'Contact', path: '/contact' }
               ].map((link, idx) => (

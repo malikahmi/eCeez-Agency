@@ -190,6 +190,10 @@ const META: Record<string, { t: string; d: string }> = {
 "t": "Contact eCeez | Free Expert Advice",
 "d": "Get free expert advice on your Shopify store. Contact eCeez for development, SEO, and CRO help."
 },
+"/reviews": {
+"t": "eCeez Client Reviews — 4.95/5 from 22 Clients | eCeez",
+"d": "Read 22 verified client reviews of eCeez, rated 4.95 out of 5. Real feedback from Shopify and ecommerce brands on development, SEO, CRO and store optimisation."
+},
 "/case-studies": {
 "t": "Case Studies | eCeez Client Results",
 "d": "Real client results: Shopify Plus scaling, apparel launches, jewelry conversion optimization, and more."

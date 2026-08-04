@@ -650,3 +650,15 @@ Key answers: the most commonly missed launch steps are placing a real test trans
 URL: https://eceez.com/blog/how-much-does-a-shopify-website-cost
 Itemised Shopify cost breakdown separating the subscription, the build, apps, and ongoing maintenance. Realistic first-year ranges: DIY $1,000-$3,000; freelancer $3,000-$15,000; agency $15,000-$60,000; enterprise/Shopify Plus $60,000-$250,000+. Covers what drives quotes up or down (design origin, catalogue size, integrations, migration complexity, content readiness, B2B), app costs of $200-$800/month, cost by store type, timelines, regional rates, agency billing models, and when to rebuild versus optimise.
 Key answer: Shopify's subscription is the smallest line item. The real cost is labour plus judgement, and it scales with genuine business complexity rather than ambition.
+
+### Client Reviews & Ratings
+URL: https://eceez.com/reviews
+eCeez is rated 4.95 out of 5 based on 22 client reviews, published with client permission.
+Reviews cover Shopify development, store migrations, technical ecommerce SEO, conversion rate
+optimisation, custom Liquid work, and ongoing growth retainers. Reviewing brands include Volvik,
+Swolverine, Aurex, East and South Interiors, Nishiyama Ramen, Oddli, Labozero, WrestlingMart,
+Tropez Official, Eluxee Jewelry, CleanFit and Express Wholesalers.
+eCeez is also reviewed independently on Clutch (https://clutch.co/profile/eceez),
+GoodFirms (https://www.goodfirms.co/company/eceez) and
+Trustpilot (https://www.trustpilot.com/review/eceez.com).
+Key answer: eCeez holds an average client rating of 4.95/5 across 22 reviews.

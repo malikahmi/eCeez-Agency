@@ -36,7 +36,7 @@ const PORT = 4321;
 // Dynamic blog posts are enumerated from the built data at runtime below.
 const STATIC_ROUTES = [
   '/', '/services', '/blog', '/contact', '/about-us', '/careers', '/privacy-policy',
-  '/case-studies', '/case-studies/clothing-store', '/case-studies/jewelry-store',
+  '/case-studies', '/reviews', '/case-studies/clothing-store', '/case-studies/jewelry-store',
   '/case-studies/meows-cat-health', '/case-studies/swolverine', '/case-studies/volvik',
   '/case-studies/tropez-official', '/case-studies/oddli', '/case-studies/labozero',
   '/case-studies/express-wholesalers', '/case-studies/wrestlingmart', '/case-studies/aoap-projects',
